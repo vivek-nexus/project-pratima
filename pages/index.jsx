@@ -21,7 +21,7 @@ export default function Home() {
           Add home page content here!
         </p>
 
-        <Link href="icons"><h3>Go to icons page &rarr;  </h3></Link>
+        <Link href="icons"><a>Go to icons page &rarr; </a></Link>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
