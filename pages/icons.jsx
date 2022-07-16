@@ -86,6 +86,7 @@ export default function Icons() {
     const [edges, setEdges] = useState("sharp");
     const [size, setSize] = useState("24");
     const [clickedIcon, setClickedIcon] = useState("");
+    const [isInfoPanelOpen, setIsInfoPanelOpen] = useState(false);
 
 
 
@@ -207,26 +208,51 @@ export default function Icons() {
 
                             <Card shadow="mild" shape="rounded"
                             >
-                                <Text weight="600" align="center" marginTop="micro" marginBottom="micro">{item.iconName} &rarr;</Text>
-                                {/* <Text align="center" marginTop="nano">Read more &rarr;</Text> */}
+                                <Text
+                                    weight="600"
+                                    align="center"
+                                    marginTop="micro"
+                                    marginBottom="micro"
+                                    style={{ cursor: "pointer" }}
+                                    onClick={() => {
+                                        console.log(item.fileName)
+                                        setClickedIcon(item.fileName)
+                                        setIsInfoPanelOpen(true)
+                                    }}
+                                >
+                                    {item.iconName} &rarr;
+                                </Text>
                             </Card>
                         </Card>
-                        <InfoPanel>
-                            <Text as="h5" marginBottom="micro">{item.iconName}</Text>
-                            <Element
-                                as="div"
-                                marginBottom="micro"
-                            >
-                                <Text marginBottom="none" weight="600">Related terms:</Text>
-                                {item.nomenclature.map(terms =>
-                                    <Text marginTop="none" marginBottom="none">{terms}</Text>
-                                )}
-                            </Element>
-                            <Text marginBottom="none" weight="600">Usage recommendations:</Text>
-                            <Text marginTop="none" marginBottom="micro">{item.notes}</Text>
-                        </InfoPanel>
                     </Portion>)}
             </Row>
+
+            <InfoPanel
+                isOpen={isInfoPanelOpen}
+                onCloseCallback={() => { setIsInfoPanelOpen(false) }}
+            >
+                {iconsArray.map(item =>
+                    <>
+                        {(clickedIcon == item.fileName) && (
+                            <>
+                                <Text as="h5" marginBottom="micro">{item.iconName}</Text>
+                                <Element
+                                    as="div"
+                                    marginBottom="micro"
+                                >
+                                    <Text marginBottom="none" weight="600">Related terms:</Text>
+                                    {item.nomenclature.map(terms =>
+                                        <Text marginTop="none" marginBottom="none">{terms}</Text>
+                                    )}
+                                </Element>
+                                <Text marginBottom="none" weight="600">Usage recommendations:</Text>
+                                <Text marginTop="none" marginBottom="micro">{item.notes}</Text>
+                            </>
+                        )}
+                    </>
+                )}
+
+            </InfoPanel>
 
 
 
