@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import { Button, Card, Row, Portion } from 'fictoan-react'
 
 export default function Home() {
   return (
@@ -21,7 +22,26 @@ export default function Home() {
           Add home page content here!
         </p>
 
-        <Link href="icons"><a>Go to icons page &rarr; </a></Link>
+        <Button kind="primary" marginBottom="micro">
+          Primary button
+        </Button>
+
+        <Row sidePadding="huge">
+          <Portion desktopSpan="12">
+            <Card padding="small" marginBottom="micro" bgColor="grey-30" shape="rounded">
+              This is a card on the left portion
+            </Card>
+          </Portion>
+          <Portion desktopSpan="12">
+            <Card padding="small" marginBottom="micro" bgColor="amber-30" >
+              This is a card on the right portion
+            </Card>
+          </Portion>
+        </Row>
+
+        <Link href="icons"><Button kind="tertiary">
+          Go to icons page &rarr;
+        </Button></Link>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
