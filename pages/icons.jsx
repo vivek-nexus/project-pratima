@@ -16,10 +16,9 @@ function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, 
                                 <Text as="h5" marginBottom="micro">{item.iconName}</Text>
                                 <a
                                     href={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
-                                    download={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}>
+                                    download>
                                     <Button kind="primary" shadow="hard" shape="rounded">Download SVG</Button>
                                 </a>
-
                                 <HRule marginTop="micro" marginBottom="micro" />
 
                                 <Text weight="600" marginBottom="none">Related terms</Text>
@@ -100,7 +99,7 @@ export default function Icons() {
         },
         {
             "fileName": "ic_view_transaction_history",
-            "iconName": "Transction history",
+            "iconName": "Transaction history",
             "nomenclature": ["Past transactions", "View transactions", "Transactions", "Passbook"],
             "notes": ["The term passbook is always associated with a booklet that encompasses all the transactions conducted through an account. In this case, adding the binder rings reinforced the identity of the book symbol and addition of the rupee symbol set the context of money/ transaction."]
         },
@@ -255,14 +254,24 @@ export default function Icons() {
                             bgColor="slate-10"
                             className={styles.cardIcon}
                         >
+
                             <a
                                 href={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
-                                download={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}>
+                                download>
                                 <img
                                     src={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
                                     alt={`${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`} />
                             </a>
-
+                            {/* <Text
+                                margin="none"
+                                align="center">
+                                <a
+                                    style={{ textAlign: "right" }}
+                                    href={`/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
+                                    download><Element as="span" marginLeft="nano" className="material-symbols-outlined">
+                                        download
+                                    </Element></a>
+                            </Text> */}
 
                             <Card
                                 shadow="mild"
@@ -282,6 +291,7 @@ export default function Icons() {
                                         chevron_right
                                     </Element>
                                 </Text>
+
                             </Card>
                         </Card>
                     </Portion>)}
