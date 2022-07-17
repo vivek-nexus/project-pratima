@@ -60,7 +60,7 @@ export const FictoanTheme = {
 
     //  BUTTON  ///////////////////////////////////////////////////////////////
     button: {
-        font: "sans-serif",
+        font: "Lato, sans-serif",
         isLoading: {
             spinnerBorder: String(customColours.hue)
         },
@@ -512,13 +512,13 @@ export const FictoanTheme = {
     //  TEXT  /////////////////////////////////////////////////////////////////
     text: {
         font: {
-            sans: "sans-serif",
+            sans: "Lato, sans-serif",
             serif: "serif",
             mono: "monospace"
         },
 
         paras: {
-            font: "sans-serif",
+            font: "Lato, sans-serif",
             size: 1,
             color: String(defaultColours.grey),
             weight: 400,
@@ -526,7 +526,7 @@ export const FictoanTheme = {
         },
 
         headings: {
-            font: "sans-serif",
+            font: "Lato, sans-serif",
             color: String(customColours.shade),
             weight: 600,
             multiplier: 1.24,
@@ -534,7 +534,7 @@ export const FictoanTheme = {
         },
 
         links: {
-            font: "sans-serif",
+            font: "Lato, sans-serif",
             default: {
                 color: String(defaultColours.blue90)
             },

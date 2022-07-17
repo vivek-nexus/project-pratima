@@ -1,5 +1,29 @@
-.icon-layout {
+.body {
+    font-family: 'Inter', sans-serif;
+}
+
+.cardIcon {
+    border-radius: 0.75rem;
+}
+
+.cardIconBottom {
+    border-radius: 0.75rem;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    padding: 1rem;
+}
+
+.iconNameLink {
+    cursor: pointer;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
+}
+
+.pill {
+    padding: 0.25rem 1rem;
+    margin-bottom: 0.05rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+    border-radius: 2rem;
 }
