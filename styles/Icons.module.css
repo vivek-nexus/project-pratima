@@ -5,6 +5,19 @@
 .cardIcon {
     border-radius: 0.75rem;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardIcon:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.iconThumbnail {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cardIconBottom {
@@ -32,6 +45,8 @@
 .infoPanel {
     background-color: rgba(225, 241, 255, 0.80) !important;
     backdrop-filter: blur(8px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px !important;
+    --animate-duration: 0.3s;
 }
 
 .flexCenter {
