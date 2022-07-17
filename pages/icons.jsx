@@ -13,22 +13,22 @@ import iconsArray from '../iconsArray';
 function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, edges, size, setIsInfoPanelOpen }) {
     return (
         <>
-            <Text
-                margin="none"
-                align="right"
-                style={{ cursor: "pointer" }}
-                onClick={() => { setIsInfoPanelOpen(false) }}
-            >
-                <Element as="span" marginLeft="nano" className="material-symbols-outlined">
-                    close
-                </Element>
-            </Text>
             {
                 iconsArray.map(item =>
                     <div key={item.fileName}>
                         {(clickedIcon == item.fileName) && (
                             <>
-                                <Text as="h5" marginBottom="micro">{item.iconName}</Text>
+                                <Text as="h5" marginBottom="micro"
+                                    className={styles.infoPanelHeading}
+                                    onClick={() => { setIsInfoPanelOpen(false) }}
+                                >
+                                    <Element
+                                        as="span"
+                                        className="material-symbols-outlined"
+                                        marginRight="nano"
+                                    >
+                                        close
+                                    </Element>{item.iconName}</Text>
                                 <a
                                     href={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
                                     download>
@@ -194,7 +194,9 @@ export default function Icons() {
                 </Portion>
             </Row>
 
-            <Row sidePadding="huge" gutters="medium">
+            <Row
+                sidePadding="huge"
+                gutters="medium">
                 {iconsArray.map(item =>
                     <Portion key={item.fileName} desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="8" mobileSpan="12" padding="nano">
                         <Card

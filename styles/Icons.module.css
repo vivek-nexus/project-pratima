@@ -34,6 +34,12 @@
     align-items: center;
 }
 
+.infoPanelHeading {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
 .pill {
     padding: 0.25rem 1rem;
     margin-bottom: 0.05rem;
