@@ -1,13 +1,23 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import styles from '../styles/Icons.module.css'
 import { Row, Portion, Select, Text, InfoPanel, Card, Element, Button, HRule } from 'fictoan-react'
 
-function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, edges, size }) {
+function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, edges, size, setIsInfoPanelOpen }) {
     return (
         <>
+            <Text
+                margin="none"
+                align="right"
+                style={{ cursor: "pointer" }}
+                onClick={() => { setIsInfoPanelOpen(false) }}
+            >
+                <Element as="span" marginLeft="nano" className="material-symbols-outlined">
+                    close
+                </Element>
+            </Text>
             {
                 iconsArray.map(item =>
                     <div key={item.fileName}>
@@ -21,11 +31,13 @@ function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, 
                                 </a>
                                 <HRule marginTop="micro" marginBottom="micro" />
 
-                                <Text weight="600" marginBottom="none">Related terms</Text>
+                                <Text as="h6" weight="600" marginBottom="none">Related terms / nomenclature</Text>
                                 {item.nomenclature.map(terms =>
                                     <Text
                                         key={terms}
-                                        bgColor="slate-10"
+                                        bgColor="slate-70"
+                                        textColor="white"
+                                        weight="600"
                                         className={styles.pill}
                                     >
                                         {terms}
@@ -34,11 +46,11 @@ function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, 
 
                                 <HRule marginTop="micro" marginBottom="micro" />
 
-                                <Text weight="600">Usage recommendations</Text>
+                                <Text as="h6" weight="600">Usage recommendations</Text>
                                 {item.notes.map(notes =>
                                     <Text
                                         key={notes}
-                                        marginTop="none">
+                                    >
                                         {notes}
                                     </Text>
                                 )}
@@ -116,14 +128,14 @@ export default function Icons() {
             "iconName": "Success",
             "nomenclature": ["Done", "Successful"],
             "notes": ["Tick communicates success state. Green colour is used to reinforce it.",
-                "However, colour should not be used a fail-safe way to communicate due to accessibility reasons (colour blindness)"]
+                "However, colour should not be used a fail-safe way to communicate due to accessibility reasons (colour blindness)."]
         },
         {
             "fileName": "ic_failure",
             "iconName": "Failure",
             "nomenclature": ["Failed", "Unsuccessful"],
             "notes": ["Cross communicates error state. Red colour is used to reinforce it.",
-                "However, colour should not be used a fail-safe way to communicate due to accessibility reasons (colour blindness)"]
+                "However, colour should not be used a fail-safe way to communicate due to accessibility reasons (colour blindness)."]
         },
         {
             "fileName": "ic_pending",
@@ -133,6 +145,8 @@ export default function Icons() {
         },
     ];
 
+
+
     const [strokeSize, setStrokeSize] = useState("s1");
     const [cornerRadius, setCornerRadius] = useState("r0");
     const [edges, setEdges] = useState("sharp");
@@ -140,10 +154,17 @@ export default function Icons() {
     const [clickedIcon, setClickedIcon] = useState("");
     const [isInfoPanelOpen, setIsInfoPanelOpen] = useState(false);
 
+    useEffect(() => {
+        if (isInfoPanelOpen) {
+            document.querySelectorAll('.dismiss-button')[0].style.display = 'none';
+            document.querySelectorAll('.dismiss-button')[1].style.display = 'none';
+        }
+    }, [isInfoPanelOpen])
+
 
 
     return (
-        <div className={styles.body}>
+        <Element as="div" className={styles.body}>
             <Head>
                 <title>Icons</title>
                 {/* <base href="/project-pratima/" /> */}
@@ -253,15 +274,20 @@ export default function Icons() {
                         <Card
                             bgColor="slate-10"
                             className={styles.cardIcon}
+                            onClick={() => {
+                                console.log(item.fileName)
+                                setClickedIcon(item.fileName)
+                                setIsInfoPanelOpen(true)
+                            }}
                         >
 
-                            <a
+                            {/* <a
                                 href={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
-                                download>
-                                <img
-                                    src={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
-                                    alt={`${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`} />
-                            </a>
+                                download> */}
+                            <img
+                                src={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
+                                alt={`${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`} />
+                            {/* </a> */}
                             {/* <Text
                                 margin="none"
                                 align="center">
@@ -281,11 +307,6 @@ export default function Icons() {
                                     weight="600"
                                     margin="none"
                                     className={styles.iconNameLink}
-                                    onClick={() => {
-                                        console.log(item.fileName)
-                                        setClickedIcon(item.fileName)
-                                        setIsInfoPanelOpen(true)
-                                    }}
                                 >
                                     {item.iconName} <Element as="span" marginLeft="nano" className="material-symbols-outlined">
                                         chevron_right
@@ -299,9 +320,11 @@ export default function Icons() {
 
             <InfoPanel
                 width="medium"
+                shadow="hard"
                 showOnlyOnDesktop showOnlyOnTabletLandscape showOnlyOnTabletPortrait
                 isOpen={isInfoPanelOpen}
                 onCloseCallback={() => { setIsInfoPanelOpen(false) }}
+                className={styles.infoPanel}
             >
                 <InfoPanelContents
                     iconsArray={iconsArray}
@@ -310,6 +333,7 @@ export default function Icons() {
                     cornerRadius={cornerRadius}
                     edges={edges}
                     size={size}
+                    setIsInfoPanelOpen={setIsInfoPanelOpen}
                 />
             </InfoPanel>
 
@@ -318,6 +342,7 @@ export default function Icons() {
                 showOnlyOnMobile
                 isOpen={isInfoPanelOpen}
                 onCloseCallback={() => { setIsInfoPanelOpen(false) }}
+                className={styles.infoPanel}
                 padding="medium"
             >
                 <InfoPanelContents
@@ -327,8 +352,9 @@ export default function Icons() {
                     cornerRadius={cornerRadius}
                     edges={edges}
                     size={size}
+                    setIsInfoPanelOpen={setIsInfoPanelOpen}
                 />
             </InfoPanel>
-        </div >
+        </Element >
     )
 }

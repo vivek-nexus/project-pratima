@@ -4,6 +4,7 @@
 
 .cardIcon {
     border-radius: 0.75rem;
+    cursor: pointer;
 }
 
 .cardIconBottom {
@@ -26,4 +27,15 @@
     margin-right: 0.5rem;
     display: inline-block;
     border-radius: 2rem;
+}
+
+.infoPanel {
+    background-color: rgba(225, 241, 255, 0.80) !important;
+    backdrop-filter: blur(8px);
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
