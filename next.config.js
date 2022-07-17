@@ -4,6 +4,11 @@ const nextConfig = {
   swcMinify: true,
   basePath: '/project-pratima',
   assetPrefix: '/project-pratima/',
+  experimental: {
+    images: {
+      unoptimized: true,
+    },
+  },
 }
 
 const isProd = process.env.NODE_ENV === 'production'
