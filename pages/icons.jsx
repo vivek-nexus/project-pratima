@@ -17,7 +17,7 @@ function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, 
                                 <a
                                     href={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
                                     download={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}>
-                                    <Button kind="primary">Download SVG</Button>
+                                    <Button kind="primary" shadow="hard" shape="rounded">Download SVG</Button>
                                 </a>
 
                                 <HRule marginTop="micro" marginBottom="micro" />
@@ -89,13 +89,13 @@ export default function Icons() {
         {
             "fileName": "ic_to_contact",
             "iconName": "Pay to contact",
-            "nomenclature": ["Pay to contact", "Pay to mobile number", "Pay to Mobile No.", "Pay to Mobile #", "Pay Contact"],
+            "nomenclature": ["Pay to contact", "Pay to mobile number", "Pay to mobile no.", "Pay to Mobile #", "Pay contact"],
             "notes": ["A phone book is a strong metaphor for contacts, pairing that with an upward arrow in this context would mean 'send money to contact.", "Having a phone symbol or just a contact book without the context of the verb would confuse the user on the action associated with it."]
         },
         {
             "fileName": "ic_qr",
             "iconName": "Scan QR",
-            "nomenclature": ["Scan & Pay", "Scan QR", "QR", "Pay via QR"],
+            "nomenclature": ["Scan and pay", "Scan QR", "QR", "Pay via QR"],
             "notes": ["Ever since advent of smartphones, QR scanning has been associated with small grid of boxes in a square frame which resembles a simplified version of the actual QR code."]
         },
         {
@@ -107,8 +107,8 @@ export default function Icons() {
         {
             "fileName": "ic_check_balance",
             "iconName": "Check balance",
-            "nomenclature": ["Check Balance", "Bank Balance", "Check Bank Balance",
-                "Balance Check", "Balance"],
+            "nomenclature": ["Check balance", "Bank balance", "Check bank balance",
+                "Balance check", "Balance"],
             "notes": ["Magnifying glass brought out thoughts such as search for money.",
                 "A question mark indicates \"asking for something\" and rupee reinforces the same thought as \"asking for balance\"."]
         },
