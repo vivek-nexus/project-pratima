@@ -29,10 +29,15 @@ function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, 
                                     >
                                         close
                                     </Element>{item.iconName}</Text>
+                                <img
+                                    src={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
+                                    alt={`${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
+                                    className="icon-large"
+                                />
                                 <a
                                     href={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
                                     download>
-                                    <Button kind="primary" shadow="hard" shape="rounded">Download SVG</Button>
+                                    <Button kind="primary" shadow="hard" shape="rounded" marginTop="micro">Download SVG</Button>
                                 </a>
                                 <HRule marginTop="micro" marginBottom="micro" />
 
