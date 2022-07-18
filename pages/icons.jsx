@@ -5,12 +5,14 @@ import { useState, useEffect } from 'react'
 import styles from '../styles/Icons.module.css'
 import { Row, Portion, Select, Text, InfoPanel, Card, Element, Button, HRule } from 'fictoan-react'
 import 'animate.css';
+import Drawer from "react-bottom-drawer";
+import { isMobile } from 'react-device-detect';
 import iconsArray from '../iconsArray';
 
 
 
 
-function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, edges, size, setIsInfoPanelOpen }) {
+function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, edges, size, setIsInfoPanelOpen, setIsBottomDrawerOpen }) {
     return (
         <>
             {
@@ -20,7 +22,7 @@ function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, 
                             <>
                                 <Text as="h5" marginBottom="micro"
                                     className={styles.infoPanelHeading}
-                                    onClick={() => { setIsInfoPanelOpen(false) }}
+                                    onClick={() => { isMobile ? setIsBottomDrawerOpen(false) : setIsInfoPanelOpen(false) }}
                                 >
                                     <Element
                                         as="span"
@@ -74,15 +76,13 @@ function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, 
 }
 
 export default function Icons() {
-
-
-
     const [strokeSize, setStrokeSize] = useState("s1");
     const [cornerRadius, setCornerRadius] = useState("r0");
     const [edges, setEdges] = useState("sharp");
     const [size, setSize] = useState("24");
     const [clickedIcon, setClickedIcon] = useState("");
     const [isInfoPanelOpen, setIsInfoPanelOpen] = useState(false);
+    const [isBottomDrawerOpen, setIsBottomDrawerOpen] = useState(false);
 
     useEffect(() => {
         if (isInfoPanelOpen) {
@@ -107,155 +107,175 @@ export default function Icons() {
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,0" />
             </Head>
 
-            <Row sidePadding="huge">
-                <Portion desktopSpan="18" tabletLandscapeSpan="18" tabletPortraitSpan="18" mobileSpan="12">
-                    <Row padding="nano" marginTop="small" marginBottom="small" gutters="huge">
-                        <Portion desktopSpan="6" tabletLandscapeSpan="12" tabletPortraitSpan="12" mobileSpan="24">
-                            <Select
-                                onChange={function (e) {
-                                    console.log(e.target.value)
-                                    if (e.target.value == "1px")
-                                        setStrokeSize("s1")
-                                    if (e.target.value == "1.5px")
-                                        setStrokeSize("s1.5")
-                                    if (e.target.value == "2px")
-                                        setStrokeSize("s2")
-                                }}
-                                id="stroke-size"
-                                label="Stroke size"
-                                options={[
-                                    {
-                                        name: "1px",
-                                        value: "1px"
-                                    },
-                                    {
-                                        name: "1.5px",
-                                        value: "1.5px"
-                                    },
-                                    {
-                                        name: "2px",
-                                        value: "2px"
-                                    },
-                                ]}
-                            />
-                        </Portion>
-                        <Portion desktopSpan="6" tabletLandscapeSpan="12" tabletPortraitSpan="12" mobileSpan="24">
-                            <Select
-                                onChange={function (e) {
-                                    console.log(e.target.value)
-                                    if (e.target.value == "0px")
-                                        setCornerRadius("r0")
-                                    if (e.target.value == "2px")
-                                        setCornerRadius("r2")
-                                    if (e.target.value == "3px")
-                                        setCornerRadius("r3")
-                                }}
-                                id="corner-radius"
-                                label="Corner radius"
-                                options={[
-                                    {
-                                        name: "0px",
-                                        value: "0px"
-                                    },
-                                    {
-                                        name: "2px",
-                                        value: "2px"
-                                    },
-                                    {
-                                        name: "3px",
-                                        value: "3px"
-                                    },
-                                ]}
-                            />
-                        </Portion>
-                        <Portion desktopSpan="6" tabletLandscapeSpan="12" tabletPortraitSpan="12" mobileSpan="24">
-                            <Select
-                                onChange={function (e) {
-                                    setEdges(e.target.value)
-                                }}
-                                id="edges"
-                                label="Edges"
-                                options={[
-                                    {
-                                        name: "sharp",
-                                        value: "sharp"
-                                    },
-                                    {
-                                        name: "soft",
-                                        value: "soft"
-                                    },
-                                ]}
-                            />
-                        </Portion>
-                        <Portion desktopSpan="6" tabletLandscapeSpan="12" tabletPortraitSpan="12" mobileSpan="24">
-                            <Select
-                                id="size"
-                                label="Size"
-                                options={[
-                                    {
-                                        name: "24px",
-                                        value: "24px"
-                                    },
-                                ]}
-                            />
-                        </Portion>
-                    </Row>
-                </Portion>
-                <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12">
-                </Portion>
-            </Row>
-
-            <Row sidePadding="huge">
-                <Portion desktopSpan="18" tabletLandscapeSpan="18" tabletPortraitSpan="18" mobileSpan="12">
-                    <Row
-                        // sidePadding="huge"
-                        gutters="medium">
-                        {iconsArray.map(item =>
-                            <Portion key={item.fileName} desktopSpan="8" tabletLandscapeSpan="10" tabletPortraitSpan="10" mobileSpan="24" padding="nano">
-                                <Card
-                                    isFullHeight
-                                    bgColor="slate-10"
-                                    className={styles.cardIcon}
-                                    onClick={() => {
-                                        console.log(item.fileName)
-                                        setClickedIcon(item.fileName)
-                                        setIsInfoPanelOpen(true)
+            <div key={isInfoPanelOpen}>
+                <Row sidePadding="huge">
+                    <Portion
+                        desktopSpan={isInfoPanelOpen ? "16" : "24"}
+                        tabletLandscapeSpan={isInfoPanelOpen ? "18" : "24"}
+                        tabletPortraitSpan={isInfoPanelOpen ? "18" : "24"}
+                        mobileSpan={false ? "12" : "24"}
+                    >
+                        <Row padding="nano" marginTop="small" marginBottom="small" gutters="huge">
+                            <Portion
+                                desktopSpan={isInfoPanelOpen ? "12" : "6"}
+                                tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
+                                mobileSpan={false ? "24" : "12"}
+                                className={clickedIcon ? `animate__animated animate__headShake` : ``}>
+                                <Select
+                                    onChange={function (e) {
+                                        console.log(e.target.value)
+                                        if (e.target.value == "1px")
+                                            setStrokeSize("s1")
+                                        if (e.target.value == "1.5px")
+                                            setStrokeSize("s1.5")
+                                        if (e.target.value == "2px")
+                                            setStrokeSize("s2")
                                     }}
-                                >
-                                    <img
-                                        src={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
-                                        alt={`${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
-                                        className={styles.iconThumnail}
-                                        style={{ width: "75%", marginLeft: "auto", marginRight: "auto" }}
-                                    />
+                                    id="stroke-size"
+                                    label="Stroke size"
+                                    options={[
+                                        {
+                                            name: "1px",
+                                            value: "1px"
+                                        },
+                                        {
+                                            name: "1.5px",
+                                            value: "1.5px"
+                                        },
+                                        {
+                                            name: "2px",
+                                            value: "2px"
+                                        },
+                                    ]}
+                                />
+                            </Portion>
+                            <Portion
+                                desktopSpan={isInfoPanelOpen ? "12" : "6"}
+                                tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
+                                mobileSpan={false ? "24" : "12"}
+                                className={clickedIcon ? `animate__animated animate__headShake` : ``}>
+                                <Select
+                                    onChange={function (e) {
+                                        console.log(e.target.value)
+                                        if (e.target.value == "0px")
+                                            setCornerRadius("r0")
+                                        if (e.target.value == "2px")
+                                            setCornerRadius("r2")
+                                        if (e.target.value == "3px")
+                                            setCornerRadius("r3")
+                                    }}
+                                    id="corner-radius"
+                                    label="Corner radius"
+                                    options={[
+                                        {
+                                            name: "0px",
+                                            value: "0px"
+                                        },
+                                        {
+                                            name: "2px",
+                                            value: "2px"
+                                        },
+                                        {
+                                            name: "3px",
+                                            value: "3px"
+                                        },
+                                    ]}
+                                />
+                            </Portion>
+                            <Portion
+                                desktopSpan={isInfoPanelOpen ? "12" : "6"}
+                                tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
+                                mobileSpan={false ? "24" : "12"}
+                                className={clickedIcon ? `animate__animated animate__headShake` : ``}>
+                                <Select
+                                    onChange={function (e) {
+                                        setEdges(e.target.value)
+                                    }}
+                                    id="edges"
+                                    label="Edges"
+                                    options={[
+                                        {
+                                            name: "sharp",
+                                            value: "sharp"
+                                        },
+                                        {
+                                            name: "soft",
+                                            value: "soft"
+                                        },
+                                    ]}
+                                />
+                            </Portion>
+                            <Portion
+                                desktopSpan={isInfoPanelOpen ? "12" : "6"}
+                                tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
+                                mobileSpan={false ? "24" : "12"}
+                                className={clickedIcon ? `animate__animated animate__headShake` : ``}>
+                                <Select
+                                    id="size"
+                                    label="Size"
+                                    options={[
+                                        {
+                                            name: "24px",
+                                            value: "24px"
+                                        },
+                                    ]}
+                                />
+                            </Portion>
+                        </Row>
+                    </Portion>
+                </Row>
 
-
+                <Row sidePadding="huge">
+                    <Portion
+                        desktopSpan={isInfoPanelOpen ? "16" : "24"}
+                        tabletLandscapeSpan={isInfoPanelOpen ? "18" : "24"}
+                        tabletPortraitSpan={isInfoPanelOpen ? "18" : "24"}
+                        mobileSpan={false ? "12" : "24"}
+                    >
+                        <Row
+                            gutters="medium">
+                            {iconsArray.map(item =>
+                                <Portion
+                                    key={item.fileName}
+                                    desktopSpan={isInfoPanelOpen ? "8" : "6"} tabletLandscapeSpan={isInfoPanelOpen ? "10" : "8"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "8"} mobileSpan={false ? "24" : "12"} padding="nano" className={clickedIcon ? `animate__animated animate__headShake` : ``}>
                                     <Card
-                                        shadow="mild"
-                                        className={styles.cardIconBottom}
+                                        isFullHeight
+                                        bgColor="slate-10"
+                                        className={styles.cardIcon}
+                                        onClick={() => {
+                                            console.log(item.fileName)
+                                            setClickedIcon(item.fileName)
+                                            isMobile ? setIsBottomDrawerOpen(true) : setIsInfoPanelOpen(true)
+                                        }}
                                     >
-                                        <Text
-                                            weight="600"
-                                            margin="none"
-                                            className={styles.iconNameLink}
+                                        <img
+                                            src={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
+                                            alt={`${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
+                                            className={styles.iconThumnail}
+                                            style={{ width: "75%", marginLeft: "auto", marginRight: "auto" }}
+                                        />
+
+
+                                        <Card
+                                            shadow="mild"
+                                            className={styles.cardIconBottom}
                                         >
-                                            {item.iconName} <Element as="span" marginLeft="nano" className="material-symbols-outlined">
-                                                chevron_right
-                                            </Element>
-                                        </Text>
+                                            <Text
+                                                weight="600"
+                                                margin="none"
+                                                className={styles.iconNameLink}
+                                            >
+                                                {item.iconName} <Element as="span" marginLeft="nano" className="material-symbols-outlined">
+                                                    chevron_right
+                                                </Element>
+                                            </Text>
+                                        </Card>
                                     </Card>
-                                </Card>
-                            </Portion>)}
-                    </Row>
-                </Portion>
-                <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12">
-                    {/* <Card borderColor="none"> */}
-                    <Text as="h5" paddingTop="nano" className={styles.infoPanelHeading}
-                    >Select an icon
-                    </Text>
-                    {/* </Card> */}
-                </Portion>
-            </Row>
+                                </Portion>)}
+                        </Row>
+                    </Portion>
+                </Row>
+            </div>
 
             <div key={clickedIcon}>
                 <InfoPanel
@@ -264,6 +284,7 @@ export default function Icons() {
                     isOpen={isInfoPanelOpen}
                     onCloseCallback={() => { setIsInfoPanelOpen(false) }}
                     className={`${clickedIcon ? `${styles.infoPanel} animate__animated animate__pulse` : `${styles.infoPanel}`}`}
+                    padding="small"
                 >
                     <InfoPanelContents
                         iconsArray={iconsArray}
@@ -273,27 +294,29 @@ export default function Icons() {
                         edges={edges}
                         size={size}
                         setIsInfoPanelOpen={setIsInfoPanelOpen}
+                        setIsBottomDrawerOpen={setIsBottomDrawerOpen}
                     />
                 </InfoPanel>
 
-                <InfoPanel
-                    width="huge"
-                    showOnlyOnMobile
-                    isOpen={isInfoPanelOpen}
-                    onCloseCallback={() => { setIsInfoPanelOpen(false) }}
-                    className={`${clickedIcon ? `${styles.infoPanel} animate__animated animate__pulse` : `${styles.infoPanel}`}`}
-                    padding="medium"
-                >
-                    <InfoPanelContents
-                        iconsArray={iconsArray}
-                        clickedIcon={clickedIcon}
-                        strokeSize={strokeSize}
-                        cornerRadius={cornerRadius}
-                        edges={edges}
-                        size={size}
-                        setIsInfoPanelOpen={setIsInfoPanelOpen}
-                    />
-                </InfoPanel>
+                {isMobile &&
+                    <Drawer
+                        isVisible={isBottomDrawerOpen}
+                        onClose={() => { setIsBottomDrawerOpen(false) }}
+                    >
+                        <Element as="div" padding="micro">
+                            <InfoPanelContents
+                                iconsArray={iconsArray}
+                                clickedIcon={clickedIcon}
+                                strokeSize={strokeSize}
+                                cornerRadius={cornerRadius}
+                                edges={edges}
+                                size={size}
+                                setIsInfoPanelOpen={setIsInfoPanelOpen}
+                                setIsBottomDrawerOpen={setIsBottomDrawerOpen}
+                            />
+                        </Element>
+                    </Drawer>
+                }
             </div>
         </Element >
     )
