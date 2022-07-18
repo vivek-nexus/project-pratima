@@ -301,6 +301,7 @@ export default function Icons() {
                 {isMobile &&
                     <Drawer
                         isVisible={isBottomDrawerOpen}
+                        className={styles.infoPanel}
                         onClose={() => { setIsBottomDrawerOpen(false) }}
                     >
                         <Element as="div" padding="micro">
