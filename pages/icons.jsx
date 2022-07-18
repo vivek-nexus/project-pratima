@@ -125,15 +125,15 @@ export default function Icons() {
                                 label="Stroke size"
                                 options={[
                                     {
-                                        label: "1px",
+                                        name: "1px",
                                         value: "1px"
                                     },
                                     {
-                                        label: "1.5px",
+                                        name: "1.5px",
                                         value: "1.5px"
                                     },
                                     {
-                                        label: "2px",
+                                        name: "2px",
                                         value: "2px"
                                     },
                                 ]}
@@ -154,15 +154,15 @@ export default function Icons() {
                                 label="Corner radius"
                                 options={[
                                     {
-                                        label: "0px",
+                                        name: "0px",
                                         value: "0px"
                                     },
                                     {
-                                        label: "2px",
+                                        name: "2px",
                                         value: "2px"
                                     },
                                     {
-                                        label: "3px",
+                                        name: "3px",
                                         value: "3px"
                                     },
                                 ]}
@@ -177,11 +177,11 @@ export default function Icons() {
                                 label="Edges"
                                 options={[
                                     {
-                                        label: "sharp",
+                                        name: "sharp",
                                         value: "sharp"
                                     },
                                     {
-                                        label: "soft",
+                                        name: "soft",
                                         value: "soft"
                                     },
                                 ]}
@@ -193,7 +193,7 @@ export default function Icons() {
                                 label="Size"
                                 options={[
                                     {
-                                        label: "24px",
+                                        name: "24px",
                                         value: "24px"
                                     },
                                 ]}
