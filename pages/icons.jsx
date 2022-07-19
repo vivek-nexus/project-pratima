@@ -8,6 +8,10 @@ import 'animate.css';
 import Drawer from "react-bottom-drawer";
 import { isMobile } from 'react-device-detect';
 import iconsArray from '../iconsArray';
+import { motion, AnimatePresence } from 'framer-motion'
+
+const MotionPortion = motion(Portion)
+
 
 
 
@@ -107,20 +111,23 @@ export default function Icons() {
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,0" />
             </Head>
 
-            <div key={isInfoPanelOpen}>
-                <Row sidePadding="huge">
-                    <Portion
-                        desktopSpan={isInfoPanelOpen ? "16" : "24"}
-                        tabletLandscapeSpan={isInfoPanelOpen ? "18" : "24"}
-                        tabletPortraitSpan={isInfoPanelOpen ? "18" : "24"}
-                        mobileSpan={false ? "12" : "24"}
-                    >
-                        <Row padding="nano" marginTop="small" marginBottom="small" gutters="huge">
-                            <Portion
+            {/* <div key={isInfoPanelOpen}> */}
+            <Row sidePadding="huge">
+                <Portion
+                    desktopSpan={isInfoPanelOpen ? "16" : "24"}
+                    tabletLandscapeSpan={isInfoPanelOpen ? "18" : "24"}
+                    tabletPortraitSpan={isInfoPanelOpen ? "18" : "24"}
+                    mobileSpan={false ? "12" : "24"}
+                >
+                    <Row padding="nano" marginTop="small" marginBottom="small" gutters="huge">
+                        <AnimatePresence>
+                            <MotionPortion
+                                layout
                                 desktopSpan={isInfoPanelOpen ? "12" : "6"}
                                 tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
                                 mobileSpan={false ? "24" : "12"}
-                                className={clickedIcon ? `animate__animated animate__headShake` : ``}>
+                            // className={clickedIcon ? `animate__animated animate__headShake` : ``}
+                            >
                                 <Select
                                     onChange={function (e) {
                                         console.log(e.target.value)
@@ -148,12 +155,16 @@ export default function Icons() {
                                         },
                                     ]}
                                 />
-                            </Portion>
-                            <Portion
+                            </MotionPortion>
+                        </AnimatePresence>
+                        <AnimatePresence>
+                            <MotionPortion
+                                layout
                                 desktopSpan={isInfoPanelOpen ? "12" : "6"}
                                 tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
                                 mobileSpan={false ? "24" : "12"}
-                                className={clickedIcon ? `animate__animated animate__headShake` : ``}>
+                            // className={clickedIcon ? `animate__animated animate__headShake` : ``}
+                            >
                                 <Select
                                     onChange={function (e) {
                                         console.log(e.target.value)
@@ -181,12 +192,16 @@ export default function Icons() {
                                         },
                                     ]}
                                 />
-                            </Portion>
-                            <Portion
+                            </MotionPortion>
+                        </AnimatePresence>
+                        <AnimatePresence>
+                            <MotionPortion
+                                layout
                                 desktopSpan={isInfoPanelOpen ? "12" : "6"}
                                 tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
                                 mobileSpan={false ? "24" : "12"}
-                                className={clickedIcon ? `animate__animated animate__headShake` : ``}>
+                            // className={clickedIcon ? `animate__animated animate__headShake` : ``}
+                            >
                                 <Select
                                     onChange={function (e) {
                                         setEdges(e.target.value)
@@ -204,12 +219,16 @@ export default function Icons() {
                                         },
                                     ]}
                                 />
-                            </Portion>
-                            <Portion
+                            </MotionPortion>
+                        </AnimatePresence>
+                        <AnimatePresence>
+                            <MotionPortion
+                                layout
                                 desktopSpan={isInfoPanelOpen ? "12" : "6"}
                                 tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
                                 mobileSpan={false ? "24" : "12"}
-                                className={clickedIcon ? `animate__animated animate__headShake` : ``}>
+                            // className={clickedIcon ? `animate__animated animate__headShake` : ``}
+                            >
                                 <Select
                                     id="size"
                                     label="Size"
@@ -220,24 +239,34 @@ export default function Icons() {
                                         },
                                     ]}
                                 />
-                            </Portion>
-                        </Row>
-                    </Portion>
-                </Row>
+                            </MotionPortion>
+                        </AnimatePresence>
+                    </Row>
+                </Portion>
+            </Row >
 
-                <Row sidePadding="huge">
-                    <Portion
-                        desktopSpan={isInfoPanelOpen ? "16" : "24"}
-                        tabletLandscapeSpan={isInfoPanelOpen ? "18" : "24"}
-                        tabletPortraitSpan={isInfoPanelOpen ? "18" : "24"}
-                        mobileSpan={false ? "12" : "24"}
+            <Row sidePadding="huge">
+
+                <Portion
+                    desktopSpan={isInfoPanelOpen ? "16" : "24"}
+                    tabletLandscapeSpan={isInfoPanelOpen ? "18" : "24"}
+                    tabletPortraitSpan={isInfoPanelOpen ? "18" : "24"}
+                    mobileSpan={false ? "12" : "24"}
+                >
+
+                    <Row
+                        gutters="medium"
                     >
-                        <Row
-                            gutters="medium">
+                        <AnimatePresence>
                             {iconsArray.map(item =>
-                                <Portion
+                                <MotionPortion
+                                    layout
                                     key={item.fileName}
-                                    desktopSpan={isInfoPanelOpen ? "8" : "6"} tabletLandscapeSpan={isInfoPanelOpen ? "10" : "8"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "8"} mobileSpan={false ? "24" : "12"} padding="nano" className={clickedIcon ? `animate__animated animate__headShake` : ``}>
+                                    desktopSpan={isInfoPanelOpen ? "8" : "6"}
+                                    tabletLandscapeSpan={isInfoPanelOpen ? "10" : "8"}
+                                    tabletPortraitSpan={isInfoPanelOpen ? "12" : "8"} mobileSpan={false ? "24" : "12"} padding="nano"
+                                // className={clickedIcon ? `animate__animated animate__headShake` : ``}
+                                >
                                     <Card
                                         isFullHeight
                                         bgColor="slate-10"
@@ -271,11 +300,12 @@ export default function Icons() {
                                             </Text>
                                         </Card>
                                     </Card>
-                                </Portion>)}
-                        </Row>
-                    </Portion>
-                </Row>
-            </div>
+                                </MotionPortion>)}
+                        </AnimatePresence>
+                    </Row>
+                </Portion>
+            </Row>
+            {/* </div> */}
 
             <div key={clickedIcon}>
                 <InfoPanel

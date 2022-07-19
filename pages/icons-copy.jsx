@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 import styles from '../styles/Icons.module.css'
 import { Row, Portion, Select, Text, InfoPanel, Card, Element, Button, HRule } from 'fictoan-react'
 import 'animate.css';
+import { motion, AnimatePresence } from 'framer-motion'
 import iconsArray from '../iconsArray';
 
 
@@ -220,9 +221,22 @@ export default function Icons() {
                     {/* <Row
                         // sidePadding="huge"
                         gutters="medium"> */}
-                    <div className={isInfoPanelOpen ? styles.flexParent1 : styles.flexParent2}>
+                    <div
+                        className={styles.wrapper}
+                    // className={true ? styles.flexParent1 : styles.flexParent2}
+                    >
                         {iconsArray.map(item =>
-                            <div key={item.fileName} className={isInfoPanelOpen ? styles.flexChild3 : styles.flexChild4}>
+                            <motion.div
+                                // initial={{ scale: 0 }}
+                                // animate={{ scale: 1, transition: { delay: 0.5, type: "spring" } }}
+                                // exit={{ opacity: 0, transition: { delay: 0.5 } }}
+                                // initial={{ gridColumn: 6 }}
+                                // animate={{ gridColumn: 8 }}
+                                layout
+                                key={item.fileName}
+                                // style={{ gridColumn: "span 6" }}
+                                className={isInfoPanelOpen ? styles.span8 : styles.span6}
+                            >
                                 <Card
                                     isFullHeight
                                     bgColor="slate-10"
@@ -256,7 +270,7 @@ export default function Icons() {
                                         </Text>
                                     </Card>
                                 </Card>
-                            </div>
+                            </motion.div>
                         )}
                     </div>
                     {/* </Row> */}

@@ -106,3 +106,18 @@
     flex-basis: 20%;
     transition: all 1s;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
+}
+
+
+.span6 {
+    grid-column: span 6;
+}
+
+.span8 {
+    grid-column: span 8;
+}
