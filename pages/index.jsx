@@ -43,22 +43,22 @@ export default function Home() {
 
         <Row sidePadding='small'>
           <Portion desktopSpan='6'>
-            <Element as="img" src="/icons/s1_r3_soft/ic_send_money_24_s1_r3_soft.svg" className="icon-huge">
+            <Element as="img" src="https://yakshag.github.io/project-pratima/icons/s1_r3_soft/ic_send_money_24_s1_r3_soft.svg" className="icon-huge">
             </Element>
             <Text size="medium">Send money</Text>
           </Portion>
           <Portion desktopSpan='6'>
-            <Element as="img" src="/icons/s1_r3_soft/ic_bank_transfer_24_s1_r3_soft.svg" className="icon-huge">
+            <Element as="img" src="https://yakshag.github.io/project-pratima/icons/s1_r3_soft/ic_bank_transfer_24_s1_r3_soft.svg" className="icon-huge">
             </Element>
             <Text size="medium">Bank transfer</Text>
           </Portion>
           <Portion desktopSpan='6'>
-            <Element as="img" src="/icons/s1_r3_soft/ic_self_transfer_24_s1_r3_soft.svg" className="icon-huge">
+            <Element as="img" src="https://yakshag.github.io/project-pratima/icons/s1_r3_soft/ic_self_transfer_24_s1_r3_soft.svg" className="icon-huge">
             </Element>
             <Text size="medium">Self transfer</Text>
           </Portion>
           <Portion desktopSpan='6'>
-            <Element as="img" src="/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg" className="icon-huge">
+            <Element as="img" src="https://yakshag.github.io/project-pratima/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg" className="icon-huge">
             </Element>
             <Text size="medium">Transaction history</Text>
           </Portion>
