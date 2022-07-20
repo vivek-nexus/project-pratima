@@ -123,7 +123,7 @@ export default function Icons() {
                     tabletPortraitSpan={isInfoPanelOpen ? "18" : "24"}
                     mobileSpan={false ? "12" : "24"}
                 >
-                    <Row padding="nano" marginTop="small" marginBottom="small" gutters="huge">
+                    <Row padding="nano" marginBottom="small" gutters="huge">
                         <AnimatePresence>
                             <MotionPortion
                                 layout
