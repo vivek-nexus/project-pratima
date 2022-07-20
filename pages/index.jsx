@@ -25,7 +25,7 @@ export default function Home() {
         <Row>
           <Portion desktopSpan='1'></Portion>
           <Portion desktopSpan='22'>
-            <Heading as="h3">Project X</Heading>
+            <Heading as="h3">Project Pratima</Heading>
               <Text size='large'>
                 An icon library that can be used by all financial institutions in India. These set of icons will be easily recognisable by every India irrespective of literacy and education level.
               </Text>

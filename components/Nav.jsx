@@ -8,14 +8,18 @@ class Nav extends React.Component {
         <Portion desktopSpan="20">
         </Portion>
         <Portion desktopSpan="2">
-          <Link href="about">
+          <Link href="/">
+            <a>
             <Text weight="600">About</Text>
+            </a>
           </Link>
         </Portion>
         
         <Portion desktopSpan="2">
           <Link href="icons">
+            <a>
             <Text weight="600">Icons</Text>
+            </a>
           </Link>
         </Portion>
       </Row> 

@@ -8,7 +8,9 @@ import 'animate.css';
 import Drawer from "react-bottom-drawer";
 import { isMobile } from 'react-device-detect';
 import iconsArray from '../iconsArray';
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion';
+import Nav from '../components/Nav';
+import Footer from '../components/Footer';
 
 const MotionPortion = motion(Portion)
 
@@ -110,6 +112,8 @@ export default function Icons() {
                 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,0" />
             </Head>
+
+            <Nav />
 
             {/* <div key={isInfoPanelOpen}> */}
             <Row sidePadding="huge">
@@ -306,6 +310,8 @@ export default function Icons() {
                 </Portion>
             </Row>
             {/* </div> */}
+
+            <Footer />
 
             <div key={clickedIcon}>
                 <InfoPanel
