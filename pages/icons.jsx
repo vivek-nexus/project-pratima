@@ -310,7 +310,6 @@ export default function Icons() {
             <div key={clickedIcon}>
                 <InfoPanel
                     width="large"
-                    showOnlyOnDesktop showOnlyOnTabletLandscape showOnlyOnTabletPortrait
                     isOpen={isInfoPanelOpen}
                     onCloseCallback={() => { setIsInfoPanelOpen(false) }}
                     className={`${clickedIcon ? `${styles.infoPanel} animate__animated animate__pulse` : `${styles.infoPanel}`}`}
