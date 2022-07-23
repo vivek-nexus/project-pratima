@@ -366,7 +366,7 @@ export default function Icons() {
                 </Portion>
                 <Portion desktopSpan="14" mobileSpan="24">
                     <a href="https://www.figma.com/community/file/1087129513242287190" target="_blank" rel="noopener noreferrer">
-                        <Element as="img" shape="rounded" shadow="hard" src="https://yakshaG.github.io/cover.svg" alt="Figma file cover" />
+                        <Element as="img" shape="rounded" shadow="hard" src="https://yakshaG.github.io/project-pratima/cover.svg" alt="Figma file cover" />
                     </a>
                     {/* <Element as="iframe" borderColor="transparent" shape="rounded" style={{ width: "100%", aspectRatio: "16/9" }} src="https://www.figma.com/community/file/1087129513242287190" allowfullscreen></Element> */}
                 </Portion>
