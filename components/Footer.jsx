@@ -14,20 +14,40 @@ class Footer extends React.Component {
             </Portion>
             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="small">
                 <Heading as="h6">ABOUT</Heading>
-                <Text>Overview</Text>
-                <Text>Team</Text>
-                <Text>Icons</Text>
+                <a>
+                    <Link href="/">
+                        <Text>Overview</Text>
+                    </Link>
+                </a>
+                <a>
+                    <Link href="/#team">
+                        <Text>Team</Text>
+                    </Link>
+                </a>
+            </Portion>
+            <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="small">
+                <Heading as="h6">RESOURCES</Heading>
+                <a>
+                    <Link href="/icons">
+                        <Text>Icons</Text>
+                    </Link>
+                </a>
+                <a>
+                    <Link href="/icons#documentation">
+                        <Text>Documentation</Text>
+                    </Link>
+                </a>
+                <a href="https://www.figma.com/community/file/1087129513242287190" target="_blank">
+                    <Text>Figma community</Text>
+                </a>
             </Portion>
             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="small">
                 <Heading as="h6">HELP</Heading>
-                <Text>FAQs</Text>
-                <Text>Contact Us</Text>
-                <Text>Discussion Forum</Text>
-            </Portion>
-            <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="small">
-                <Heading as="h6">DEVELOPERS</Heading>
-                <Text>Documentation</Text>
-                <Text>Figma Community</Text>
+                <a>
+                    <Link href="/icons#faqs">
+                        <Text>FAQs</Text>
+                    </Link>
+                </a>
             </Portion>
         </Row>
     }

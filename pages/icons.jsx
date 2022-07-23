@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import styles from '../styles/Icons.module.css'
-import { Row, Portion, Select, Text, InfoPanel, Card, Element, Button, HRule } from 'fictoan-react'
+import { Row, Portion, Select, Text, InfoPanel, Card, Element, Button, HRule, Heading } from 'fictoan-react'
 import 'animate.css';
 import Drawer from "react-bottom-drawer";
 import { isMobile } from 'react-device-detect';
@@ -116,14 +116,15 @@ export default function Icons() {
             <Nav />
 
             {/* <div key={isInfoPanelOpen}> */}
-            <Row sidePadding="huge">
+            <Row sidePadding="huge" marginBottom="none">
                 <Portion
                     desktopSpan={isInfoPanelOpen ? "16" : "24"}
                     tabletLandscapeSpan={isInfoPanelOpen ? "18" : "24"}
                     tabletPortraitSpan={isInfoPanelOpen ? "18" : "24"}
                     mobileSpan={false ? "12" : "24"}
                 >
-                    <Row padding="nano" marginBottom="small" gutters="huge">
+                    <Heading as="h4" marginBottom="tiny">Icons</Heading>
+                    <Row padding="nano" gutters="huge">
                         <AnimatePresence>
                             <MotionPortion
                                 layout
@@ -250,14 +251,12 @@ export default function Icons() {
             </Row >
 
             <Row sidePadding="huge">
-
                 <Portion
                     desktopSpan={isInfoPanelOpen ? "16" : "24"}
                     tabletLandscapeSpan={isInfoPanelOpen ? "18" : "24"}
                     tabletPortraitSpan={isInfoPanelOpen ? "18" : "24"}
                     mobileSpan={false ? "12" : "24"}
                 >
-
                     <Row
                         gutters="medium"
                     >
@@ -310,6 +309,70 @@ export default function Icons() {
                 </Portion>
             </Row>
             {/* </div> */}
+
+
+            <HRule sideMargin="huge" />
+
+            <Row sidePadding="huge" marginBottom="small">
+                <Portion isFullWidth>
+                    <Heading as="h4">Documentation</Heading>
+                </Portion>
+                <Portion>
+                    <Row>
+                        <Portion desktopSpan="10" marginBottom="tiny">
+                            <Heading as="h5">Base grid</Heading>
+                            <Text>Icon content should remain inside of the live area, which is the region of an image that is unlikely to be hidden from view.</Text>
+                        </Portion>
+                        <Portion desktopSpan="14" marginBottom="tiny">
+                            <img src='/docs-images/icon-grid-1.png' />
+                        </Portion>
+                    </Row>
+                    <Row>
+                        <Portion desktopSpan="10" marginBottom="tiny">
+                            <Heading as="h5">Key lines</Heading>
+                            <Text>Keyline shapes are the foundation of the grid. By using these core shapes as guidelines, you can maintain consistent visual proportions across system icons.</Text>
+                        </Portion>
+                        <Portion desktopSpan="6" marginBottom="tiny">
+                            <img src='/docs-images/key-lines.png' />
+                        </Portion>
+                    </Row>
+                    <Row>
+                        <Portion desktopSpan="10" marginBottom="tiny">
+                            <Heading as="h5">Key shapes</Heading>
+                            <Text>Specific keylines are present for certain shapes: circle, square, rectangle, orthogonals, and diagonals. These basic shapes help unify the icons and regulate their placement on the icon grid.</Text>
+                        </Portion>
+                        <Portion desktopSpan="14" marginBottom="tiny">
+                            <img src='/docs-images/key-shapes.png' />
+                        </Portion>
+                    </Row>
+                </Portion>
+            </Row>
+
+            <HRule sideMargin="huge" />
+
+            <Row sidePadding="huge" marginBottom="small">
+                <Text as="h4">FAQs</Text>
+            </Row>
+
+            <HRule sideMargin="huge" />
+
+            <Row sidePadding="huge" marginBottom="small">
+                <Portion desktopSpan="10" mobileSpan="24">
+                    <Heading as="h4">Figma community</Heading>
+                    <Text>Download complete documentation and icons as a Figma file</Text>
+                    <a href="https://www.figma.com/community/file/1087129513242287190" target="_blank">
+                        <Button kind="primary" shadow="hard" shape="rounded" marginBottom="micro">Get a copy</Button>
+                    </a>
+                </Portion>
+                <Portion desktopSpan="14" mobileSpan="24">
+                    <a href="https://www.figma.com/community/file/1087129513242287190" target="_blank">
+                        <Element as="img" shape="rounded" shadow="hard" src="/cover.svg" alt="Figma file cover" />
+                    </a>
+                    {/* <Element as="iframe" borderColor="transparent" shape="rounded" style={{ width: "100%", aspectRatio: "16/9" }} src="https://www.figma.com/community/file/1087129513242287190" allowfullscreen></Element> */}
+                </Portion>
+            </Row>
+
+
 
             <Footer />
 
