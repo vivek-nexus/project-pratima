@@ -37,7 +37,7 @@ class Footer extends React.Component {
                         <Text>Documentation</Text>
                     </Link>
                 </a>
-                <a href="https://www.figma.com/community/file/1087129513242287190" target="_blank">
+                <a href="https://www.figma.com/community/file/1087129513242287190" target="_blank" rel="noopener noreferrer">
                     <Text>Figma community</Text>
                 </a>
             </Portion>

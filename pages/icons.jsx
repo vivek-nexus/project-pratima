@@ -324,7 +324,7 @@ export default function Icons() {
                             <Text>Icon content should remain inside of the live area, which is the region of an image that is unlikely to be hidden from view.</Text>
                         </Portion>
                         <Portion desktopSpan="14" marginBottom="tiny">
-                            <img src='/docs-images/icon-grid-1.png' />
+                            <img src="https://yakshaG.github.io/project-pratima/docs-images/icon-grid-1.png" />
                         </Portion>
                     </Row>
                     <Row>
@@ -333,7 +333,7 @@ export default function Icons() {
                             <Text>Keyline shapes are the foundation of the grid. By using these core shapes as guidelines, you can maintain consistent visual proportions across system icons.</Text>
                         </Portion>
                         <Portion desktopSpan="6" marginBottom="tiny">
-                            <img src='/docs-images/key-lines.png' />
+                            <img src="https://yakshaG.github.io/project-pratima/docs-images/key-lines.png" />
                         </Portion>
                     </Row>
                     <Row>
@@ -342,7 +342,7 @@ export default function Icons() {
                             <Text>Specific keylines are present for certain shapes: circle, square, rectangle, orthogonals, and diagonals. These basic shapes help unify the icons and regulate their placement on the icon grid.</Text>
                         </Portion>
                         <Portion desktopSpan="14" marginBottom="tiny">
-                            <img src='/docs-images/key-shapes.png' />
+                            <img src="https://yakshaG.github.io/project-pratima/docs-images/key-shapes.png" />
                         </Portion>
                     </Row>
                 </Portion>
@@ -360,13 +360,13 @@ export default function Icons() {
                 <Portion desktopSpan="10" mobileSpan="24">
                     <Heading as="h4">Figma community</Heading>
                     <Text>Download complete documentation and icons as a Figma file</Text>
-                    <a href="https://www.figma.com/community/file/1087129513242287190" target="_blank">
+                    <a href="https://www.figma.com/community/file/1087129513242287190" target="_blank" rel="noopener noreferrer">
                         <Button kind="primary" shadow="hard" shape="rounded" marginBottom="micro">Get a copy</Button>
                     </a>
                 </Portion>
                 <Portion desktopSpan="14" mobileSpan="24">
-                    <a href="https://www.figma.com/community/file/1087129513242287190" target="_blank">
-                        <Element as="img" shape="rounded" shadow="hard" src="/cover.svg" alt="Figma file cover" />
+                    <a href="https://www.figma.com/community/file/1087129513242287190" target="_blank" rel="noopener noreferrer">
+                        <Element as="img" shape="rounded" shadow="hard" src="https://yakshaG.github.io/cover.svg" alt="Figma file cover" />
                     </a>
                     {/* <Element as="iframe" borderColor="transparent" shape="rounded" style={{ width: "100%", aspectRatio: "16/9" }} src="https://www.figma.com/community/file/1087129513242287190" allowfullscreen></Element> */}
                 </Portion>
