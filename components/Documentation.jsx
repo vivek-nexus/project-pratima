@@ -153,7 +153,7 @@ function Documentation() {
                 <Row>
                     <Portion desktopSpan="24">
                         <Heading as="h5">Edge variations</Heading>
-                        <Text marginBottom="none">Two options for edges. As per your brand principles, please choose the relevant edges to pair with the corner radius. Example here highlights soft edges on 0px and 2px corner radius, with 1px stroke.</Text>
+                        <Text marginBottom="none">Two options for edges — soft and sharp. As per your brand principles, please choose the relevant edges to pair with the corner radius. Example here highlights soft and sharp edges on 0px and 2px corner radius, with 1px stroke.</Text>
                     </Portion>
                     <Portion desktopSpan="4">
                     </Portion>
@@ -177,7 +177,7 @@ function Documentation() {
                                 <Text align="center" margin="none">2px</Text>
                             </Portion>
                             <Portion desktopSpan="5" tabletLandscapeSpan="5" tabletPortraitSpan="5" mobileSpan="12" marginBottom="micro">
-                                <img src={`${imageUrlPrefix}/icons/s1_r0_sharp/ic_view_transaction_history_24_s1_r0_sharp.svg`} alt="edge-variations" />
+                                <img src={`${imageUrlPrefix}/icons/s1_r2_sharp/ic_view_transaction_history_24_s1_r2_sharp.svg`} alt="edge-variations" />
                                 <Text align="center" weight="600" marginBottom="none">SHARP</Text>
                                 <Text align="center" margin="none">2px</Text>
                             </Portion>
