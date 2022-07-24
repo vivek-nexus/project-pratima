@@ -68,7 +68,7 @@ export default function Home() {
         <Row sidePadding="huge">
           <Portion desktopSpan='6'>
             <Link href="icons">
-              <Button kind="secondary" marginBottom='small'>Go to icon library</Button>
+              <Button kind="primary" shadow="hard" marginBottom='small'>Go to icon library</Button>
             </Link>
           </Portion>
         </Row>

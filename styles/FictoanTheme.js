@@ -4,7 +4,7 @@ import darken from "polished/lib/color/darken";
 import { defaultColours } from "fictoan-react";
 
 export const customColours = {
-    hue: defaultColours.blue90,
+    hue: "#012A72",
     tint: defaultColours.amber,
     shade: defaultColours.grey,
     analogue: defaultColours.indigo50,
@@ -72,9 +72,9 @@ export const FictoanTheme = {
                 borderRadius: "4px"
             },
             onHover: {
-                bg: String(customColours.hue),
+                bg: `${lighten(0.08, String(customColours.hue))}`,
                 border: String(customColours.hue),
-                text: String(defaultColours.white)
+                text: String(defaultColours.white),
             },
             isActive: {
                 bg: String(customColours.hue),
@@ -156,7 +156,7 @@ export const FictoanTheme = {
     //  RULE  /////////////////////////////////////////////////////////////////
     hr: {
         default: {
-            bg: String(defaultColours.blue80),
+            bg: String(customColours.hue),
             height: "1px"
         },
         primary: {

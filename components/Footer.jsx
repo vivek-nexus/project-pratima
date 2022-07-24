@@ -20,6 +20,11 @@ class Footer extends React.Component {
                     </Link>
                 </a>
                 <a>
+                    <Link href="/#design-principles">
+                        <Text>Design principles</Text>
+                    </Link>
+                </a>
+                <a>
                     <Link href="/#team">
                         <Text>Team</Text>
                     </Link>
@@ -37,8 +42,10 @@ class Footer extends React.Component {
                         <Text>Documentation</Text>
                     </Link>
                 </a>
-                <a href="https://www.figma.com/community/file/1087129513242287190" target="_blank" rel="noopener noreferrer">
-                    <Text>Figma community</Text>
+                <a>
+                    <Link href="/icons#figma-community">
+                        <Text>Figma community</Text>
+                    </Link>
                 </a>
             </Portion>
             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="small">

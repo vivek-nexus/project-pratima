@@ -9,8 +9,13 @@ import Drawer from "react-bottom-drawer";
 import { isMobile } from 'react-device-detect';
 import iconsArray from '../iconsArray';
 import { motion, AnimatePresence } from 'framer-motion';
+
+
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import InfoPanelContents from '../components/InfoPanelContents'
+import Documentation from '../components/Documentation'
+import FAQs from '../components/FAQs'
 
 const MotionPortion = motion(Portion)
 
@@ -18,68 +23,7 @@ const MotionPortion = motion(Portion)
 
 
 
-function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, edges, size, setIsInfoPanelOpen, setIsBottomDrawerOpen }) {
-    return (
-        <>
-            {
-                iconsArray.map(item =>
-                    <div key={item.fileName}>
-                        {(clickedIcon == item.fileName) && (
-                            <>
-                                <Text as="h5" marginBottom="micro"
-                                    className={styles.infoPanelHeading}
-                                    onClick={() => { isMobile ? setIsBottomDrawerOpen(false) : setIsInfoPanelOpen(false) }}
-                                >
-                                    <Element
-                                        as="span"
-                                        className="material-symbols-outlined"
-                                        marginRight="nano"
-                                    >
-                                        close
-                                    </Element>{item.iconName}</Text>
-                                <img
-                                    src={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
-                                    alt={`${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
-                                    className="icon-large"
-                                />
-                                <a
-                                    href={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
-                                    download>
-                                    <Button kind="primary" shadow="hard" shape="rounded" marginTop="micro">Download SVG</Button>
-                                </a>
-                                <HRule marginTop="micro" marginBottom="micro" />
 
-                                <Text as="h6" weight="600" marginBottom="none">Related terms / nomenclature</Text>
-                                {item.nomenclature.map(terms =>
-                                    <Text
-                                        key={terms}
-                                        bgColor="slate-70"
-                                        textColor="white"
-                                        weight="600"
-                                        className={styles.pill}
-                                    >
-                                        {terms}
-                                    </Text>
-                                )}
-
-                                <HRule marginTop="micro" marginBottom="micro" />
-
-                                <Text as="h6" weight="600">Usage recommendations</Text>
-                                {item.notes.map(notes =>
-                                    <Text
-                                        key={notes}
-                                    >
-                                        {notes}
-                                    </Text>
-                                )}
-                            </>
-                        )}
-                    </div>
-                )
-            }
-        </>
-    )
-}
 
 export default function Icons() {
     const [strokeSize, setStrokeSize] = useState("s1");
@@ -311,50 +255,15 @@ export default function Icons() {
             {/* </div> */}
 
 
-            <HRule sideMargin="huge" />
+            <HRule id="documentation" sideMargin="huge" />
 
-            <Row sidePadding="huge" marginBottom="small">
-                <Portion isFullWidth>
-                    <Heading as="h4">Documentation</Heading>
-                </Portion>
-                <Portion>
-                    <Row>
-                        <Portion desktopSpan="10" marginBottom="tiny">
-                            <Heading as="h5">Base grid</Heading>
-                            <Text>Icon content should remain inside of the live area, which is the region of an image that is unlikely to be hidden from view.</Text>
-                        </Portion>
-                        <Portion desktopSpan="14" marginBottom="tiny">
-                            <img src="https://yakshaG.github.io/project-pratima/docs-images/icon-grid-1.png" />
-                        </Portion>
-                    </Row>
-                    <Row>
-                        <Portion desktopSpan="10" marginBottom="tiny">
-                            <Heading as="h5">Key lines</Heading>
-                            <Text>Keyline shapes are the foundation of the grid. By using these core shapes as guidelines, you can maintain consistent visual proportions across system icons.</Text>
-                        </Portion>
-                        <Portion desktopSpan="6" marginBottom="tiny">
-                            <img src="https://yakshaG.github.io/project-pratima/docs-images/key-lines.png" />
-                        </Portion>
-                    </Row>
-                    <Row>
-                        <Portion desktopSpan="10" marginBottom="tiny">
-                            <Heading as="h5">Key shapes</Heading>
-                            <Text>Specific keylines are present for certain shapes: circle, square, rectangle, orthogonals, and diagonals. These basic shapes help unify the icons and regulate their placement on the icon grid.</Text>
-                        </Portion>
-                        <Portion desktopSpan="14" marginBottom="tiny">
-                            <img src="https://yakshaG.github.io/project-pratima/docs-images/key-shapes.png" />
-                        </Portion>
-                    </Row>
-                </Portion>
-            </Row>
+            <Documentation />
 
-            <HRule sideMargin="huge" />
+            <HRule id="faqs" sideMargin="huge" />
 
-            <Row sidePadding="huge" marginBottom="small">
-                <Text as="h4">FAQs</Text>
-            </Row>
+            <FAQs />
 
-            <HRule sideMargin="huge" />
+            <HRule id="figma-community" sideMargin="huge" />
 
             <Row sidePadding="huge" marginBottom="small">
                 <Portion desktopSpan="10" mobileSpan="24">
@@ -366,9 +275,8 @@ export default function Icons() {
                 </Portion>
                 <Portion desktopSpan="14" mobileSpan="24">
                     <a href="https://www.figma.com/community/file/1087129513242287190" target="_blank" rel="noopener noreferrer">
-                        <Element as="img" shape="rounded" shadow="hard" src="https://yakshaG.github.io/project-pratima/cover.svg" alt="Figma file cover" />
+                        <Element as="img" shape="rounded" shadow="hard" src="/cover.svg" alt="Figma file cover" />
                     </a>
-                    {/* <Element as="iframe" borderColor="transparent" shape="rounded" style={{ width: "100%", aspectRatio: "16/9" }} src="https://www.figma.com/community/file/1087129513242287190" allowfullscreen></Element> */}
                 </Portion>
             </Row>
 
