@@ -6,8 +6,8 @@ import styles from '../styles/Icons.module.css'
 import { Row, Portion, Select, Text, InfoPanel, Card, Element, Button, HRule } from 'fictoan-react'
 import 'animate.css';
 import { motion, AnimatePresence } from 'framer-motion'
-import iconsArray from '../iconsArray';
 
+import iconsArray from '../constants/iconsArray'
 
 
 
