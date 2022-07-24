@@ -20,7 +20,7 @@ function FAQs() {
             </Portion>
             <Portion>
                 <Heading as="h5">Set consistency</Heading>
-                <Text>Use the same set of icons across all 12 icons. Eg: Do not use 2px for pay one and 1.5px for transaction history.</Text>
+                <Text>Use the same set of icons across all 12 icons. Eg: Do not use 2px for Pay and 1.5px for Bank transfer.</Text>
                 <img style={{ width: "75%", margin: "auto" }} src="https://yakshaG.github.io/project-pratima/docs-images/set-dd.png" alt="set" />
             </Portion>
             <Portion>

@@ -7,10 +7,10 @@ import { Row, Portion, Select, Text, InfoPanel, Card, Element, Button, HRule, He
 import 'animate.css';
 import Drawer from "react-bottom-drawer";
 import { isMobile } from 'react-device-detect';
-import iconsArray from '../iconsArray';
 import { motion, AnimatePresence } from 'framer-motion';
 
-
+import iconsArray from '../constants/iconsArray'
+import imageUrlPrefix from '../constants/imageUrlPrefix'
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import InfoPanelContents from '../components/InfoPanelContents'
@@ -225,7 +225,7 @@ export default function Icons() {
                                         }}
                                     >
                                         <img
-                                            src={`https://yakshag.github.io/project-pratima/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
+                                            src={`${imageUrlPrefix}/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
                                             alt={`${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
                                             className={styles.iconThumnail}
                                             style={{ width: "75%", marginLeft: "auto", marginRight: "auto" }}
@@ -275,7 +275,7 @@ export default function Icons() {
                 </Portion>
                 <Portion desktopSpan="14" mobileSpan="24">
                     <a href="https://www.figma.com/community/file/1087129513242287190" target="_blank" rel="noopener noreferrer">
-                        <Element as="img" shape="rounded" shadow="hard" src="https://yakshaG.github.io/project-pratima/cover.svg" alt="Figma file cover" />
+                        <Element as="img" shape="rounded" shadow="hard" src={`${imageUrlPrefix}/cover.svg`} alt="Figma file cover" />
                     </a>
                 </Portion>
             </Row>
