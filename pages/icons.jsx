@@ -58,17 +58,23 @@ export default function Icons() {
             </Head>
 
             <Nav />
+            <Row sidePadding="huge" marginBottom="none">
+                <Heading as="h4" marginBottom="tiny">Icons</Heading>
+            </Row>
+
 
             {/* <div key={isInfoPanelOpen}> */}
-            <Row sidePadding="huge" marginBottom="none">
+            <Row sidePadding="huge" marginBottom="none" >
                 <Portion
                     desktopSpan={isInfoPanelOpen ? "16" : "24"}
                     tabletLandscapeSpan={isInfoPanelOpen ? "18" : "24"}
                     tabletPortraitSpan={isInfoPanelOpen ? "18" : "24"}
                     mobileSpan={false ? "12" : "24"}
+                    className={styles.stickyScroll}
+                    shape="rounded"
+                    padding="nano"
                 >
-                    <Heading as="h4" marginBottom="tiny">Icons</Heading>
-                    <Row padding="nano" gutters="huge">
+                    <Row padding="nano" marginBottom="none">
                         <AnimatePresence>
                             <MotionPortion
                                 layout
@@ -192,9 +198,7 @@ export default function Icons() {
                         </AnimatePresence>
                     </Row>
                 </Portion>
-            </Row >
 
-            <Row sidePadding="huge">
                 <Portion
                     desktopSpan={isInfoPanelOpen ? "16" : "24"}
                     tabletLandscapeSpan={isInfoPanelOpen ? "18" : "24"}

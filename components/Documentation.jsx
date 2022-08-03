@@ -19,7 +19,7 @@ function Documentation() {
                     <Portion desktopSpan="6">
                     </Portion>
                     <Portion desktopSpan="12">
-                        <Row gutters="large">
+                        <Row>
                             <Portion desktopSpan="8" tabletLandscapeSpan="8" tabletPortraitSpan="8" mobileSpan="8" marginBottom="micro">
                                 <img src={`${imageUrlPrefix}/docs-images/base-grid-1.svg`} alt="icon-grid" />
                                 <Text align="center" weight="600">Gird — 24 x 24px</Text>
@@ -86,7 +86,7 @@ function Documentation() {
                     <Portion desktopSpan="6" tabletLandscapeSpan="5" tabletPortraitSpan="5" mobileSpan="5">
                     </Portion>
                     <Portion desktopSpan="12" tabletLandscapeSpan="18" tabletPortraitSpan="18" mobileSpan="18">
-                        <Row gutters="large" verticallyCenterItems>
+                        <Row style={{ alignItems: "end" }}>
                             <Portion desktopSpan="4" tabletLandscapeSpan="4" tabletPortraitSpan="4" mobileSpan="4">
                                 <img src={`${imageUrlPrefix}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
                                 <Text align="center" weight="600">16px</Text>
@@ -110,7 +110,7 @@ function Documentation() {
                     <Portion desktopSpan="6">
                     </Portion>
                     <Portion desktopSpan="12">
-                        <Row gutters="large" verticallyCenterItems>
+                        <Row verticallyCenterItems>
                             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="8" mobileSpan="8">
                                 <img src={`${imageUrlPrefix}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-strokes" />
                                 <Text align="center" weight="600" margin="none">1px</Text>
@@ -134,7 +134,7 @@ function Documentation() {
                     <Portion desktopSpan="6">
                     </Portion>
                     <Portion desktopSpan="12">
-                        <Row gutters="large" verticallyCenterItems>
+                        <Row verticallyCenterItems>
                             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="8" mobileSpan="8">
                                 <img src={`${imageUrlPrefix}/icons/s1_r0_soft/ic_view_transaction_history_24_s1_r0_soft.svg`} alt="corner-radius" />
                                 <Text align="center" weight="600" margin="none">0px</Text>
@@ -158,7 +158,7 @@ function Documentation() {
                     <Portion desktopSpan="4">
                     </Portion>
                     <Portion desktopSpan="16">
-                        <Row gutters="large">
+                        <Row>
                             <Portion desktopSpan="5" tabletLandscapeSpan="5" tabletPortraitSpan="5" mobileSpan="12" marginBottom="micro">
                                 <img src={`${imageUrlPrefix}/icons/s1_r0_soft/ic_view_transaction_history_24_s1_r0_soft.svg`} alt="edge-variations" />
                                 <Text align="center" weight="600" marginBottom="none">SOFT</Text>

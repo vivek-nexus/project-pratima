@@ -1,3 +1,12 @@
+.stickyScroll {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 5px -2.5px; */
+}
+
 .cardIcon {
     border-radius: 0.75rem;
     cursor: pointer;
