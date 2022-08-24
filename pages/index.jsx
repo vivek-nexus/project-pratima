@@ -7,7 +7,8 @@ import React from 'react';
 import { ReactDOM } from 'react-dom/client';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import Team from '../components/Team'
+import Team from '../components/Team';
+import DesignPrinciples from '../components/DesignPrinciples';
 
 import imageUrlPrefix from '../constants/imageUrlPrefix';
 
@@ -55,6 +56,7 @@ export default function Home() {
         </Portion>
       </Row>
 
+      <HRule sideMargin="huge" />
 
       <Row sidePadding='huge'>
         <Portion desktopSpan='24'>
@@ -98,6 +100,6 @@ export default function Home() {
 
       <Footer />
 
-    </div >
+    </div>
   )
 }
