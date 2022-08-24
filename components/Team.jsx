@@ -69,9 +69,9 @@ const tabTwoContent = () => (
 function Team() {
     return (
         <>
-            <Row sidePadding="huge" marginBottom="tiny" gutters="huge">
+            <Row sidePadding="huge" gutters="huge">
                 <Portion>
-                    <Heading as="h4" marginBottom="none">Team</Heading>
+                    <Heading as="h4" marginBottom="micro">Team</Heading>
                 </Portion>
             </Row>
             <Row sidePadding="huge" marginBottom="none" gutters="huge">
@@ -121,7 +121,7 @@ function Team() {
 
 
 
-            <Row sidePadding="huge">
+            <Row sidePadding="huge" marginBottom='medium'>
                 <Portion>
                     <Tabs
                         tabs={[
