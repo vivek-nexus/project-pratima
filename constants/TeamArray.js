@@ -18,12 +18,12 @@ const teamArray = {
         {
             "name": "Neha Shrimali",
             "designation": "Manager — Visual Design",
-            "org": "AmazonPay"
+            "org": "Amazon Pay"
         },
         {
             "name": "Rajashree Gopalakrishnan",
             "designation": "Art Director",
-            "org": "AmazonPay"
+            "org": "Amazon Pay"
         },
         {
             "name": "Kalpitha Jagadeesh",
@@ -70,7 +70,7 @@ const teamArray = {
         {
             "name": "Vinay Choletti",
             "designation": "Head — Merchant Payments",
-            "org": "Mobikwik"
+            "org": "WhatsApp Pay"
         },
         {
             "name": "Rahul Saini",
@@ -83,7 +83,7 @@ const teamArray = {
             "org": "NPCI"
         },
         {
-            "name": "Alfie Saldana",
+            "name": "Alfie Saldanha",
             "designation": "Lead Marketing",
             "org": "NPCI"
         },

@@ -520,14 +520,14 @@ export const FictoanTheme = {
         paras: {
             font: "Lato, sans-serif",
             size: 1,
-            color: String(defaultColours.grey),
+            color: String(defaultColours.black),
             weight: 400,
             lineHeight: 1.64
         },
 
         headings: {
             font: "Lato, sans-serif",
-            color: String(customColours.shade),
+            color: String(defaultColours.black),
             weight: 600,
             multiplier: 1.24,
             lineHeight: 1.24

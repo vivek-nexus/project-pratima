@@ -58,7 +58,7 @@ export default function Icons() {
             </Head>
 
             <Nav />
-            <Row sidePadding="huge" marginBottom="none">
+            <Row sidePadding="huge" marginBottom="none" marginTop="small">
                 <Heading as="h4" marginBottom="tiny">Icons</Heading>
             </Row>
 

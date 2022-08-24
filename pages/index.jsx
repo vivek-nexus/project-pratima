@@ -24,65 +24,80 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
       </Head>
 
-      <main className={styles.main}>
+      <Row>
+        <Portion>
+          <Element as="div" style={{
+            backgroundImage: `url(${imageUrlPrefix}/hero-1.jpg)`,
+            backgroundPosition: "center left", backgroundSize: "100% auto",
+          }}>
+            <Nav />
+            <Row sidePadding="huge">
+              <Portion
+                marginTop="medium"
+                marginBottom="medium"
+                padding="small"
+                desktopSpan="12"
+                tabletLandscapeSpan="12"
+                tabletPortraitSpan="18"
+                mobileSpan="24"
+                className={styles.glassHeroCard
+                }
+              >
+                <Heading as="h4" marginBottom="micro">Project Pratima</Heading>
+                <Heading as="h6">An icon library for all financial institutions in India.</Heading>
+                <Text marginBottom="tiny"> Easily recognisable by every Indian irrespective of literacy and education level.</Text>
+                <Link href="icons">
+                  <Button kind="primary" shadow="hard">Read more</Button>
+                </Link>
+              </Portion>
+            </Row>
+          </Element>
+        </Portion>
+      </Row>
 
-        <Nav />
 
-        <Row sidePadding="huge">
-          <Portion desktopSpan='22'>
-            <Heading as="h3">Project Pratima</Heading>
-            <Text size='large'>
-              An icon library that can be used by all financial institutions in India. These set of icons will be easily recognisable by every India irrespective of literacy and education level.
-            </Text>
-          </Portion>
-          <Portion desktopSpan='1'></Portion>
-        </Row>
+      <Row sidePadding='huge'>
+        <Portion desktopSpan='24'>
+          <Heading as="h6">Icons</Heading>
+        </Portion>
+      </Row>
 
-        <HRule sideMargin="huge" />
+      <Row sidePadding='huge'>
+        <Portion desktopSpan='6' tabletLandscapeSpan='6' tabletPortraitSpan='6' mobileSpan='12' >
+          <Element as="img" src={`${imageUrlPrefix}/icons/s1_r3_soft/ic_send_money_24_s1_r3_soft.svg`} className="icon-huge">
+          </Element>
+          <Text size="medium">Send money</Text>
+        </Portion>
+        <Portion desktopSpan='6' tabletLandscapeSpan='6' tabletPortraitSpan='6' mobileSpan='12'>
+          <Element as="img" src={`${imageUrlPrefix}/icons/s1_r3_soft/ic_bank_transfer_24_s1_r3_soft.svg`} className="icon-huge">
+          </Element>
+          <Text size="medium">Bank transfer</Text>
+        </Portion>
+        <Portion desktopSpan='6' tabletLandscapeSpan='6' tabletPortraitSpan='6' mobileSpan='12'>
+          <Element as="img" src={`${imageUrlPrefix}/icons/s1_r3_soft/ic_self_transfer_24_s1_r3_soft.svg`} className="icon-huge">
+          </Element>
+          <Text size="medium">Self transfer</Text>
+        </Portion>
+        <Portion desktopSpan='6' tabletLandscapeSpan='6' tabletPortraitSpan='6' mobileSpan='12'>
+          <Element as="img" src={`${imageUrlPrefix}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} className="icon-huge">
+          </Element>
+          <Text size="medium">Transaction history</Text>
+        </Portion>
+      </Row>
+      <Row sidePadding="huge">
+        <Portion desktopSpan='6'>
+          <Link href="icons">
+            <Button kind="primary" shadow="hard" marginBottom='small'>Go to icon library</Button>
+          </Link>
+        </Portion>
+      </Row>
 
-        <Row sidePadding='huge'>
-          <Portion desktopSpan='24'>
-            <Heading as="h6">Icons</Heading>
-          </Portion>
-        </Row>
+      <HRule sideMargin="huge" />
 
-        <Row sidePadding='huge'>
-          <Portion desktopSpan='6' tabletLandscapeSpan='6' tabletPortraitSpan='6' mobileSpan='12' >
-            <Element as="img" src={`${imageUrlPrefix}/icons/s1_r3_soft/ic_send_money_24_s1_r3_soft.svg`} className="icon-huge">
-            </Element>
-            <Text size="medium">Send money</Text>
-          </Portion>
-          <Portion desktopSpan='6' tabletLandscapeSpan='6' tabletPortraitSpan='6' mobileSpan='12'>
-            <Element as="img" src={`${imageUrlPrefix}/icons/s1_r3_soft/ic_bank_transfer_24_s1_r3_soft.svg`} className="icon-huge">
-            </Element>
-            <Text size="medium">Bank transfer</Text>
-          </Portion>
-          <Portion desktopSpan='6' tabletLandscapeSpan='6' tabletPortraitSpan='6' mobileSpan='12'>
-            <Element as="img" src={`${imageUrlPrefix}/icons/s1_r3_soft/ic_self_transfer_24_s1_r3_soft.svg`} className="icon-huge">
-            </Element>
-            <Text size="medium">Self transfer</Text>
-          </Portion>
-          <Portion desktopSpan='6' tabletLandscapeSpan='6' tabletPortraitSpan='6' mobileSpan='12'>
-            <Element as="img" src={`${imageUrlPrefix}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} className="icon-huge">
-            </Element>
-            <Text size="medium">Transaction history</Text>
-          </Portion>
-        </Row>
-        <Row sidePadding="huge">
-          <Portion desktopSpan='6'>
-            <Link href="icons">
-              <Button kind="primary" shadow="hard" marginBottom='small'>Go to icon library</Button>
-            </Link>
-          </Portion>
-        </Row>
+      <Team />
 
-        <HRule sideMargin="huge" />
+      <Footer />
 
-        <Team />
-
-        <Footer />
-      </main>
-
-    </div>
+    </div >
   )
 }

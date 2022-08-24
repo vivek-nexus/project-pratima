@@ -1,10 +1,11 @@
 import { Button, Card, Row, Portion, Text, HRule, Heading, Element } from 'fictoan-react';
 import Link from 'next/link'
 import React from 'react';
+import styles from '../styles/Home.module.css'
 
 class Nav extends React.Component {
   render() {
-    return <Row bgColor='grey-10' sidePadding="huge">
+    return <Row sidePadding="huge" marginBottom="none" className={styles.glassNav} shadow="mild">
       <Portion desktopSpan="20" tabletLandscapeSpan='20' tabletPortraitSpan='20' mobileSpan='8'>
         <Link href="/">
           <a>
