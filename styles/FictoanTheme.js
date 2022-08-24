@@ -457,10 +457,10 @@ export const FictoanTheme = {
     table: {
         bg: String(defaultColours.white),
         text: String(customColours.shade),
-        border: String(defaultColours.slate40),
+        border: String(defaultColours.slate20),
         striped: {
             header: {
-                bg: String(defaultColours.blue40)
+                bg: `${lighten(0.7, String(customColours.hue))}`
             },
             cell: {
                 bg: String(defaultColours.slate20)

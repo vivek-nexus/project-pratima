@@ -7,8 +7,9 @@ import React from 'react';
 import { ReactDOM } from 'react-dom/client';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import Team from '../components/Team'
 
-import imageUrlPrefix from '../constants/imageUrlPrefix'
+import imageUrlPrefix from '../constants/imageUrlPrefix';
 
 
 export default function Home() {
@@ -74,6 +75,11 @@ export default function Home() {
             </Link>
           </Portion>
         </Row>
+
+        <HRule sideMargin="huge" />
+
+        <Team />
+
         <Footer />
       </main>
 
