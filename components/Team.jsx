@@ -76,52 +76,52 @@ function Team() {
             </Row>
             <Row sidePadding="huge" marginBottom="none" gutters="huge">
                 <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
-                    <OrgLogo org="whatsapp" />
+                    <OrgLogo org="whatsapp" format="svg" />
                 </Portion>
                 <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="mobikwik" />
+                    <OrgLogo org="mobikwik" format="svg" />
                 </Portion>
                 <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="eko" />
+                    <OrgLogo org="eko" format="svg" />
                 </Portion>
                 <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
-                    <OrgLogo org="amazon-pay" />
+                    <OrgLogo org="amazon-pay" format="svg" />
                 </Portion>
                 <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="payu" />
+                    <OrgLogo org="payu" format="svg" />
                 </Portion>
                 <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="setu" />
+                    <OrgLogo org="setu" format="svg" />
                 </Portion>
                 <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
-                    <OrgLogo org="sbi" />
+                    <OrgLogo org="sbi" format="svg" />
                 </Portion>
                 <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="fampay" />
+                    <OrgLogo org="fampay" format="svg" />
                 </Portion>
                 <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="jupiter" />
+                    <OrgLogo org="jupiter" format="svg" />
                 </Portion>
                 <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
-                    <OrgLogo org="paytm" />
+                    <OrgLogo org="paytm" format="svg" />
                 </Portion>
                 <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="npci" />
+                    <OrgLogo org="npci" format="svg" />
                 </Portion>
                 <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="visa" />
+                    <OrgLogo org="visa" format="svg" />
                 </Portion>
                 <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="safexpay" />
+                    <OrgLogo org="safexpay" format="svg" />
                 </Portion>
                 <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="hdfc" />
+                    <OrgLogo org="hdfc" format="svg" />
                 </Portion>
             </Row>
 
 
 
-            <Row sidePadding="huge" marginBottom='medium'>
+            <Row sidePadding="huge" marginBottom="medium">
                 <Portion>
                     <Tabs
                         tabs={[

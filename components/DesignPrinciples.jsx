@@ -7,7 +7,7 @@ class DesignPrinciples extends React.Component {
     render() {
         return <Row sidePadding='huge'>
             <Portion desktopSpan="24">
-                <Heading as="h4" marginBottom="micro">Design Principles</Heading>
+                <Heading as="h4" marginBottom="micro">Design principles</Heading>
             </Portion>
             <Portion desktopSpan="12" tabletLandscapeSpan="12" tabletPortraitSpan="24" mobileSpan="24" >
                 <Card
