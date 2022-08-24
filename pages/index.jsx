@@ -96,6 +96,10 @@ export default function Home() {
 
       <HRule sideMargin="huge" />
 
+      <DesignPrinciples />
+
+      <HRule sideMargin="huge" />
+
       <Team />
 
       <Footer />
