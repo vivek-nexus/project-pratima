@@ -47,7 +47,7 @@ export default function Home() {
                 <Heading as="h4" marginBottom="micro">Project Pratima</Heading>
                 <Heading as="h6">An icon library for all financial institutions in India.</Heading>
                 <Text marginBottom="tiny"> Easily recognisable by every Indian irrespective of literacy and education level.</Text>
-                <Link href="icons">
+                <Link href="#icons">
                   <Button kind="primary" shadow="hard">Read more</Button>
                 </Link>
               </Portion>
@@ -56,11 +56,9 @@ export default function Home() {
         </Portion>
       </Row>
 
-      <HRule sideMargin="huge" />
-
-      <Row sidePadding='huge'>
+      <Row sidePadding='huge' id="icons">
         <Portion desktopSpan='24'>
-          <Heading as="h6">Icons</Heading>
+          <Heading as="h4">Icons</Heading>
         </Portion>
       </Row>
 
@@ -89,16 +87,16 @@ export default function Home() {
       <Row sidePadding="huge">
         <Portion desktopSpan='6'>
           <Link href="icons">
-            <Button kind="primary" shadow="hard" marginBottom='small'>Go to icon library</Button>
+            <Button kind="primary" shadow="hard">Go to icon library</Button>
           </Link>
         </Portion>
       </Row>
 
-      <HRule sideMargin="huge" />
+      <HRule sideMargin="huge" id="design-principles" />
 
       <DesignPrinciples />
 
-      <HRule sideMargin="huge" />
+      <HRule sideMargin="huge" id="team" />
 
       <Team />
 

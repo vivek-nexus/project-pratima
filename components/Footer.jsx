@@ -16,17 +16,17 @@ class Footer extends React.Component {
                 <Heading as="h6">ABOUT</Heading>
                 <a>
                     <Link href="/">
-                        <Text>Overview</Text>
+                        <Text weight="400">Overview</Text>
                     </Link>
                 </a>
                 <a>
                     <Link href="/#design-principles">
-                        <Text>Design principles</Text>
+                        <Text weight="400">Design principles</Text>
                     </Link>
                 </a>
                 <a>
                     <Link href="/#team">
-                        <Text>Team</Text>
+                        <Text weight="400">Team</Text>
                     </Link>
                 </a>
             </Portion>
@@ -34,17 +34,17 @@ class Footer extends React.Component {
                 <Heading as="h6">RESOURCES</Heading>
                 <a>
                     <Link href="/icons">
-                        <Text>Icons</Text>
+                        <Text weight="400">Icons</Text>
                     </Link>
                 </a>
                 <a>
                     <Link href="/icons#documentation">
-                        <Text>Documentation</Text>
+                        <Text weight="400">Documentation</Text>
                     </Link>
                 </a>
                 <a>
                     <Link href="/icons#figma-community">
-                        <Text>Figma community</Text>
+                        <Text weight="400">Figma community</Text>
                     </Link>
                 </a>
             </Portion>
@@ -52,7 +52,7 @@ class Footer extends React.Component {
                 <Heading as="h6">HELP</Heading>
                 <a>
                     <Link href="/icons#faqs">
-                        <Text>FAQs</Text>
+                        <Text weight="400">FAQs</Text>
                     </Link>
                 </a>
             </Portion>

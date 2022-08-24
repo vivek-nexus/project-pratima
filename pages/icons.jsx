@@ -273,12 +273,12 @@ export default function Icons() {
                 <Portion desktopSpan="10" mobileSpan="24">
                     <Heading as="h4">Figma community</Heading>
                     <Text>Download complete documentation and icons as a Figma file</Text>
-                    <a href="https://www.figma.com/community/file/1087129513242287190" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.figma.com/file/2JP8urOlZv4U48ojZHnRQv/Project-Pratima?node-id=4%3A125" target="_blank" rel="noopener noreferrer">
                         <Button kind="primary" shadow="hard" shape="rounded" marginBottom="micro">Get a copy</Button>
                     </a>
                 </Portion>
                 <Portion desktopSpan="14" mobileSpan="24">
-                    <a href="https://www.figma.com/community/file/1087129513242287190" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.figma.com/file/2JP8urOlZv4U48ojZHnRQv/Project-Pratima?node-id=4%3A125" target="_blank" rel="noopener noreferrer">
                         <Element as="img" shape="rounded" shadow="hard" src={`${imageUrlPrefix}/cover.svg`} alt="Figma file cover" />
                     </a>
                 </Portion>

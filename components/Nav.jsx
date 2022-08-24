@@ -14,7 +14,7 @@ class Nav extends React.Component {
         </Link>
       </Portion>
       <Portion desktopSpan="2" tabletLandscapeSpan='2' tabletPortraitSpan='2' mobileSpan='8'>
-        <Link href="/">
+        <Link href="/#team">
           <a>
             <Text weight="600">About</Text>
           </a>
