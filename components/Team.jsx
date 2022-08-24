@@ -5,18 +5,9 @@ import Image from 'next/image';
 import styles from '../styles/Team.module.css'
 
 import teamArray from '../constants/TeamArray';
-import OrgLogo from './org-logo';
+import OrgLogo from './OrgLogo';
 
-import {
-    Accordion,
-    AccordionItem,
-    AccordionItemHeading,
-    AccordionItemButton,
-    AccordionItemPanel,
-} from 'react-accessible-accordion';
 
-// Demo styles, see 'Styles' section below for some notes on use.
-import 'react-accessible-accordion/dist/fancy-example.css';
 
 // Content for tabs --------------------
 const tabOneContent = () => (
@@ -148,61 +139,6 @@ function Team() {
                     />
                 </Portion>
             </Row >
-
-            {/* <Accordion allowZeroExpanded={true} style={{ borderRadius: "4px" }}>
-                <AccordionItem style={{ borderRadius: "4px" }}>
-                    <AccordionItemHeading style={{ borderRadius: "4px" }}>
-                        <AccordionItemButton style={{ borderRadius: "4px" }}>
-                            <Text weight="600" margin="none" paddingLeft="nano" style={{ display: "inline-block" }}>Core group members</Text>
-                        </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                        <Table bordersFor="both" padding="tiny" isStriped isHoverable isFullWidth style={{
-                            tableLayout: "fixed",
-                            width: "100px"
-                        }}>
-                            <thead>
-                                <tr>
-                                    <th><Text margin="none" weight="600">Name</Text></th>
-                                    <th><Text margin="none" weight="600">Designation</Text></th>
-                                    <th><Text margin="none" weight="600">Organisation</Text></th>
-                                </tr>
-                            </thead>
-                        </Table>
-                        {teamArray.coreGroup.map((item) =>
-                            <Element as="div" key={item.name}>
-                                <Table bordersFor="both" padding="tiny" isStriped isHoverable isFullWidth style={{
-                                    tableLayout: "fixed",
-                                    width: "100px"
-                                }}>
-                                    <tbody>
-                                        <tr>
-                                            <td><Text margin="none">{item.name}</Text></td>
-                                            <td><Text margin="none">{item.designation}</Text></td>
-                                            <td><Text margin="none">{item.org}</Text></td>
-                                        </tr>
-                                    </tbody>
-                                </Table>
-                            </Element>)
-                        }
-                    </AccordionItemPanel>
-                </AccordionItem>
-                <AccordionItem style={{ borderRadius: "4px" }}>
-                    <AccordionItemHeading style={{ borderRadius: "4px" }}>
-                        <AccordionItemButton style={{ borderRadius: "4px" }}>
-                            <Text weight="600" margin="none" paddingLeft="nano" style={{ display: "inline-block" }}>Working group members</Text>
-                        </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                        {teamArray.workingGroup.map((item) =>
-                            <Element as="div" key={item.name}>
-                                <Text>
-                                    {item.name} — {item.designation} @ {item.org}
-                                </Text>
-                            </Element>)}
-                    </AccordionItemPanel>
-                </AccordionItem>
-            </Accordion> */}
         </>
     );
 }
