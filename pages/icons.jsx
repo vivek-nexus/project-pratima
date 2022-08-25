@@ -50,7 +50,7 @@ export default function Icons() {
             <Head>
                 <title>Icons</title>
                 <meta name="description" content="Payment icons for India" />
-                <link rel="icon" href={`${imageUrlPrefix}/icons/s1_r3_soft/ic_send_money_24_s1_r3_soft.svg`} />
+                <link rel="icon" href="/favicon.png" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
                 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
