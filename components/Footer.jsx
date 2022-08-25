@@ -11,14 +11,14 @@ class Footer extends React.Component {
         return (
             <>
                 <Row sidePadding="huge" gutters="small" bgColor="sky-10" padding="small" paddingBottom="micro" marginBottom="none">
-                    <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="24">
+                    <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="24" marginBottom="micro">
                         <Link href="/">
                             <Button shape="circular" bgColour="slate-40">
                                 <Text size="large">PP</Text>
                             </Button>
                         </Link>
                     </Portion>
-                    <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12">
+                    <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
                         <Heading as="h6">ABOUT</Heading>
                         <a>
                             <Link href="/">
@@ -36,7 +36,7 @@ class Footer extends React.Component {
                             </Link>
                         </a>
                     </Portion>
-                    <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12">
+                    <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
                         <Heading as="h6">RESOURCES</Heading>
                         <a>
                             <Link href="/icons">
@@ -54,7 +54,7 @@ class Footer extends React.Component {
                             </Link>
                         </a>
                     </Portion>
-                    <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12">
+                    <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
                         <Heading as="h6">HELP</Heading>
                         <a>
                             <Link href="/icons#faqs">
