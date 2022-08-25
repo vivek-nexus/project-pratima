@@ -13,7 +13,9 @@ class Footer extends React.Component {
                 <Row sidePadding="huge" gutters="small" bgColor="sky-10" padding="small" paddingBottom="micro" marginBottom="none">
                     <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="24">
                         <Link href="/">
-                            <Button shape="circular" bgColour="slate-40">LOGO</Button>
+                            <Button shape="circular" bgColour="slate-40">
+                                <Text size="large">PP</Text>
+                            </Button>
                         </Link>
                     </Portion>
                     <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12">

@@ -5,12 +5,10 @@ import styles from '../styles/Home.module.css'
 
 class Nav extends React.Component {
   render() {
-    return <Row sidePadding="huge" marginBottom="none" className={styles.glassNav} shadow="mild">
+    return <Row sidePadding="huge" marginBottom="none" className={styles.glassNav} shadow="mild" verticallyCenterItems>
       <Portion desktopSpan="20" tabletLandscapeSpan='20' tabletPortraitSpan='20' mobileSpan='8'>
         <Link href="/">
-          <a>
-            <Text weight="600">Logo</Text>
-          </a>
+          <Button shape="circular" size="small" bgColour="slate-40">PP</Button>
         </Link>
       </Portion>
       <Portion desktopSpan="2" tabletLandscapeSpan='2' tabletPortraitSpan='2' mobileSpan='8'>
