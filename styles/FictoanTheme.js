@@ -124,8 +124,8 @@ export const FictoanTheme = {
                 borderRadius: "4px"
             },
             onHover: {
-                bg: `${lighten(0.40, String(customColours.hue))}`,
-                border: String(defaultColours.transparent),
+                bg: `${lighten(0.70, String(customColours.hue))}`,
+                border: String(customColours.hue),
                 text: String(customColours.hue)
             },
             isActive: {

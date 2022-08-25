@@ -254,6 +254,11 @@ export default function Icons() {
                                 </MotionPortion>)}
                         </AnimatePresence>
                     </Row>
+                    <a
+                        href={`${imageUrlPrefix}/project-pratima-icons.zip`}
+                        download>
+                        <Button kind="tertiary" shadow="mild" shape="rounded" marginLeft="nano">Download all</Button>
+                    </a>
                 </Portion>
             </Row>
             {/* </div> */}

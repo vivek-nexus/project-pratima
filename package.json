@@ -7,7 +7,9 @@
     "export": "next export",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "zip-install": "",
+    "zip": "(cd public/icons && zip -r ../../public/project-pratima-icons.zip .)"
   },
   "dependencies": {
     "animate.css": "^4.1.1",

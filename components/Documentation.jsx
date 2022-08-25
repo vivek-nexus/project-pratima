@@ -22,7 +22,7 @@ function Documentation() {
                         <Row>
                             <Portion desktopSpan="8" tabletLandscapeSpan="8" tabletPortraitSpan="8" mobileSpan="8" marginBottom="micro">
                                 <img src={`${imageUrlPrefix}/docs-images/base-grid-1.svg`} alt="icon-grid" />
-                                <Text align="center" weight="600">Gird — 24 x 24px</Text>
+                                <Text align="center" weight="600">Grid — 24 x 24px</Text>
                             </Portion>
                             <Portion desktopSpan="8" tabletLandscapeSpan="8" tabletPortraitSpan="8" mobileSpan="8" marginBottom="micro">
                                 <img src={`${imageUrlPrefix}/docs-images/base-grid-2.svg`} alt="icon-grid" />
