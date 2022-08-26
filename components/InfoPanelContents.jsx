@@ -2,7 +2,7 @@ import styles from '../styles/Icons.module.css'
 import { Text, Element, Button, HRule } from 'fictoan-react'
 import 'animate.css';
 import { isMobile } from 'react-device-detect';
-import imageUrlPrefix from '../constants/imageUrlPrefix';
+import linkUrlPrefix from '../constants/linkUrlPrefix';
 
 
 function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, edges, size, setIsInfoPanelOpen, setIsBottomDrawerOpen }) {
@@ -25,12 +25,12 @@ function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, 
                                         close
                                     </Element>{item.iconName}</Text>
                                 <img
-                                    src={`${imageUrlPrefix}/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
+                                    src={`${linkUrlPrefix}/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
                                     alt={`${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
                                     className="icon-large"
                                 />
                                 <a
-                                    href={`${imageUrlPrefix}/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
+                                    href={`${linkUrlPrefix}/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
                                     download>
                                     <Button kind="primary" shadow="hard" shape="rounded" marginTop="micro">Download SVG</Button>
                                 </a>

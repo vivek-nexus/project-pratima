@@ -2,7 +2,7 @@ import styles from '../styles/Icons.module.css'
 import { Row, Portion, Text, Heading } from 'fictoan-react'
 import 'animate.css';
 
-import imageUrlPrefix from '../constants/imageUrlPrefix';
+import linkUrlPrefix from '../constants/linkUrlPrefix';
 
 function Documentation() {
     return (
@@ -21,15 +21,15 @@ function Documentation() {
                     <Portion desktopSpan="12">
                         <Row>
                             <Portion desktopSpan="8" tabletLandscapeSpan="8" tabletPortraitSpan="8" mobileSpan="8" marginBottom="micro">
-                                <img src={`${imageUrlPrefix}/docs-images/base-grid-1.svg`} alt="icon-grid" />
+                                <img src={`${linkUrlPrefix}/docs-images/base-grid-1.svg`} alt="icon-grid" />
                                 <Text align="center" weight="600">Grid — 24 x 24px</Text>
                             </Portion>
                             <Portion desktopSpan="8" tabletLandscapeSpan="8" tabletPortraitSpan="8" mobileSpan="8" marginBottom="micro">
-                                <img src={`${imageUrlPrefix}/docs-images/base-grid-2.svg`} alt="icon-grid" />
+                                <img src={`${linkUrlPrefix}/docs-images/base-grid-2.svg`} alt="icon-grid" />
                                 <Text align="center" weight="600">Padding — 2 x 2px</Text>
                             </Portion>
                             <Portion desktopSpan="8" tabletLandscapeSpan="8" tabletPortraitSpan="8" mobileSpan="8" marginBottom="micro">
-                                <img src={`${imageUrlPrefix}/docs-images/base-grid-3.svg`} alt="icon-grid" />
+                                <img src={`${linkUrlPrefix}/docs-images/base-grid-3.svg`} alt="icon-grid" />
                                 <Text align="center" weight="600">Live area — 2 x 2px</Text>
                             </Portion>
                         </Row>
@@ -43,7 +43,7 @@ function Documentation() {
                     <Portion desktopSpan="10" tabletLandscapeSpan="8" tabletPortraitSpan="8" mobileSpan="8">
                     </Portion>
                     <Portion desktopSpan="5" tabletLandscapeSpan="8" tabletPortraitSpan="8" mobileSpan="8" marginBottom="small">
-                        <img src={`${imageUrlPrefix}/docs-images/key-line.svg`} alt="key-lines" />
+                        <img src={`${linkUrlPrefix}/docs-images/key-line.svg`} alt="key-lines" />
                     </Portion>
                 </Row>
                 <Row>
@@ -56,22 +56,22 @@ function Documentation() {
                     <Portion desktopSpan="22">
                         <Row gutters="large">
                             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
-                                <img src={`${imageUrlPrefix}/docs-images/key-shape-1.svg`} alt="key-shapes" />
+                                <img src={`${linkUrlPrefix}/docs-images/key-shape-1.svg`} alt="key-shapes" />
                                 <Text align="center" weight="600" marginBottom="none">SQUARE</Text>
                                 <Text align="center" margin="none">H — 18px, W — 18px</Text>
                             </Portion>
                             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
-                                <img src={`${imageUrlPrefix}/docs-images/key-shape-2.svg`} alt="key-shapes" />
+                                <img src={`${linkUrlPrefix}/docs-images/key-shape-2.svg`} alt="key-shapes" />
                                 <Text align="center" weight="600" marginBottom="none">CIRCLE</Text>
                                 <Text align="center" margin="none">Diameter — 20px</Text>
                             </Portion>
                             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
-                                <img src={`${imageUrlPrefix}/docs-images/key-shape-3.svg`} alt="key-shapes" />
+                                <img src={`${linkUrlPrefix}/docs-images/key-shape-3.svg`} alt="key-shapes" />
                                 <Text align="center" weight="600" marginBottom="none">HORIZONTAL RECTANGLE</Text>
                                 <Text align="center" margin="none">H — 18px, W — 20px</Text>
                             </Portion>
                             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
-                                <img src={`${imageUrlPrefix}/docs-images/key-shape-4.svg`} alt="icon-grid" />
+                                <img src={`${linkUrlPrefix}/docs-images/key-shape-4.svg`} alt="icon-grid" />
                                 <Text align="center" weight="600" marginBottom="none">VERTICAL RECTANGLE</Text>
                                 <Text align="center" margin="none">H — 20px, W — 18px</Text>
                             </Portion>
@@ -88,15 +88,15 @@ function Documentation() {
                     <Portion desktopSpan="12" tabletLandscapeSpan="18" tabletPortraitSpan="18" mobileSpan="18">
                         <Row style={{ alignItems: "end" }}>
                             <Portion desktopSpan="4" tabletLandscapeSpan="4" tabletPortraitSpan="4" mobileSpan="4">
-                                <img src={`${imageUrlPrefix}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
+                                <img src={`${linkUrlPrefix}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
                                 <Text align="center" weight="600">16px</Text>
                             </Portion>
                             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="6">
-                                <img src={`${imageUrlPrefix}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
+                                <img src={`${linkUrlPrefix}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
                                 <Text align="center" weight="600">24px</Text>
                             </Portion>
                             <Portion desktopSpan="8" tabletLandscapeSpan="8" tabletPortraitSpan="8" mobileSpan="8">
-                                <img src={`${imageUrlPrefix}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
+                                <img src={`${linkUrlPrefix}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
                                 <Text align="center" weight="600">32px</Text>
                             </Portion>
                         </Row>
@@ -112,15 +112,15 @@ function Documentation() {
                     <Portion desktopSpan="12">
                         <Row verticallyCenterItems>
                             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="8" mobileSpan="8">
-                                <img src={`${imageUrlPrefix}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-strokes" />
+                                <img src={`${linkUrlPrefix}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-strokes" />
                                 <Text align="center" weight="600" margin="none">1px</Text>
                             </Portion>
                             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="8" mobileSpan="8">
-                                <img src={`${imageUrlPrefix}/icons/s1.5_r3_soft/ic_view_transaction_history_24_s1.5_r3_soft.svg`} alt="icon-strokes" />
+                                <img src={`${linkUrlPrefix}/icons/s1.5_r3_soft/ic_view_transaction_history_24_s1.5_r3_soft.svg`} alt="icon-strokes" />
                                 <Text align="center" weight="600" margin="none">1.5px</Text>
                             </Portion>
                             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="8" mobileSpan="8">
-                                <img src={`${imageUrlPrefix}/icons/s2_r3_soft/ic_view_transaction_history_24_s2_r3_soft.svg`} alt="icon-strokes" />
+                                <img src={`${linkUrlPrefix}/icons/s2_r3_soft/ic_view_transaction_history_24_s2_r3_soft.svg`} alt="icon-strokes" />
                                 <Text align="center" weight="600" margin="none">2px</Text>
                             </Portion>
                         </Row>
@@ -136,15 +136,15 @@ function Documentation() {
                     <Portion desktopSpan="12">
                         <Row verticallyCenterItems>
                             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="8" mobileSpan="8">
-                                <img src={`${imageUrlPrefix}/icons/s1_r0_soft/ic_view_transaction_history_24_s1_r0_soft.svg`} alt="corner-radius" />
+                                <img src={`${linkUrlPrefix}/icons/s1_r0_soft/ic_view_transaction_history_24_s1_r0_soft.svg`} alt="corner-radius" />
                                 <Text align="center" weight="600" margin="none">0px</Text>
                             </Portion>
                             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="8" mobileSpan="8">
-                                <img src={`${imageUrlPrefix}/icons/s1_r2_soft/ic_view_transaction_history_24_s1_r2_soft.svg`} alt="corner-radius" />
+                                <img src={`${linkUrlPrefix}/icons/s1_r2_soft/ic_view_transaction_history_24_s1_r2_soft.svg`} alt="corner-radius" />
                                 <Text align="center" weight="600" margin="none">2px</Text>
                             </Portion>
                             <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="8" mobileSpan="8">
-                                <img src={`${imageUrlPrefix}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="corner-radius" />
+                                <img src={`${linkUrlPrefix}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="corner-radius" />
                                 <Text align="center" weight="600" margin="none">3px</Text>
                             </Portion>
                         </Row>
@@ -160,24 +160,24 @@ function Documentation() {
                     <Portion desktopSpan="16">
                         <Row>
                             <Portion desktopSpan="5" tabletLandscapeSpan="5" tabletPortraitSpan="5" mobileSpan="12" marginBottom="micro">
-                                <img src={`${imageUrlPrefix}/icons/s1_r0_soft/ic_view_transaction_history_24_s1_r0_soft.svg`} alt="edge-variations" />
+                                <img src={`${linkUrlPrefix}/icons/s1_r0_soft/ic_view_transaction_history_24_s1_r0_soft.svg`} alt="edge-variations" />
                                 <Text align="center" weight="600" marginBottom="none">SOFT</Text>
                                 <Text align="center" margin="none">0px</Text>
                             </Portion>
                             <Portion desktopSpan="5" tabletLandscapeSpan="5" tabletPortraitSpan="5" mobileSpan="12" marginBottom="micro">
-                                <img src={`${imageUrlPrefix}/icons/s1_r0_sharp/ic_view_transaction_history_24_s1_r0_sharp.svg`} alt="edge-variations" />
+                                <img src={`${linkUrlPrefix}/icons/s1_r0_sharp/ic_view_transaction_history_24_s1_r0_sharp.svg`} alt="edge-variations" />
                                 <Text align="center" weight="600" marginBottom="none">SHARP</Text>
                                 <Text align="center" margin="none">0px</Text>
                             </Portion>
                             <Portion desktopSpan="4" tabletLandscapeSpan="4" tabletPortraitSpan="4" mobileSpan="0" hideOnMobile marginBottom="micro">
                             </Portion>
                             <Portion desktopSpan="5" tabletLandscapeSpan="5" tabletPortraitSpan="5" mobileSpan="12" marginBottom="micro">
-                                <img src={`${imageUrlPrefix}/icons/s1_r2_soft/ic_view_transaction_history_24_s1_r2_soft.svg`} alt="edge-variations" />
+                                <img src={`${linkUrlPrefix}/icons/s1_r2_soft/ic_view_transaction_history_24_s1_r2_soft.svg`} alt="edge-variations" />
                                 <Text align="center" weight="600" marginBottom="none">SOFT</Text>
                                 <Text align="center" margin="none">2px</Text>
                             </Portion>
                             <Portion desktopSpan="5" tabletLandscapeSpan="5" tabletPortraitSpan="5" mobileSpan="12" marginBottom="micro">
-                                <img src={`${imageUrlPrefix}/icons/s1_r2_sharp/ic_view_transaction_history_24_s1_r2_sharp.svg`} alt="edge-variations" />
+                                <img src={`${linkUrlPrefix}/icons/s1_r2_sharp/ic_view_transaction_history_24_s1_r2_sharp.svg`} alt="edge-variations" />
                                 <Text align="center" weight="600" marginBottom="none">SHARP</Text>
                                 <Text align="center" margin="none">2px</Text>
                             </Portion>
@@ -192,7 +192,7 @@ function Documentation() {
                     <Portion desktopSpan="5">
                     </Portion>
                     <Portion desktopSpan="14" marginBottom="tiny">
-                        <img src={`${imageUrlPrefix}/docs-images/icon-colour.png`} alt="icon-colour" />
+                        <img src={`${linkUrlPrefix}/docs-images/icon-colour.png`} alt="icon-colour" />
                     </Portion>
                 </Row>
                 <Row>
@@ -203,7 +203,7 @@ function Documentation() {
                     <Portion desktopSpan="5">
                     </Portion>
                     <Portion desktopSpan="14" marginBottom="tiny">
-                        <img src={`${imageUrlPrefix}/docs-images/background-shapes.png`} alt="background-shapes" />
+                        <img src={`${linkUrlPrefix}/docs-images/background-shapes.png`} alt="background-shapes" />
                     </Portion>
                 </Row>
             </Portion >

@@ -4,7 +4,7 @@ import { Button, Card, Row, Portion, Text, HRule, Heading, Element } from 'ficto
 import Icons from "../pages/icons";
 import Link from "next/link";
 import OrgLogo from "./OrgLogo";
-import imageimageUrlPrefix from "../constants/imageUrlPrefix";
+import imagelinkUrlPrefix from "../constants/linkUrlPrefix";
 
 class Footer extends React.Component {
     render() {
@@ -79,7 +79,7 @@ class Footer extends React.Component {
                         <OrgLogo org="pci" format="png" />
                     </Portion>
                     <Portion desktopSpan="4" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
-                        <Element as="img" src={`${imageimageUrlPrefix}/org-logos/iba.png`} className="icon-large" />
+                        <Element as="img" src={`${imagelinkUrlPrefix}/org-logos/iba.png`} className="icon-large" />
                     </Portion>
                     <Portion desktopSpan="4"></Portion>
                 </Row >

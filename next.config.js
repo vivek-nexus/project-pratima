@@ -3,9 +3,9 @@ const isProd = process.env.NODE_ENV === 'production'
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    // Sample URL prefix: https://yakshaG.github.io/project-pratima
+    // Sample LINK prefix: /project-pratima
     // Do not add the slash at the last
-    IMAGE_PREFIX: isProd ? "https://yakshaG.github.io/project-pratima" : ""
+    LINK_PREFIX: isProd ? "/project-pratima" : ""
   },
   reactStrictMode: true,
   swcMinify: true,
