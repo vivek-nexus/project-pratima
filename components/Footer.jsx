@@ -1,10 +1,7 @@
 import React from "react";
 import styles from '../styles/Footer.module.css';
 import { Button, Card, Row, Portion, Text, HRule, Heading, Element } from 'fictoan-react';
-import Icons from "../pages/icons";
 import Link from "next/link";
-import OrgLogo from "./OrgLogo";
-import imagelinkUrlPrefix from "../constants/linkUrlPrefix";
 
 class Footer extends React.Component {
     render() {
@@ -64,24 +61,22 @@ class Footer extends React.Component {
                     </Portion>
                 </Row>
 
-                <Row sidePadding="huge" bgColor="sky-10" gutters="huge" marginBottom="none">
+                <Row sidePadding="huge" bgColor="sky-10" paddingBottom="micro" marginBottom="none">
                     <Portion>
                         <Text align="center" weight="600" marginBottom="none">Brought to you by</Text>
                     </Portion>
-                    <Portion desktopSpan="4"></Portion>
-                    <Portion desktopSpan="4" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
-                        <OrgLogo org="rbi" format="webp" />
+                    <Portion desktopSpan="6" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
+                        <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/rbi.webp`} className={styles.mxauto} />
                     </Portion>
-                    <Portion desktopSpan="4" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                        <OrgLogo org="iamai" format="png" />
+                    <Portion desktopSpan="6" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="12">
+                        <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/iamai.png`} className={styles.mxauto} />
                     </Portion>
-                    <Portion desktopSpan="4" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                        <OrgLogo org="pci" format="png" />
+                    <Portion desktopSpan="6" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="12">
+                        <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/pci.png`} className={styles.mxauto} />
                     </Portion>
-                    <Portion desktopSpan="4" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
-                        <Element as="img" src={`${imagelinkUrlPrefix}/org-logos/iba.png`} className="icon-large" />
+                    <Portion desktopSpan="6" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="12">
+                        <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/iba.png`} className={styles.mxauto} />
                     </Portion>
-                    <Portion desktopSpan="4"></Portion>
                 </Row >
             </>
         )

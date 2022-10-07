@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import styles from '../styles/Icons.module.css'
@@ -10,7 +9,6 @@ import { isMobile } from 'react-device-detect';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import iconsArray from '../constants/iconsArray'
-import linkUrlPrefix from '../constants/linkUrlPrefix'
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import InfoPanelContents from '../components/InfoPanelContents'
@@ -50,7 +48,7 @@ export default function Icons() {
             <Head>
                 <title>Icons</title>
                 <meta name="description" content="Payment icons for India" />
-                <link rel="icon" type="image/png" href={`${linkUrlPrefix}/favicon.png`} />
+                <link rel="icon" type="image/png" href={`${process.env.LINK_PREFIX}/favicon.png`} />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
                 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
@@ -229,7 +227,7 @@ export default function Icons() {
                                         }}
                                     >
                                         <img
-                                            src={`${linkUrlPrefix}/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
+                                            src={`${process.env.LINK_PREFIX}/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
                                             alt={`${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
                                             className={styles.iconThumnail}
                                             style={{ width: "75%", marginLeft: "auto", marginRight: "auto" }}
@@ -255,7 +253,7 @@ export default function Icons() {
                         </AnimatePresence>
                     </Row>
                     <a
-                        href={`${linkUrlPrefix}/project-pratima-icons.zip`}
+                        href={`${process.env.LINK_PREFIX}/project-pratima-icons.zip`}
                         download>
                         <Button kind="tertiary" shadow="mild" shape="rounded" marginLeft="nano">Download all</Button>
                     </a>
@@ -284,7 +282,7 @@ export default function Icons() {
                 </Portion>
                 <Portion desktopSpan="14" mobileSpan="24">
                     <a href="https://www.figma.com/file/2JP8urOlZv4U48ojZHnRQv/Project-Pratima?node-id=4%3A125" target="_blank" rel="noopener noreferrer">
-                        <Element as="img" shape="rounded" shadow="hard" src={`${linkUrlPrefix}/cover.svg`} alt="Figma file cover" />
+                        <Element as="img" shape="rounded" shadow="hard" src={`${process.env.LINK_PREFIX}/cover.svg`} alt="Figma file cover" />
                     </a>
                 </Portion>
             </Row>

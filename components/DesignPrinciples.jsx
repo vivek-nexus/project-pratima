@@ -1,7 +1,6 @@
 import React from "react";
 import Link from 'next/link';
 import { Button, Card, Row, Portion, Text, HRule, Heading, Element } from 'fictoan-react';
-import linkUrlPrefix from '../constants/linkUrlPrefix';
 
 class DesignPrinciples extends React.Component {
     render() {
@@ -17,7 +16,7 @@ class DesignPrinciples extends React.Component {
                 >
                     <Row marginBottom="none">
                         <Portion desktopSpan="6">
-                            <Element as="img" src={`${linkUrlPrefix}/design-principles/recognisable.svg`} className="icon-huge">
+                            <Element as="img" src={`${process.env.LINK_PREFIX}/design-principles/recognisable.svg`} className="icon-huge">
                             </Element>
                         </Portion>
                         <Portion desktopSpan="17">
@@ -37,7 +36,7 @@ class DesignPrinciples extends React.Component {
                 >
                     <Row marginBottom="none">
                         <Portion desktopSpan="6">
-                            <Element as="img" src={`${linkUrlPrefix}/design-principles/accessible.svg`} className="icon-huge">
+                            <Element as="img" src={`${process.env.LINK_PREFIX}/design-principles/accessible.svg`} className="icon-huge">
                             </Element>
                         </Portion>
                         <Portion desktopSpan="17">
@@ -57,7 +56,7 @@ class DesignPrinciples extends React.Component {
                 >
                     <Row marginBottom="none">
                         <Portion desktopSpan="6">
-                            <Element as="img" src={`${linkUrlPrefix}/design-principles/scalable.svg`} className="icon-huge">
+                            <Element as="img" src={`${process.env.LINK_PREFIX}/design-principles/scalable.svg`} className="icon-huge">
                             </Element>
                         </Portion>
                         <Portion desktopSpan="17">
@@ -77,7 +76,7 @@ class DesignPrinciples extends React.Component {
                 >
                     <Row marginBottom="none">
                         <Portion desktopSpan="6">
-                            <Element as="img" src={`${linkUrlPrefix}/design-principles/flexible.svg`} className="icon-huge">
+                            <Element as="img" src={`${process.env.LINK_PREFIX}/design-principles/flexible.svg`} className="icon-huge">
                             </Element>
                         </Portion>
                         <Portion desktopSpan="17">
