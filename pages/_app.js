@@ -1,22 +1,30 @@
 import '../styles/globals.css'
 import { ThemeProvider } from "fictoan-react"
 import { FictoanTheme } from '../styles/FictoanTheme'
-import { useEffect } from 'react';
+import { useEffect, useState } from "react"
 
 
 function MyApp({ Component, pageProps }) {
 
+  const [isLoading, setIsLoading] = useState(true);
+
+
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const loader = document.getElementById('globalLoader');
-      if (loader)
-        loader.style.display = 'none';
-    }
-  }, []);
+    setIsLoading(false)
+  }, [])
+
   return (
-    <ThemeProvider theme={FictoanTheme}>
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <>
+      {isLoading
+        ? <div>
+          <img src={`${process.env.LINK_PREFIX}/loader.svg`} height="124px" />
+        </div>
+        :
+        <ThemeProvider theme={FictoanTheme}>
+          <Component {...pageProps} />
+        </ThemeProvider>
+      }
+    </>
   )
 }
 

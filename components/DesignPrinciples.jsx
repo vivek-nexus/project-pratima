@@ -2,9 +2,9 @@ import React from "react";
 import Link from 'next/link';
 import { Button, Card, Row, Portion, Text, HRule, Heading, Element } from 'fictoan-react';
 
-class DesignPrinciples extends React.Component {
-    render() {
-        return <Row sidePadding='huge'>
+function DesignPrinciples() {
+    return (
+        <Row sidePadding='huge'>
             <Portion desktopSpan="24">
                 <Heading as="h4" marginBottom="micro">Design principles</Heading>
             </Portion>
@@ -89,8 +89,7 @@ class DesignPrinciples extends React.Component {
                 </Card>
             </Portion>
         </Row>
-
-    }
+    )
 }
 
 export default DesignPrinciples;

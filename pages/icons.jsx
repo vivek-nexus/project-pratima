@@ -47,12 +47,6 @@ export default function Icons() {
         <Element as="div" className={styles.body}>
             <Head>
                 <title>Icons</title>
-                <meta name="description" content="Payment icons for India" />
-                <link rel="icon" type="image/png" href={`${process.env.LINK_PREFIX}/favicon.png`} />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-                <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,0" />
             </Head>
 
             <Nav />
@@ -61,8 +55,9 @@ export default function Icons() {
             </Row>
 
 
-            {/* <div key={isInfoPanelOpen}> */}
             <Row sidePadding="huge" marginBottom="none" >
+                {/* ////////////////// */}
+                {/* Dropdowns */}
                 <Portion
                     desktopSpan={isInfoPanelOpen ? "16" : "24"}
                     tabletLandscapeSpan={isInfoPanelOpen ? "18" : "24"}
@@ -79,7 +74,6 @@ export default function Icons() {
                                 desktopSpan={isInfoPanelOpen ? "12" : "6"}
                                 tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
                                 mobileSpan={false ? "24" : "12"}
-                            // className={clickedIcon ? `animate__animated animate__headShake` : ``}
                             >
                                 <Select
                                     onChange={function (e) {
@@ -116,7 +110,6 @@ export default function Icons() {
                                 desktopSpan={isInfoPanelOpen ? "12" : "6"}
                                 tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
                                 mobileSpan={false ? "24" : "12"}
-                            // className={clickedIcon ? `animate__animated animate__headShake` : ``}
                             >
                                 <Select
                                     onChange={function (e) {
@@ -153,7 +146,6 @@ export default function Icons() {
                                 desktopSpan={isInfoPanelOpen ? "12" : "6"}
                                 tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
                                 mobileSpan={false ? "24" : "12"}
-                            // className={clickedIcon ? `animate__animated animate__headShake` : ``}
                             >
                                 <Select
                                     onChange={function (e) {
@@ -180,7 +172,6 @@ export default function Icons() {
                                 desktopSpan={isInfoPanelOpen ? "12" : "6"}
                                 tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
                                 mobileSpan={false ? "24" : "12"}
-                            // className={clickedIcon ? `animate__animated animate__headShake` : ``}
                             >
                                 <Select
                                     id="size"
@@ -197,15 +188,16 @@ export default function Icons() {
                     </Row>
                 </Portion>
 
+
+                {/* ////////////////// */}
+                {/* Icons */}
                 <Portion
                     desktopSpan={isInfoPanelOpen ? "16" : "24"}
                     tabletLandscapeSpan={isInfoPanelOpen ? "18" : "24"}
                     tabletPortraitSpan={isInfoPanelOpen ? "18" : "24"}
                     mobileSpan={false ? "12" : "24"}
                 >
-                    <Row
-                        gutters="medium"
-                    >
+                    <Row gutters="medium">
                         <AnimatePresence>
                             {iconsArray.map(item =>
                                 <MotionPortion
@@ -214,7 +206,6 @@ export default function Icons() {
                                     desktopSpan={isInfoPanelOpen ? "8" : "6"}
                                     tabletLandscapeSpan={isInfoPanelOpen ? "10" : "8"}
                                     tabletPortraitSpan={isInfoPanelOpen ? "12" : "8"} mobileSpan={false ? "24" : "12"} padding="nano"
-                                // className={clickedIcon ? `animate__animated animate__headShake` : ``}
                                 >
                                     <Card
                                         isFullHeight
@@ -259,7 +250,6 @@ export default function Icons() {
                     </a>
                 </Portion>
             </Row>
-            {/* </div> */}
 
 
             <HRule id="documentation" sideMargin="huge" />
@@ -291,6 +281,8 @@ export default function Icons() {
 
             <Footer />
 
+            {/* ////////////////// */}
+            {/* Info panel */}
             <div key={clickedIcon}>
                 <InfoPanel
                     width="large"
