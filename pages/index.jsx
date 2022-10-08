@@ -20,6 +20,7 @@ function Home() {
       <Row>
         <Portion>
           <Element as="div" style={{
+            backgroundColor: "darkgray",
             backgroundImage: `url(${process.env.LINK_PREFIX}/hero-1.jpg)`,
             backgroundPosition: "center left", backgroundSize: "100% auto",
           }}>
