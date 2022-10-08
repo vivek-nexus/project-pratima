@@ -232,12 +232,10 @@ export default function Icons() {
                                             <Text
                                                 weight="600"
                                                 margin="none"
-                                                className={styles.iconNameLink}
                                             >
-                                                {item.iconName} <Element as="span" marginLeft="nano" className="material-symbols-outlined">
-                                                    chevron_right
-                                                </Element>
+                                                {item.iconName}
                                             </Text>
+                                            <img style={{ width: "auto", height: "32px" }} src={`${process.env.LINK_PREFIX}/chevron_right.svg`} />
                                         </Card>
                                     </Card>
                                 </MotionPortion>)}
