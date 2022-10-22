@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-import styles from '../styles/Icons.module.css'
 import { Row, Portion, Select, Text, InfoPanel, Card, Element, Button, HRule, Heading } from 'fictoan-react'
 import 'animate.css';
 import Drawer from "react-bottom-drawer";
@@ -14,6 +13,7 @@ import Footer from '../components/Footer';
 import InfoPanelContents from '../components/InfoPanelContents'
 import Documentation from '../components/Documentation'
 import FAQs from '../components/FAQs'
+import InfoPanelStyled from "../styles/InfoPanel.styled";
 
 const MotionPortion = motion(Portion)
 
@@ -32,19 +32,10 @@ export default function Icons() {
     const [isInfoPanelOpen, setIsInfoPanelOpen] = useState(false);
     const [isBottomDrawerOpen, setIsBottomDrawerOpen] = useState(false);
 
-    useEffect(() => {
-        if (isInfoPanelOpen) {
-            let dismissButtons = document.querySelectorAll('.dismiss-button')
-            dismissButtons.forEach(element => {
-                element.style.display = 'none'
-            });
-        }
-    }, [clickedIcon])
-
 
 
     return (
-        <Element as="div" className={styles.body}>
+        <Element as="div">
             <Head>
                 <title>Icons</title>
             </Head>
@@ -63,7 +54,8 @@ export default function Icons() {
                     tabletLandscapeSpan={isInfoPanelOpen ? "18" : "24"}
                     tabletPortraitSpan={isInfoPanelOpen ? "18" : "24"}
                     mobileSpan={false ? "12" : "24"}
-                    className={styles.stickyScroll}
+                    className="sticky top-0 z-10 bg-white/80"
+                    style={{ backdropFilter: "blur(8px)" }}
                     shape="rounded"
                     padding="nano"
                 >
@@ -210,7 +202,7 @@ export default function Icons() {
                                     <Card
                                         isFullHeight
                                         bgColor="slate-10"
-                                        className={styles.cardIcon}
+                                        className="flex flex-col justify-between rounded-xl cursor-pointer hover:shadow-xl duration-300 h-max"
                                         onClick={() => {
                                             console.log(item.fileName)
                                             setClickedIcon(item.fileName)
@@ -220,14 +212,14 @@ export default function Icons() {
                                         <img
                                             src={`${process.env.LINK_PREFIX}/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
                                             alt={`${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
-                                            className={styles.iconThumnail}
-                                            style={{ width: "75%", marginLeft: "auto", marginRight: "auto" }}
+                                            className="mx-auto w-3/4"
+
                                         />
 
 
                                         <Card
                                             shadow="mild"
-                                            className={styles.cardIconBottom}
+                                            className="flex justify-between items-center rounded-b-lg p-4"
                                         >
                                             <Text
                                                 weight="600"
@@ -235,7 +227,7 @@ export default function Icons() {
                                             >
                                                 {item.iconName}
                                             </Text>
-                                            <img style={{ width: "auto", height: "32px" }} src={`${process.env.LINK_PREFIX}/chevron_right.svg`} />
+                                            <img className="w-auto h-[32px]" src={`${process.env.LINK_PREFIX}/chevron_right.svg`} />
                                         </Card>
                                     </Card>
                                 </MotionPortion>)}
@@ -282,29 +274,32 @@ export default function Icons() {
             {/* ////////////////// */}
             {/* Info panel */}
             <div key={clickedIcon}>
-                <InfoPanel
-                    width="large"
-                    isOpen={isInfoPanelOpen}
-                    onCloseCallback={() => { setIsInfoPanelOpen(false) }}
-                    className={`${clickedIcon ? `${styles.infoPanel} animate__animated animate__pulse` : `${styles.infoPanel}`}`}
-                    padding="small"
-                >
-                    <InfoPanelContents
-                        iconsArray={iconsArray}
-                        clickedIcon={clickedIcon}
-                        strokeSize={strokeSize}
-                        cornerRadius={cornerRadius}
-                        edges={edges}
-                        size={size}
-                        setIsInfoPanelOpen={setIsInfoPanelOpen}
-                        setIsBottomDrawerOpen={setIsBottomDrawerOpen}
-                    />
-                </InfoPanel>
+                <InfoPanelStyled>
+                    <InfoPanel
+                        width="large"
+                        isOpen={isInfoPanelOpen}
+                        onCloseCallback={() => { setIsInfoPanelOpen(false) }}
+                        className={`bg-blue-100/80 shadow-md  z-50 ${clickedIcon ? `animate__animated animate__pulse animate__faster` : ``}`}
+                        style={{ backdropFilter: "blur(8px)" }}
+                        padding="small"
+                    >
+                        <InfoPanelContents
+                            iconsArray={iconsArray}
+                            clickedIcon={clickedIcon}
+                            strokeSize={strokeSize}
+                            cornerRadius={cornerRadius}
+                            edges={edges}
+                            size={size}
+                            setIsInfoPanelOpen={setIsInfoPanelOpen}
+                            setIsBottomDrawerOpen={setIsBottomDrawerOpen}
+                        />
+                    </InfoPanel>
+                </InfoPanelStyled>
 
                 {isMobile &&
                     <Drawer
                         isVisible={isBottomDrawerOpen}
-                        className={styles.infoPanel}
+                        className="bg-blue-100/80 shadow-md z-50"
                         onClose={() => { setIsBottomDrawerOpen(false) }}
                     >
                         <Element as="div" padding="micro">

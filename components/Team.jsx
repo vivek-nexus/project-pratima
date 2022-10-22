@@ -1,8 +1,5 @@
 import { Element, Text, Table, Tabs, Row, Portion, Heading } from 'fictoan-react';
 import React from 'react';
-
-import styles from '../styles/Team.module.css'
-
 import teamArray from '../constants/TeamArray';
 import OrgLogo from './OrgLogo';
 
@@ -11,7 +8,7 @@ import OrgLogo from './OrgLogo';
 // Content for tabs --------------------
 const tabOneContent = () => (
     <>
-        <Table bordersFor="rows" padding="tiny" isStriped isFullWidth className={styles.table}>
+        <Table bordersFor="rows" padding="tiny" isStriped isFullWidth className="table-fixed w-1/3">
             <thead>
                 <tr>
                     <th><Text margin="none" weight="600">Name</Text></th>
@@ -22,7 +19,7 @@ const tabOneContent = () => (
         </Table>
         {teamArray.coreGroup.map((item) =>
             <Element as="div" key={item.name}>
-                <Table bordersFor="rows" padding="tiny" isStriped isFullWidth className={styles.table}>
+                <Table bordersFor="rows" padding="tiny" isStriped isFullWidth className="table-fixed w-1/3">
                     <tbody>
                         <tr>
                             <td><Text margin="none">{item.name}</Text></td>
@@ -38,7 +35,7 @@ const tabOneContent = () => (
 
 const tabTwoContent = () => (
     <>
-        <Table bordersFor="rows" padding="tiny" isStriped isFullWidth className={styles.table}>
+        <Table bordersFor="rows" padding="tiny" isStriped isFullWidth className="table-fixed w-1/3">
             <thead>
                 <tr>
                     <th><Text margin="none" weight="600">Name</Text></th>
@@ -49,7 +46,7 @@ const tabTwoContent = () => (
         </Table>
         {teamArray.workingGroup.map((item) =>
             <Element as="div" key={item.name}>
-                <Table bordersFor="rows" padding="tiny" isStriped isFullWidth className={styles.table}>
+                <Table bordersFor="rows" padding="tiny" isStriped isFullWidth className="table-fixed w-1/3">
                     <tbody>
                         <tr>
                             <td><Text margin="none">{item.name}</Text></td>

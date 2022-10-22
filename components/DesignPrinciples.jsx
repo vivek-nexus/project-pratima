@@ -12,7 +12,7 @@ function DesignPrinciples() {
                 <Card
                     padding="micro"
                     shape="rounded"
-                    bgColour="sky-20"
+                    bgColour="blue-10"
                 >
                     <Row marginBottom="none">
                         <Portion desktopSpan="6">
@@ -32,7 +32,7 @@ function DesignPrinciples() {
                 <Card
                     padding="micro"
                     shape="rounded"
-                    bgColour="sky-20"
+                    bgColour="blue-10"
                 >
                     <Row marginBottom="none">
                         <Portion desktopSpan="6">
@@ -52,7 +52,7 @@ function DesignPrinciples() {
                 <Card
                     padding="micro"
                     shape="rounded"
-                    bgColour="sky-20"
+                    bgColour="blue-10"
                 >
                     <Row marginBottom="none">
                         <Portion desktopSpan="6">
@@ -72,7 +72,7 @@ function DesignPrinciples() {
                 <Card
                     padding="micro"
                     shape="rounded"
-                    bgColour="sky-20"
+                    bgColour="blue-10"
                 >
                     <Row marginBottom="none">
                         <Portion desktopSpan="6">

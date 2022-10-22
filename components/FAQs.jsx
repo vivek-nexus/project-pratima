@@ -1,4 +1,3 @@
-import styles from '../styles/Icons.module.css'
 import { Row, Portion, Text, Heading } from 'fictoan-react'
 import 'animate.css';
 

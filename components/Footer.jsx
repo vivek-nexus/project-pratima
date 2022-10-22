@@ -1,12 +1,11 @@
 import React from "react";
-import styles from '../styles/Footer.module.css';
 import { Button, Card, Row, Portion, Text, HRule, Heading, Element } from 'fictoan-react';
 import Link from "next/link";
 
 function Footer() {
     return (
         <>
-            <Row sidePadding="huge" gutters="small" bgColor="sky-10" padding="small" paddingBottom="micro" marginBottom="none">
+            <Row sidePadding="huge" gutters="small" bgColor="blue-10" padding="small" paddingBottom="micro" marginBottom="none">
                 <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="24" marginBottom="micro">
                     <Link href="/">
                         <Button shape="circular" bgColour="slate-40">
@@ -58,25 +57,19 @@ function Footer() {
                         </Link>
                     </a>
                 </Portion>
+                <Portion desktopSpan="12" tabletLandscapeSpan="12" tabletPortraitSpan="12" mobileSpan="12">
+                    <Text align="center" weight="600" marginBottom="nano">Brought to you by</Text>
+                    <a href="https://paymentscouncil.in/" target="_blank" rel="noreferrer">
+                        <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/pci.png`} className="w-auto mx-auto" />
+                    </a>
+                </Portion>
+                <Portion desktopSpan="12" tabletLandscapeSpan="12" tabletPortraitSpan="12" mobileSpan="12">
+                    <Text align="center" weight="600" marginBottom="nano">In association with</Text>
+                    <a href="https://www.iba.org.in/" target="_blank" rel="noreferrer">
+                        <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/iba.png`} className="w-auto mx-auto" />
+                    </a>
+                </Portion>
             </Row>
-
-            <Row sidePadding="huge" bgColor="sky-10" paddingBottom="micro" marginBottom="none">
-                <Portion>
-                    <Text align="center" weight="600" marginBottom="none">Brought to you by</Text>
-                </Portion>
-                <Portion desktopSpan="6" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
-                    <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/rbi.webp`} className={styles.mxauto} />
-                </Portion>
-                <Portion desktopSpan="6" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="12">
-                    <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/iamai.png`} className={styles.mxauto} />
-                </Portion>
-                <Portion desktopSpan="6" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="12">
-                    <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/pci.png`} className={styles.mxauto} />
-                </Portion>
-                <Portion desktopSpan="6" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="12">
-                    <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/iba.png`} className={styles.mxauto} />
-                </Portion>
-            </Row >
         </>
     )
 }
