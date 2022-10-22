@@ -14,6 +14,7 @@ import InfoPanelContents from '../components/InfoPanelContents'
 import Documentation from '../components/Documentation'
 import FAQs from '../components/FAQs'
 import InfoPanelStyled from "../styles/InfoPanel.styled";
+import BottomDrawerStyled from "../styles/BottomDrawer.styled";
 
 const MotionPortion = motion(Portion)
 
@@ -297,24 +298,27 @@ export default function Icons() {
                 </InfoPanelStyled>
 
                 {isMobile &&
-                    <Drawer
-                        isVisible={isBottomDrawerOpen}
-                        className="bg-blue-100/80 shadow-md z-50"
-                        onClose={() => { setIsBottomDrawerOpen(false) }}
-                    >
-                        <Element as="div" padding="micro">
-                            <InfoPanelContents
-                                iconsArray={iconsArray}
-                                clickedIcon={clickedIcon}
-                                strokeSize={strokeSize}
-                                cornerRadius={cornerRadius}
-                                edges={edges}
-                                size={size}
-                                setIsInfoPanelOpen={setIsInfoPanelOpen}
-                                setIsBottomDrawerOpen={setIsBottomDrawerOpen}
-                            />
-                        </Element>
-                    </Drawer>
+                    <BottomDrawerStyled>
+                        <Drawer
+                            isVisible={isBottomDrawerOpen}
+                            className="drawer"
+                            onClose={() => { setIsBottomDrawerOpen(false) }}
+                        >
+
+                            <Element as="div" padding="micro">
+                                <InfoPanelContents
+                                    iconsArray={iconsArray}
+                                    clickedIcon={clickedIcon}
+                                    strokeSize={strokeSize}
+                                    cornerRadius={cornerRadius}
+                                    edges={edges}
+                                    size={size}
+                                    setIsInfoPanelOpen={setIsInfoPanelOpen}
+                                    setIsBottomDrawerOpen={setIsBottomDrawerOpen}
+                                />
+                            </Element>
+                        </Drawer>
+                    </BottomDrawerStyled>
                 }
             </div>
         </Element >
