@@ -70,7 +70,6 @@ export default function Icons() {
                             >
                                 <Select
                                     onChange={function (e) {
-                                        console.log(e.target.value)
                                         if (e.target.value == "1px")
                                             setStrokeSize("s1")
                                         if (e.target.value == "1.5px")
@@ -106,7 +105,6 @@ export default function Icons() {
                             >
                                 <Select
                                     onChange={function (e) {
-                                        console.log(e.target.value)
                                         if (e.target.value == "0px")
                                             setCornerRadius("r0")
                                         if (e.target.value == "2px")
@@ -205,7 +203,6 @@ export default function Icons() {
                                         bgColor="slate-10"
                                         className="flex flex-col justify-between rounded-xl cursor-pointer hover:shadow-xl duration-300 h-max"
                                         onClick={() => {
-                                            console.log(item.fileName)
                                             setClickedIcon(item.fileName)
                                             isMobile ? setIsBottomDrawerOpen(true) : setIsInfoPanelOpen(true)
                                         }}
