@@ -11,14 +11,20 @@ function MyApp({ Component, pageProps }) {
 
 
   useEffect(() => {
-    setIsLoading(false)
+
+    let image = new Image();
+    image.src = `${process.env.LINK_PREFIX}/hero-1.jpg`
+    image.addEventListener("load", function () {
+      setIsLoading(false)
+    })
+
   }, [])
 
   return (
     <>
-      {false
-        ? <div>
-          <img src={`${process.env.LINK_PREFIX}/loader.svg`} height="124px" />
+      {isLoading
+        ? <div className="flex justify-center pl-12">
+          <img src={`${process.env.LINK_PREFIX}/loader.svg`} height="96px" />
         </div>
         :
         <div className="animate__animated animate__fadeIn">

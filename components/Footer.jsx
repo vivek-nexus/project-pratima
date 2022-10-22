@@ -57,6 +57,8 @@ function Footer() {
                         </Link>
                     </a>
                 </Portion>
+            </Row>
+            <Row sidePadding="huge" bgColor="blue-10" paddingBottom="micro" marginBottom="none">
                 <Portion desktopSpan="12" tabletLandscapeSpan="12" tabletPortraitSpan="12" mobileSpan="12">
                     <Text align="center" weight="600" marginBottom="nano">Brought to you by</Text>
                     <a href="https://paymentscouncil.in/" target="_blank" rel="noreferrer">

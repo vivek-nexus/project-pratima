@@ -56,32 +56,24 @@ function Home() {
 
       <Row sidePadding='huge'>
         <Portion desktopSpan='6' tabletLandscapeSpan='6' tabletPortraitSpan='6' mobileSpan='12'>
-          <Element as="div" className="w-max">
-            <Element as="img" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_send_money_24_s1_r3_soft.svg`} className="icon-huge" horizontallyCenterThis>
-            </Element>
-            <Text size="medium">Send money</Text>
+          <Element as="img" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_send_money_24_s1_r3_soft.svg`} className="icon-huge">
           </Element>
+          <Text size="medium">Send money</Text>
         </Portion>
         <Portion desktopSpan='6' tabletLandscapeSpan='6' tabletPortraitSpan='6' mobileSpan='12'>
-          <Element as="div" className="w-max">
-            <Element as="img" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_bank_transfer_24_s1_r3_soft.svg`} className="icon-huge" horizontallyCenterThis>
-            </Element>
-            <Text size="medium">Bank transfer</Text>
+          <Element as="img" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_bank_transfer_24_s1_r3_soft.svg`} className="icon-huge" >
           </Element>
+          <Text size="medium">Bank transfer</Text>
         </Portion>
         <Portion desktopSpan='6' tabletLandscapeSpan='6' tabletPortraitSpan='6' mobileSpan='12'>
-          <Element as="div" className="w-max">
-            <Element as="img" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_self_transfer_24_s1_r3_soft.svg`} className="icon-huge" horizontallyCenterThis>
-            </Element>
-            <Text size="medium">Self transfer</Text>
+          <Element as="img" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_self_transfer_24_s1_r3_soft.svg`} className="icon-huge">
           </Element>
+          <Text size="medium">Self transfer</Text>
         </Portion>
         <Portion desktopSpan='6' tabletLandscapeSpan='6' tabletPortraitSpan='6' mobileSpan='12'>
-          <Element as="div" className="w-max">
-            <Element as="img" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} className="icon-huge" horizontallyCenterThis>
-            </Element>
-            <Text size="medium">Transaction history</Text>
+          <Element as="img" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} className="icon-huge">
           </Element>
+          <Text size="medium">Transaction history</Text>
         </Portion>
       </Row>
       <Row sidePadding="huge">

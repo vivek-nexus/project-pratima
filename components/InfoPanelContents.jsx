@@ -34,7 +34,7 @@ function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, 
                                 </a>
                                 <HRule marginTop="micro" marginBottom="micro" />
 
-                                <Text as="h6" weight="600" marginBottom="none">Related terms / nomenclature</Text>
+                                <Text as="h6" weight="600" marginBottom="none">Other labels or nomenclature</Text>
                                 {item.nomenclature.map(terms =>
                                     <Text
                                         key={terms}
