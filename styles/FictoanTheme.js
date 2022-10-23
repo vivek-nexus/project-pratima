@@ -160,7 +160,7 @@ export const FictoanTheme = {
             height: "1px"
         },
         primary: {
-            bg: String(defaultColours.blue80),
+            bg: String(defaultColours.hue),
             height: "1px"
         },
         secondary: {

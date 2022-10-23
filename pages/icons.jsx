@@ -253,17 +253,17 @@ export default function Icons() {
                     </Row>
 
                     <Element as="div" ref={ref2}>
-                        <HRule id="documentation" />
+                        <HRule kind="primary" id="documentation" />
                         <Documentation />
                     </Element>
 
                     <Element as="div" ref={ref3}>
-                        <HRule id="faqs" />
+                        <HRule kind="primary" id="faqs" />
                         <FAQs />
                     </Element>
 
                     <Element as="div" ref={ref4}>
-                        <HRule id="figma-community" />
+                        <HRule kind="primary" id="figma-community" />
 
                         <Row marginBottom="small">
                             <Portion desktopSpan="10" mobileSpan="24">

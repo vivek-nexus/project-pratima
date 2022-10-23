@@ -84,11 +84,11 @@ function Home() {
         </Portion>
       </Row>
 
-      <HRule sideMargin="huge" id="design-principles" />
+      <HRule kind="primary" sideMargin="huge" id="design-principles" />
 
       <DesignPrinciples />
 
-      <HRule sideMargin="huge" id="team" />
+      <HRule kind="primary" sideMargin="huge" id="team" />
 
       <Team />
 

@@ -32,7 +32,7 @@ function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, 
                                     download>
                                     <Button kind="primary" shadow="hard" shape="rounded" marginTop="micro">Download SVG</Button>
                                 </a>
-                                <HRule marginTop="micro" marginBottom="micro" />
+                                <HRule kind="primary" marginTop="micro" marginBottom="micro" />
 
                                 <Text as="h6" weight="600" marginBottom="none">Other labels or nomenclature</Text>
                                 {item.nomenclature.map(terms =>
@@ -47,7 +47,7 @@ function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, 
                                     </Text>
                                 )}
 
-                                <HRule marginTop="micro" marginBottom="micro" />
+                                <HRule kind="primary" marginTop="micro" marginBottom="micro" />
 
                                 <Text as="h6" weight="600">Usage recommendations</Text>
                                 {item.notes.map(notes =>
