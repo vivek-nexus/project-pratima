@@ -13,10 +13,11 @@ function DesignPrinciples() {
                     padding="micro"
                     shape="rounded"
                     bgColour="blue-10"
+                    isFullHeight
                 >
                     <Row marginBottom="none">
                         <Portion desktopSpan="6">
-                            <Element as="img" src={`${process.env.LINK_PREFIX}/design-principles/recognisable.svg`} className="icon-huge">
+                            <Element as="img" src={`${process.env.LINK_PREFIX}/design-principles/recognisable.svg`} className="h-[64px] w-auto">
                             </Element>
                         </Portion>
                         <Portion desktopSpan="17">
@@ -33,10 +34,11 @@ function DesignPrinciples() {
                     padding="micro"
                     shape="rounded"
                     bgColour="blue-10"
+                    isFullHeight
                 >
                     <Row marginBottom="none">
                         <Portion desktopSpan="6">
-                            <Element as="img" src={`${process.env.LINK_PREFIX}/design-principles/accessible.svg`} className="icon-huge">
+                            <Element as="img" src={`${process.env.LINK_PREFIX}/design-principles/accessible.svg`} className="h-[64px] w-auto">
                             </Element>
                         </Portion>
                         <Portion desktopSpan="17">
@@ -53,10 +55,11 @@ function DesignPrinciples() {
                     padding="micro"
                     shape="rounded"
                     bgColour="blue-10"
+                    isFullHeight
                 >
                     <Row marginBottom="none">
                         <Portion desktopSpan="6">
-                            <Element as="img" src={`${process.env.LINK_PREFIX}/design-principles/scalable.svg`} className="icon-huge">
+                            <Element as="img" src={`${process.env.LINK_PREFIX}/design-principles/scalable.svg`} className="h-[56px] w-auto">
                             </Element>
                         </Portion>
                         <Portion desktopSpan="17">
@@ -73,10 +76,11 @@ function DesignPrinciples() {
                     padding="micro"
                     shape="rounded"
                     bgColour="blue-10"
+                    isFullHeight
                 >
                     <Row marginBottom="none">
                         <Portion desktopSpan="6">
-                            <Element as="img" src={`${process.env.LINK_PREFIX}/design-principles/flexible.svg`} className="icon-huge">
+                            <Element as="img" src={`${process.env.LINK_PREFIX}/design-principles/flexible.svg`} className="h-[68px] w-auto">
                             </Element>
                         </Portion>
                         <Portion desktopSpan="17">

@@ -42,7 +42,7 @@ function FAQs() {
                 <Heading as="h5">Set consistency</Heading>
                 <Text>Use the same set of icons across all 12 icons. Eg: Do not use 2px for Pay and 1.5px for Bank transfer.</Text>
                 <Element as="div" className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center items-start">
-                    <div>
+                    <div className="mb-8 sm:mb-0">
                         <div className="flex justify-center gap-4">
                             <div>
                                 <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/set-consistency-yes-1.svg`} alt="set-consistency-yes" />

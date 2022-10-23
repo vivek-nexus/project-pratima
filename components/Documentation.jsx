@@ -39,12 +39,12 @@ function Documentation() {
                 <Text>Specific keylines are present for certain shapes: circle, square, rectangle, orthogonals, and diagonals. These basic shapes help unify the icons and regulate their placement on the icon grid.</Text>
 
                 <Element as="div" className="grid grid-cols-2 sm:grid-cols-4 gap-4 justify-center items-start">
-                    <div>
+                    <div className="mb-8 sm:mb-0">
                         <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/key-shape-1.svg`} alt="key-shapes" />
                         <Text align="center" weight="600" marginBottom="none">SQUARE</Text>
                         <Text align="center" margin="none">H — 18px, W — 18px</Text>
                     </div>
-                    <div>
+                    <div className="mb-8 sm:mb-0">
                         <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/key-shape-2.svg`} alt="key-shapes" />
                         <Text align="center" weight="600" marginBottom="none">CIRCLE</Text>
                         <Text align="center" margin="none">Diameter — 20px</Text>
@@ -127,16 +127,16 @@ function Documentation() {
                 <Heading as="h5">Edge variations</Heading>
                 <Text marginBottom="none">Two options for edges — soft and sharp. As per your brand principles, please choose the relevant edges to pair with the corner radius. Example here highlights soft and sharp edges on 0px and 2px corner radius, with 1px stroke.</Text>
 
-                <Element as="div" className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
+                <Element as="div" className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="mb-8 sm:mb-0">
                         <div className="flex justify-center gap-4">
                             <div>
                                 <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-1.svg`} alt="edge-variations" />
-                                <Text align="center" marginTop="none">Soft</Text>
+                                <Text align="center" margin="none">Soft</Text>
                             </div>
                             <div>
                                 <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-2.svg`} alt="edge-variations" />
-                                <Text align="center" marginTop="none">Sharp</Text>
+                                <Text align="center" margin="none">Sharp</Text>
                             </div>
                         </div>
                         <div>
@@ -147,11 +147,11 @@ function Documentation() {
                         <div className="flex justify-center gap-4">
                             <div>
                                 <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-3.svg`} alt="edge-variations" />
-                                <Text align="center" marginTop="none">Soft</Text>
+                                <Text align="center" margin="none">Soft</Text>
                             </div>
                             <div>
                                 <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-4.svg`} alt="edge-variations" />
-                                <Text align="center" marginTop="none">Sharp</Text>
+                                <Text align="center" margin="none">Sharp</Text>
                             </div>
                         </div>
                         <div>
