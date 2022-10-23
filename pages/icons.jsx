@@ -280,12 +280,11 @@ export default function Icons() {
                             </Portion>
                         </Row>
                     </Element>
-
-
-
-
-
                 </Portion>
+
+
+                {/* /////////////////////////////////// */}
+                {/* RIGHT STICKY ON THIS PAGE CONTAINER */}
                 <Portion desktopSpan="4" tabletLandscapeSpan="4" tabletPortraitSpan="1" mobileSpan="1">
                     <Element
                         as="div"

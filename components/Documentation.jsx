@@ -38,7 +38,7 @@ function Documentation() {
                 <Heading as="h5">Key shapes</Heading>
                 <Text>Specific keylines are present for certain shapes: circle, square, rectangle, orthogonals, and diagonals. These basic shapes help unify the icons and regulate their placement on the icon grid.</Text>
 
-                <Element as="div" className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center items-start">
+                <Element as="div" className="grid grid-cols-2 sm:grid-cols-4 gap-4 justify-center items-start">
                     <div>
                         <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/key-shape-1.svg`} alt="key-shapes" />
                         <Text align="center" weight="600" marginBottom="none">SQUARE</Text>
@@ -130,26 +130,26 @@ function Documentation() {
                 <Element as="div" className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="flex gap-4 items-top justify-center">
                         <div>
-                            <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s1_r0_soft/ic_view_transaction_history_24_s1_r0_soft.svg`} alt="edge-variations" />
+                            <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-1.svg`} alt="edge-variations" />
                             <Text align="center" weight="600" margin="none">SOFT</Text>
-                            <Text align="center" margin="none">0px</Text>
+                            <Text align="center" margin="none">0px corner radius</Text>
                         </div>
                         <div>
-                            <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s1_r0_sharp/ic_view_transaction_history_24_s1_r0_sharp.svg`} alt="edge-variations" />
+                            <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-2.svg`} alt="edge-variations" />
                             <Text align="center" weight="600" margin="none">SHARP</Text>
-                            <Text align="center" margin="none">0px</Text>
+                            <Text align="center" margin="none">0px corner radius</Text>
                         </div>
                     </div>
                     <div className="flex gap-4 items-top justify-center -mt-1">
                         <div>
-                            <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s1_r2_soft/ic_view_transaction_history_24_s1_r2_soft.svg`} alt="edge-variations" />
+                            <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-3.svg`} alt="edge-variations" />
                             <Text align="center" weight="600" margin="none">SOFT</Text>
-                            <Text align="center" margin="none">2px</Text>
+                            <Text align="center" margin="none">2px corner radius</Text>
                         </div>
                         <div>
-                            <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s1_r2_sharp/ic_view_transaction_history_24_s1_r2_sharp.svg`} alt="edge-variations" />
+                            <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-4.svg`} alt="edge-variations" />
                             <Text align="center" weight="600" margin="none">SHARP</Text>
-                            <Text align="center" margin="none">2px</Text>
+                            <Text align="center" margin="none">2px corner radius</Text>
                         </div>
                     </div>
 
@@ -159,20 +159,45 @@ function Documentation() {
 
             <Element as="div" marginBottom="small">
                 <Heading as="h5">Colour</Heading>
-                <Text marginBottom="none">Pratima provides the flexibility of choosing your brand colours and style for each icon. Here are some examples of how colours can be applied on the icon. Note: You can use any colour palette that your brand supports, as long as it meets the accessibility guidelines.</Text>
+                <Text marginBottom="none">Pratima provides the flexibility of choosing your brand colours and style for each icon. Here are some examples of how colours can be applied on the icon. You can use any colour palette that your brand supports, as long as it meets the accessibility guidelines.</Text>
 
-                <div className="w-3/4 mx-auto">
-                    <img src={`${process.env.LINK_PREFIX}/docs-images/icon-colour.png`} alt="icon-colour" />
-                </div>
+                <Element as="div" className="grid grid-cols-2 sm:grid-cols-5 gap-4 justify-center items-start">
+                    <div>
+                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/colours-1.svg`} alt="colours" />
+                    </div>
+                    <div>
+                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/colours-2.svg`} alt="colours" />
+                    </div>
+                    <div>
+                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/colours-3.svg`} alt="colours" />
+                    </div>
+                    <div>
+                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/colours-4.svg`} alt="colours" />
+                    </div>
+                    <div>
+                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/colours-5.svg`} alt="colours" />
+                    </div>
+                </Element>
             </Element>
 
             <Element as="div" marginBottom="small">
                 <Heading as="h5">Background shapes</Heading>
-                <Text marginBottom="none">Pratima provides the flexibility of choosing your brand colours and background shapes for each icon.  Here are some examples of how background shape (Sharp Square, rounded Square, squircle, circle)  can be applied on the icon. Note: You can use any colour palette that your brand supports, as long as it meets the accessibility guidelines.</Text>
+                <Text>Pratima provides the flexibility of choosing your brand colours and background shapes for each icon.  Here are some examples of how background shape (Sharp Square, rounded Square, squircle, circle)  can be applied on the icon.</Text>
 
-                <div className="w-2/3 mx-auto">
-                    <img src={`${process.env.LINK_PREFIX}/docs-images/background-shapes.png`} alt="background-shapes" />
-                </div>
+                <Element as="div" className="grid grid-cols-2 sm:grid-cols-4 gap-4 justify-center items-start">
+                    <div>
+                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/background-shapes-1.svg`} alt="colours" />
+                    </div>
+                    <div>
+                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/background-shapes-2.svg`} alt="colours" />
+                    </div>
+                    <div>
+                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/background-shapes-3.svg`} alt="colours" />
+                    </div>
+                    <div>
+                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/background-shapes-4.svg`} alt="colours" />
+                    </div>
+                </Element>
             </Element>
         </>
     )
