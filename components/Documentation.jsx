@@ -128,28 +128,34 @@ function Documentation() {
                 <Text marginBottom="none">Two options for edges — soft and sharp. As per your brand principles, please choose the relevant edges to pair with the corner radius. Example here highlights soft and sharp edges on 0px and 2px corner radius, with 1px stroke.</Text>
 
                 <Element as="div" className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="flex gap-4 items-top justify-center">
-                        <div>
-                            <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-1.svg`} alt="edge-variations" />
-                            <Text align="center" weight="600" margin="none">SOFT</Text>
-                            <Text align="center" margin="none">0px corner radius</Text>
+                    <div>
+                        <div className="flex justify-center gap-4">
+                            <div>
+                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-1.svg`} alt="edge-variations" />
+                                <Text align="center" marginTop="none">Soft</Text>
+                            </div>
+                            <div>
+                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-2.svg`} alt="edge-variations" />
+                                <Text align="center" marginTop="none">Sharp</Text>
+                            </div>
                         </div>
                         <div>
-                            <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-2.svg`} alt="edge-variations" />
-                            <Text align="center" weight="600" margin="none">SHARP</Text>
-                            <Text align="center" margin="none">0px corner radius</Text>
+                            <Text align="center" weight="600" margin="none">1px corner radius</Text>
                         </div>
                     </div>
-                    <div className="flex gap-4 items-top justify-center -mt-1">
-                        <div>
-                            <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-3.svg`} alt="edge-variations" />
-                            <Text align="center" weight="600" margin="none">SOFT</Text>
-                            <Text align="center" margin="none">2px corner radius</Text>
+                    <div>
+                        <div className="flex justify-center gap-4">
+                            <div>
+                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-3.svg`} alt="edge-variations" />
+                                <Text align="center" marginTop="none">Soft</Text>
+                            </div>
+                            <div>
+                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-4.svg`} alt="edge-variations" />
+                                <Text align="center" marginTop="none">Sharp</Text>
+                            </div>
                         </div>
                         <div>
-                            <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-4.svg`} alt="edge-variations" />
-                            <Text align="center" weight="600" margin="none">SHARP</Text>
-                            <Text align="center" margin="none">2px corner radius</Text>
+                            <Text align="center" weight="600" margin="none">2px corner radius</Text>
                         </div>
                     </div>
 
