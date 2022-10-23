@@ -11,7 +11,7 @@ import DesignPrinciples from '../components/DesignPrinciples';
 
 function Home() {
   return (
-    <div>
+    <Element as="div">
       <Head>
         <title>Project Pratima</title>
       </Head>
@@ -94,7 +94,7 @@ function Home() {
 
       <Footer />
 
-    </div>
+    </Element>
   )
 }
 

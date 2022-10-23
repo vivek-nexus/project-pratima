@@ -3,10 +3,10 @@ import 'animate.css';
 
 function FAQs() {
     return (
-        <Row sidePadding="huge" gutters="huge" marginBottom="small">
-            <Portion>
+        <Row gutters="huge" marginBottom="small">
+            < Portion >
                 <Heading as="h4">FAQs</Heading>
-            </Portion>
+            </Portion >
             <Portion>
                 <Heading as="h5">Base grid</Heading>
                 <Text>Icon content should remain inside of the live area.</Text>
@@ -37,7 +37,7 @@ function FAQs() {
                 <Text>Use a white cross on a red circle.</Text>
                 <img style={{ width: "75%", margin: "auto" }} src={`${process.env.LINK_PREFIX}/docs-images/failure-dd.png`} alt="failure" />
             </Portion>
-        </Row>
+        </Row >
     )
 }
 

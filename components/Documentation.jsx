@@ -4,7 +4,7 @@ import 'animate.css';
 
 function Documentation() {
     return (
-        <Row sidePadding="huge" marginBottom="small">
+        <Row marginBottom="small">
             <Portion isFullWidth>
                 <Heading as="h4" marginBottom="micro">Documentation</Heading>
             </Portion>
