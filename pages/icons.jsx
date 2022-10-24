@@ -51,10 +51,10 @@ export default function Icons() {
 
             <Nav />
             <Row>
-                <Portion desktopSpan="4" tabletLandscapeSpan="4" tabletPortraitSpan="1" mobileSpan="1">
+                <Portion desktopSpan="4" tabletLandscapeSpan="2" tabletPortraitSpan="1" mobileSpan="1">
 
                 </Portion>
-                <Portion desktopSpan="16" tabletLandscapeSpan="16" tabletPortraitSpan="22" mobileSpan="22">
+                <Portion desktopSpan="16" tabletLandscapeSpan="20" tabletPortraitSpan="22" mobileSpan="22">
                     <Row marginBottom="none" marginTop="small">
                         <Portion>
                             <Heading as="h4" marginBottom="tiny">Icons</Heading>
@@ -285,11 +285,11 @@ export default function Icons() {
 
                 {/* /////////////////////////////////// */}
                 {/* RIGHT STICKY ON THIS PAGE CONTAINER */}
-                <Portion desktopSpan="4" tabletLandscapeSpan="4" tabletPortraitSpan="1" mobileSpan="1">
+                <Portion desktopSpan="4" tabletLandscapeSpan="2" tabletPortraitSpan="1" mobileSpan="1">
                     <Element
                         as="div"
                         className="sticky top-6 bg-gray-100"
-                        hideOnTabletPortrait hideOnMobile
+                        showOnlyOnDesktop
                         marginTop="small"
                         marginRight="micro"
                         padding="micro"
