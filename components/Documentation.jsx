@@ -36,7 +36,7 @@ function Documentation() {
 
             <Element as="div" marginBottom="small">
                 <Heading as="h5">Key shapes</Heading>
-                <Text>Specific keylines are present for certain shapes: circle, square, rectangle, orthogonals, and diagonals. These basic shapes help unify the icons and regulate their placement on the icon grid.</Text>
+                <Text>Specific keylines are present for certain shapes — circle, square, rectangle, orthogonals, and diagonals. These basic shapes help unify the icons and regulate their placement on the icon grid.</Text>
 
                 <Element as="div" className="grid grid-cols-2 sm:grid-cols-4 gap-4 justify-center items-start">
                     <div className="mb-8 sm:mb-0">
@@ -64,7 +64,7 @@ function Documentation() {
 
             <Element as="div" marginBottom="small">
                 <Heading as="h5">Sizes</Heading>
-                <Text marginBottom="none">Icons are displayed as 24 x 24 px and can extend upto 32 x 32 px. All icons are available at 24 x 24 SVGs.</Text>
+                <Text marginBottom="none">Icons are displayed as 24 x 24 px and can scale upto 32 x 32 px. All icons are available at 24 x 24 SVGs.</Text>
 
                 <Element as="div" className="flex items-end justify-center">
                     <div>
@@ -84,7 +84,7 @@ function Documentation() {
 
             <Element as="div" marginBottom="small">
                 <Heading as="h5">Strokes</Heading>
-                <Text marginBottom="none">Pratima icons use a consistent stroke width of either 2px or 1.5 px or 1px, including curves, angles, and both interior and exterior strokes. Based on your brand guidelines, choose and maintain a consistent stroke for all icons.</Text>
+                <Text marginBottom="none">Pratima icons use a consistent stroke width of either 2px or 1.5 px or 1px, including curves, angles and both interior and exterior strokes. Based on your brand guidelines, choose and maintain a consistent stroke for all icons.</Text>
 
                 <Element as="div" className="flex gap-4 items-center justify-center">
                     <div>
@@ -188,7 +188,7 @@ function Documentation() {
 
             <Element as="div" marginBottom="small">
                 <Heading as="h5">Background shapes</Heading>
-                <Text>Pratima provides the flexibility of choosing your brand colours and background shapes for each icon.  Here are some examples of how background shape (Sharp Square, rounded Square, squircle, circle)  can be applied on the icon.</Text>
+                <Text>Pratima provides the flexibility of choosing your brand colours and background shapes for each icon.  Here are some examples of how background shape (sharp square, rounded square, squircle, circle)  can be applied on the icon.</Text>
 
                 <Element as="div" className="grid grid-cols-2 sm:grid-cols-4 gap-4 justify-center items-start">
                     <div>

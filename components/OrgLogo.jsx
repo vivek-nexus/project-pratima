@@ -6,6 +6,7 @@ function OrgLogo({ org, format }) {
             as="img"
             src={`${process.env.LINK_PREFIX}/org-logos/${org}.${format}`}
             height="36px"
+            alt={`${org}-logo`}
             isFullWidth
         />
     )

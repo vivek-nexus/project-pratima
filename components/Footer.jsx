@@ -62,13 +62,13 @@ function Footer() {
                 <Portion desktopSpan="12" tabletLandscapeSpan="12" tabletPortraitSpan="12" mobileSpan="12">
                     <Text align="center" weight="600" marginBottom="nano">Brought to you by</Text>
                     <a href="https://paymentscouncil.in/" target="_blank" rel="noreferrer">
-                        <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/pci.png`} className="w-auto mx-auto" />
+                        <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/pci.png`} alt="pci-logo" className="w-auto mx-auto" />
                     </a>
                 </Portion>
                 <Portion desktopSpan="12" tabletLandscapeSpan="12" tabletPortraitSpan="12" mobileSpan="12">
                     <Text align="center" weight="600" marginBottom="nano">In association with</Text>
                     <a href="https://www.iba.org.in/" target="_blank" rel="noreferrer">
-                        <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/iba.png`} className="w-auto mx-auto" />
+                        <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/iba.png`} alt="iba-logo" className="w-auto mx-auto" />
                     </a>
                 </Portion>
             </Row>

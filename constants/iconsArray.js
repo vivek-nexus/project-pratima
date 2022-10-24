@@ -29,13 +29,13 @@ const iconsArray = [
         "fileName": "ic_self_transfer",
         "iconName": "Pay to self",
         "nomenclature": ["Pay to self", "Self pay", "Pay yourself", "Self transfer"],
-        "notes": ["Self transfer could mean either transfering between two bank accounts that the person holds or transfering from a wallet to their bank account. Hence we have kept the icon ambiguous enough yet conveying that it only involves a single person — self."]
+        "notes": ["Self transfer could mean either transfering between two bank accounts that the person holds or transfering from a wallet to their bank account. Hence we have kept the icon ambiguous enough, yet conveying that it only involves a single person — self."]
     },
     {
         "fileName": "ic_to_contact",
         "iconName": "Pay to contact",
         "nomenclature": ["Pay to contact", "Pay to mobile number", "Pay to mobile no.", "Pay to Mobile #", "Pay contact"],
-        "notes": ["A phone book is a strong metaphor for contacts, pairing that with an upward arrow in this context would mean 'send money to contact.", "Having a phone symbol or just a contact book without the context of the verb would confuse the user on the action associated with it."]
+        "notes": ["A phone book is a strong metaphor for contacts, pairing that with an upward arrow in this context would mean send money to contact.", "Having a phone symbol or just a contact book without the context of the verb would confuse the user on the action associated with it."]
     },
     {
         "fileName": "ic_qr",
@@ -47,7 +47,7 @@ const iconsArray = [
         "fileName": "ic_view_transaction_history",
         "iconName": "Transaction history",
         "nomenclature": ["Past transactions", "View transactions", "Transactions", "Passbook"],
-        "notes": ["The term passbook is always associated with a booklet that encompasses all the transactions conducted through an account. In this case, adding the binder rings reinforced the identity of the book symbol and addition of the rupee symbol set the context of money/ transaction."]
+        "notes": ["The term passbook is always associated with a booklet that encompasses all the transactions conducted through an account. In this case, adding the binder rings reinforced the identity of the book symbol and addition of the rupee symbol sets the context of money/ transaction."]
     },
     {
         "fileName": "ic_check_balance",
@@ -55,7 +55,7 @@ const iconsArray = [
         "nomenclature": ["Check balance", "Bank balance", "Check bank balance",
             "Balance check", "Balance"],
         "notes": ["Magnifying glass brought out thoughts such as search for money.",
-            "A question mark indicates \"asking for something\" and rupee reinforces the same thought as \"asking for balance\"."]
+            "Hence, a question mark indicates \"asking for something\" and rupee reinforces the same thought as \"asking for balance\"."]
     },
     {
         "fileName": "ic_success",
