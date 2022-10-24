@@ -17,47 +17,47 @@ function Footer() {
                     </Portion>
                     <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
                         <Heading as="h6">ABOUT</Heading>
-                        <a>
-                            <Link href="/">
-                                <Text weight="400">Overview</Text>
-                            </Link>
-                        </a>
-                        <a>
-                            <Link href="/#design-principles">
-                                <Text weight="400">Design principles</Text>
-                            </Link>
-                        </a>
-                        <a>
-                            <Link href="/#team">
-                                <Text weight="400">Team</Text>
-                            </Link>
-                        </a>
+
+                        <Link href="/">
+                            <Text className="cursor-pointer" weight="400">Overview</Text>
+                        </Link>
+
+
+                        <Link href="/#design-principles">
+                            <Text className="cursor-pointer" weight="400">Design principles</Text>
+                        </Link>
+
+
+                        <Link href="/#team">
+                            <Text className="cursor-pointer" weight="400">Team</Text>
+                        </Link>
+
                     </Portion>
                     <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
                         <Heading as="h6">RESOURCES</Heading>
-                        <a>
-                            <Link href="/icons">
-                                <Text weight="400">Icons</Text>
-                            </Link>
-                        </a>
-                        <a>
-                            <Link href="/icons#documentation">
-                                <Text weight="400">Documentation</Text>
-                            </Link>
-                        </a>
-                        <a>
-                            <Link href="/icons#figma-community">
-                                <Text weight="400">Figma community</Text>
-                            </Link>
-                        </a>
+
+                        <Link href="/icons">
+                            <Text className="cursor-pointer" weight="400">Icons</Text>
+                        </Link>
+
+
+                        <Link href="/icons#documentation">
+                            <Text className="cursor-pointer" weight="400">Documentation</Text>
+                        </Link>
+
+
+                        <Link href="/icons#figma-community">
+                            <Text className="cursor-pointer" weight="400">Figma community</Text>
+                        </Link>
+
                     </Portion>
                     <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
                         <Heading as="h6">HELP</Heading>
-                        <a>
-                            <Link href="/icons#faqs">
-                                <Text weight="400">FAQs</Text>
-                            </Link>
-                        </a>
+
+                        <Link href="/icons#faqs">
+                            <Text className="cursor-pointer" weight="400">FAQs</Text>
+                        </Link>
+
                     </Portion>
                 </Row>
                 <Row sidePadding="huge" paddingBottom="micro" marginBottom="none">

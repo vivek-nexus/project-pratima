@@ -238,7 +238,7 @@ export default function Icons() {
                                                     >
                                                         {item.iconName}
                                                     </Text>
-                                                    <img className="w-auto h-[32px]" src={`${process.env.LINK_PREFIX}/chevron_right.svg`} />
+                                                    <img className="w-auto h-[32px]" src={`${process.env.LINK_PREFIX}/chevron_right.svg`} alt="chevron-right-icon" />
                                                 </Card>
                                             </Card>
                                         </MotionPortion>)}
