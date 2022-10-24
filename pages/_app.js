@@ -11,7 +11,12 @@ function MyApp({ Component, pageProps }) {
 
 
   useEffect(() => {
-    setIsLoading(false)
+
+    let image = new Image();
+    image.src = `${process.env.LINK_PREFIX}/hero-3.svg`
+    image.addEventListener("load", function () {
+      setIsLoading(false)
+    })
   }, [])
 
   return (
