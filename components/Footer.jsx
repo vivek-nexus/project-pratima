@@ -10,8 +10,8 @@ function Footer() {
                 <Row gutters="small" paddingTop="small" paddingBottom="micro" marginBottom="none">
                     <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="24" marginBottom="micro">
                         <Link href="/">
-                            <Button shape="circular" bgColour="slate-40">
-                                <Text size="large">PP</Text>
+                            <Button kind="primary" shape="circular" bgColour="slate-40">
+                                <Text size="large">P</Text>
                             </Button>
                         </Link>
                     </Portion>

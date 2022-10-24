@@ -213,7 +213,7 @@ export default function Icons() {
                                         >
                                             <Card
                                                 isFullHeight
-                                                bgColor="slate-10"
+                                                bgColor="blue-10"
                                                 className="flex flex-col justify-between rounded-xl cursor-pointer hover:shadow-xl duration-300 h-max"
                                                 onClick={() => {
                                                     setClickedIcon(item.fileName)
@@ -288,13 +288,14 @@ export default function Icons() {
                 <Portion desktopSpan="4" tabletLandscapeSpan="2" tabletPortraitSpan="1" mobileSpan="1">
                     <Element
                         as="div"
-                        className="sticky top-6 bg-gray-100"
+                        className="sticky top-6"
                         showOnlyOnDesktop
                         marginTop="small"
                         marginRight="micro"
                         padding="micro"
                         shape="rounded"
                         shadow="mild"
+                        bgColor="blue-10"
                     >
                         <Heading as="h6" weight="400" marginTop="nano" marginBottom="nano">On this page</Heading>
                         <HRule kind="secondary" marginTop="nano" marginBottom="nano" />

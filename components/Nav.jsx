@@ -1,17 +1,18 @@
 import { Button, Card, Row, Portion, Text, HRule, Heading, Element } from 'fictoan-react';
 import Link from 'next/link'
 import React from 'react';
+import { customColours } from "../styles/FictoanTheme";
 
 function Nav() {
   return (
-    <Row marginBottom="none" className="bg-white/70" shadow="mild"
+    <Row marginBottom="none" className="bg-white/50" shadow="mild"
       style={{ backdropFilter: "blur(16px)" }}>
       <Portion desktopSpan="4" tabletLandscapeSpan="2" tabletPortraitSpan="1" mobileSpan="1"></Portion>
       <Portion desktopSpan="16" tabletLandscapeSpan="20" tabletPortraitSpan="22" mobileSpan="22">
         <Row marginBottom="none">
           <Portion desktopSpan='20' tabletLandscapeSpan='20' tabletPortraitSpan='20' mobileSpan='8' verticallyCenterItems>
             <Link href="/">
-              <Button shape="circular" size="small" bgColour="slate-40">PP</Button>
+              <Button kind="primary" shape="circular" size="small">P</Button>
             </Link>
           </Portion>
 

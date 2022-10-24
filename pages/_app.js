@@ -11,13 +11,7 @@ function MyApp({ Component, pageProps }) {
 
 
   useEffect(() => {
-
-    let image = new Image();
-    image.src = `${process.env.LINK_PREFIX}/hero-1.jpg`
-    image.addEventListener("load", function () {
-      setIsLoading(false)
-    })
-
+    setIsLoading(false)
   }, [])
 
   return (

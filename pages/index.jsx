@@ -16,15 +16,15 @@ function Home() {
         <title>Project Pratima</title>
       </Head>
 
-      <Row>
+      <Row marginBottom="none">
         <Portion>
-          <Element as="div" className="bg-gray-300 bg-left-center"
+          <Element as="div" className="bg-gray-300"
             style={{
-              backgroundImage: `url(${process.env.LINK_PREFIX}/hero-1.jpg)`,
+              backgroundImage: `url(${process.env.LINK_PREFIX}/hero-3.svg)`,
               backgroundSize: "100% auto",
             }}>
             <Nav />
-            <Row>
+            <Row marginBottom="none">
               <Portion desktopSpan="4" tabletLandscapeSpan="2" tabletPortraitSpan="1" mobileSpan="1"></Portion>
               <Portion desktopSpan="16" tabletLandscapeSpan="20" tabletPortraitSpan="22" mobileSpan="22">
                 <Row>
@@ -32,12 +32,12 @@ function Home() {
                     marginTop="medium"
                     marginBottom="medium"
                     padding="small"
-                    desktopSpan="12"
-                    tabletLandscapeSpan="12"
+                    desktopSpan="14"
+                    tabletLandscapeSpan="14"
                     tabletPortraitSpan="18"
                     mobileSpan="24"
                     style={{ backdropFilter: "blur(12px)" }}
-                    className={"bg-white/70 rounded-lg m animate__animated animate__zoomIn"}
+                    className={"bg-white/60 rounded-lg m animate__animated animate__zoomIn"}
                   >
                     <Heading as="h4" marginBottom="micro">Project Pratima</Heading>
                     <Heading as="h6">An icon library for all financial institutions in India.</Heading>
@@ -54,7 +54,7 @@ function Home() {
         </Portion>
       </Row>
 
-      <Row id="icons">
+      <Row id="icons" paddingTop="small">
         <Portion desktopSpan="4" tabletLandscapeSpan="2" tabletPortraitSpan="1" mobileSpan="1"></Portion>
 
         <Portion desktopSpan="16" tabletLandscapeSpan="20" tabletPortraitSpan="22" mobileSpan="22">
@@ -84,6 +84,13 @@ function Home() {
           <Link href="icons">
             <Button kind="primary" shadow="hard">Go to icon library</Button>
           </Link>
+        </Portion>
+        <Portion desktopSpan="4" tabletLandscapeSpan="2" tabletPortraitSpan="1" mobileSpan="1"></Portion>
+      </Row>
+
+      <Row>
+        <Portion desktopSpan="4" tabletLandscapeSpan="2" tabletPortraitSpan="1" mobileSpan="1"></Portion>
+        <Portion desktopSpan="16" tabletLandscapeSpan="20" tabletPortraitSpan="22" mobileSpan="22">
           <HRule kind="primary" id="design-principles" />
 
           <DesignPrinciples />
@@ -92,9 +99,6 @@ function Home() {
 
           <Team />
         </Portion>
-
-
-
         <Portion desktopSpan="4" tabletLandscapeSpan="2" tabletPortraitSpan="1" mobileSpan="1"></Portion>
       </Row>
 
@@ -104,7 +108,7 @@ function Home() {
 
 
 
-    </Element>
+    </Element >
   )
 }
 
