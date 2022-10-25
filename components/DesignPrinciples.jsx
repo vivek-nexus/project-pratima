@@ -12,9 +12,10 @@ function DesignPrinciples() {
             <Portion desktopSpan="12" tabletLandscapeSpan="12" tabletPortraitSpan="24" mobileSpan="24" >
                 <Card
                     padding="micro"
-                    shape="rounded"
+                    className="rounded-xl"
                     bgColour="blue-10"
                     isFullHeight
+
                 >
                     <Element as="img" marginBottom="micro" src={`${process.env.LINK_PREFIX}/design-principles/recognisable.svg`} className="h-[60px] w-auto" alt="recognisable">
                     </Element>
@@ -27,7 +28,7 @@ function DesignPrinciples() {
             <Portion desktopSpan="12" tabletLandscapeSpan="12" tabletPortraitSpan="24" mobileSpan="24">
                 <Card
                     padding="micro"
-                    shape="rounded"
+                    className="rounded-xl"
                     bgColour="blue-10"
                     isFullHeight
                 >
@@ -42,7 +43,7 @@ function DesignPrinciples() {
             <Portion desktopSpan="12" tabletLandscapeSpan="12" tabletPortraitSpan="24" mobileSpan="24">
                 <Card
                     padding="micro"
-                    shape="rounded"
+                    className="rounded-xl"
                     bgColour="blue-10"
                     isFullHeight
                 >
@@ -57,7 +58,7 @@ function DesignPrinciples() {
             <Portion desktopSpan="12" tabletLandscapeSpan="12" tabletPortraitSpan="24" mobileSpan="24">
                 <Card
                     padding="micro"
-                    shape="rounded"
+                    className="rounded-xl"
                     bgColour="blue-10"
                     isFullHeight
                 >

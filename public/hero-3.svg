@@ -1,6 +1,6 @@
-<svg width="431" height="256" viewBox="0 0 431 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="431" height="258" viewBox="0 0 431 258" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_406_3391)">
-<rect width="431" height="256" fill="#1C283D"/>
+<rect width="431" height="258" fill="#1C283D"/>
 <path d="M181.379 193.207L197.499 165.287H229.737L245.857 193.207L229.737 221.126H197.499L181.379 193.207Z" fill="#0A2047"/>
 <path d="M181.379 257.684L197.499 229.765H229.737L245.857 257.684L229.737 285.604H197.499L181.379 257.684Z" fill="#0A2047"/>
 <path d="M127.648 225.445L143.768 197.526H176.006L192.126 225.445L176.006 253.365H143.768L127.648 225.445Z" fill="#0A2047"/>
@@ -97,7 +97,7 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect3_dropShadow_406_3391" result="shape"/>
 </filter>
 <clipPath id="clip0_406_3391">
-<rect width="431" height="256" fill="white"/>
+<rect width="431" height="258" fill="white"/>
 </clipPath>
 </defs>
 </svg>

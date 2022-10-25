@@ -18,10 +18,9 @@ function Home() {
 
       <Row marginBottom="none">
         <Portion>
-          <Element as="div" className="bg-gray-300"
+          <Element as="div" className="bg-gray-300 sm:bg-cover"
             style={{
               backgroundImage: `url(${process.env.LINK_PREFIX}/hero-3.svg)`,
-              backgroundSize: "100% auto",
             }}>
             <Nav />
             <Row marginBottom="none">
@@ -32,12 +31,12 @@ function Home() {
                     marginTop="medium"
                     marginBottom="medium"
                     padding="small"
-                    desktopSpan="14"
-                    tabletLandscapeSpan="14"
+                    desktopSpan="12"
+                    tabletLandscapeSpan="12"
                     tabletPortraitSpan="18"
                     mobileSpan="24"
                     style={{ backdropFilter: "blur(12px)" }}
-                    className={"bg-white/60 rounded-lg m animate__animated animate__zoomIn"}
+                    className={"bg-white/60 bg-center bg-cover bg-no-repeat rounded-lg m animate__animated animate__zoomIn"}
                   >
                     <Heading as="h4" marginBottom="micro">Project Pratima</Heading>
                     <Heading as="h6">An icon library for all financial institutions in India.</Heading>
@@ -54,7 +53,7 @@ function Home() {
         </Portion>
       </Row>
 
-      <Row id="icons" paddingTop="small">
+      <Row id="icons" paddingTop="small" marginBottom="none">
         <Portion desktopSpan="4" tabletLandscapeSpan="2" tabletPortraitSpan="1" mobileSpan="1"></Portion>
 
         <Portion desktopSpan="16" tabletLandscapeSpan="20" tabletPortraitSpan="22" mobileSpan="22">
