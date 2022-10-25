@@ -1,5 +1,4 @@
 import { Row, Portion, Text, Heading, Element } from "fictoan-react"
-import "animate.css";
 
 
 function Documentation() {

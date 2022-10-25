@@ -1,5 +1,4 @@
 import { Text, Element, Button, HRule } from "fictoan-react"
-import "animate.css";
 import { isMobile } from "react-device-detect";
 
 
