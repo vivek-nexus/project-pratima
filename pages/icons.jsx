@@ -70,15 +70,16 @@ export default function Icons() {
                             className="sticky top-0 z-10 bg-white/80"
                             style={{ backdropFilter: "blur(8px)" }}
                             shape="rounded"
-                            padding="nano"
+                            paddingBottom="nano"
                         >
-                            <Row padding="nano" marginBottom="none">
+                            <Row paddingBottom="nano" gutters="medium" marginBottom="none">
                                 <AnimatePresence>
                                     <MotionPortion
                                         layout
                                         desktopSpan={isInfoPanelOpen ? "12" : "6"}
                                         tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
                                         mobileSpan={false ? "24" : "12"}
+                                        paddingLeft="nano"
                                     >
                                         <Select
                                             onChange={function (e) {
@@ -114,6 +115,7 @@ export default function Icons() {
                                         desktopSpan={isInfoPanelOpen ? "12" : "6"}
                                         tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
                                         mobileSpan={false ? "24" : "12"}
+                                        paddingLeft="nano"
                                     >
                                         <Select
                                             onChange={function (e) {
@@ -149,6 +151,7 @@ export default function Icons() {
                                         desktopSpan={isInfoPanelOpen ? "12" : "6"}
                                         tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
                                         mobileSpan={false ? "24" : "12"}
+                                        paddingLeft="nano"
                                     >
                                         <Select
                                             onChange={function (e) {
@@ -175,6 +178,7 @@ export default function Icons() {
                                         desktopSpan={isInfoPanelOpen ? "12" : "6"}
                                         tabletLandscapeSpan={isInfoPanelOpen ? "10" : "6"} tabletPortraitSpan={isInfoPanelOpen ? "12" : "6"}
                                         mobileSpan={false ? "24" : "12"}
+                                        paddingLeft="nano"
                                     >
                                         <Select
                                             id="size"

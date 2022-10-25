@@ -87,7 +87,7 @@ function FAQs() {
                         <Text align="center" weight="600" size="huge" margin="none">👎</Text>
                     </div>
                     <div>
-                        <img className="h-32 shadow-sm" src={`${process.env.LINK_PREFIX}/docs-images/faqs/themes-no-2.svg`} alt="themes-no" />
+                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/themes-no-2.svg`} alt="themes-no" />
                         <Text align="center" weight="600" size="huge" margin="none">👎</Text>
                     </div>
                 </Element>
