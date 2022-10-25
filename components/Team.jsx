@@ -1,7 +1,7 @@
-import { Element, Text, Table, Tabs, Row, Portion, Heading } from 'fictoan-react';
-import React from 'react';
-import teamArray from '../constants/TeamArray';
-import OrgLogo from './OrgLogo';
+import { Element, Text, Table, Tabs, Row, Portion, Heading } from "fictoan-react";
+import React from "react";
+import teamArray from "../constants/TeamArray";
+import OrgLogo from "./OrgLogo";
 
 
 

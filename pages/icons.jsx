@@ -1,19 +1,18 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import { useState, useEffect } from 'react'
-import { Row, Portion, Select, Text, InfoPanel, Card, Element, Button, HRule, Heading } from 'fictoan-react'
-import 'animate.css';
+import Head from "next/head"
+import Link from "next/link"
+import { useState, useEffect } from "react"
+import { Row, Portion, Select, Text, InfoPanel, Card, Element, Button, HRule, Heading } from "fictoan-react"
 import Drawer from "react-bottom-drawer";
-import { isMobile } from 'react-device-detect';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useInView } from 'react-hook-inview'
+import { isMobile } from "react-device-detect";
+import { motion, AnimatePresence } from "framer-motion";
+import { useInView } from "react-hook-inview"
 
-import iconsArray from '../constants/iconsArray'
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
-import InfoPanelContents from '../components/InfoPanelContents'
-import Documentation from '../components/Documentation'
-import FAQs from '../components/FAQs'
+import iconsArray from "../constants/iconsArray"
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
+import InfoPanelContents from "../components/InfoPanelContents"
+import Documentation from "../components/Documentation"
+import FAQs from "../components/FAQs"
 import InfoPanelStyled from "../styles/InfoPanel.styled";
 import BottomDrawerStyled from "../styles/BottomDrawer.styled";
 import { customColours } from "../styles/FictoanTheme";
@@ -46,7 +45,7 @@ export default function Icons() {
     return (
         <Element as="div">
             <Head>
-                <title>Icons</title>
+                <title>Project Pratima — Icon library</title>
             </Head>
 
             <Nav />
@@ -57,7 +56,7 @@ export default function Icons() {
                 <Portion desktopSpan="16" tabletLandscapeSpan="20" tabletPortraitSpan="22" mobileSpan="22">
                     <Row marginBottom="none" marginTop="small">
                         <Portion>
-                            <Heading as="h4" marginBottom="tiny">Icons</Heading>
+                            <Heading as="h4" marginBottom="tiny">Icon library</Heading>
                         </Portion>
 
                         {/* ////////////////// */}
@@ -304,7 +303,7 @@ export default function Icons() {
                                 weight={isVisible1 ? `600` : ``}
                                 style={{ color: isVisible1 ? `${customColours.hue}` : `` }}
                                 className="cursor-pointer"
-                            >Icons
+                            >Icon library
                             </Text>
                         </Link>
                         <Link href="/icons/#documentation">

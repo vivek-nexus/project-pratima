@@ -1,6 +1,6 @@
 import React from "react";
-import Link from 'next/link';
-import { Button, Card, Row, Portion, Text, HRule, Heading, Element } from 'fictoan-react';
+import Link from "next/link";
+import { Button, Card, Row, Portion, Text, HRule, Heading, Element } from "fictoan-react";
 
 
 function DesignPrinciples() {

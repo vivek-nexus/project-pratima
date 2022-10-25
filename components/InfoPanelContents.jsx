@@ -1,6 +1,6 @@
-import { Text, Element, Button, HRule } from 'fictoan-react'
-import 'animate.css';
-import { isMobile } from 'react-device-detect';
+import { Text, Element, Button, HRule } from "fictoan-react"
+import "animate.css";
+import { isMobile } from "react-device-detect";
 
 
 function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, edges, size, setIsInfoPanelOpen, setIsBottomDrawerOpen }) {

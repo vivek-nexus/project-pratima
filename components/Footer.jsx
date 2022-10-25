@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, Row, Portion, Text, HRule, Heading, Element } from 'fictoan-react';
+import { Button, Card, Row, Portion, Text, HRule, Heading, Element } from "fictoan-react";
 import Link from "next/link";
 
 function Footer() {
@@ -37,7 +37,7 @@ function Footer() {
                         <Heading as="h6">RESOURCES</Heading>
 
                         <Link href="/icons">
-                            <Text className="cursor-pointer" weight="400">Icons</Text>
+                            <Text className="cursor-pointer" weight="400">Icon library</Text>
                         </Link>
 
 

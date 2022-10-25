@@ -33,7 +33,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="description" content="Payment icons for India" />
+          <meta name="description" content="An icon library for all financial institutions in India — brought to you by PCI" />
           <link rel="icon" type="image/png" href={`${process.env.LINK_PREFIX}/favicon.png`} />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />

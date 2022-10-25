@@ -1,8 +1,8 @@
-import '../styles/globals.css'
+import "../styles/globals.css"
 import { ThemeProvider } from "fictoan-react"
-import { FictoanTheme } from '../styles/FictoanTheme'
+import { FictoanTheme } from "../styles/FictoanTheme"
 import { useEffect, useState } from "react"
-import 'animate.css';
+import "animate.css";
 
 
 function MyApp({ Component, pageProps }) {
