@@ -33,7 +33,7 @@ View project website at http://yakshag.github.io/project-pratima/
 - Redo images under Success FAQ and Failure FAQ to prevent copyright issues
 - Check with Vikas for fixes under smooth edges for pending icon
 - Project logo, if needed to be changed
-- 
+- Hero illustration changes
 
 
 
