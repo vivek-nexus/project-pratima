@@ -1,6 +1,5 @@
 const isProd = process.env.NODE_ENV === 'production'
 
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
     // Sample LINK prefix: /project-pratima
@@ -11,12 +10,6 @@ const nextConfig = {
   swcMinify: true,
   basePath: isProd ? "/project-pratima" : "",
   assetPrefix: isProd ? "/project-pratima" : "",
-  experimental: {
-    images: {
-      unoptimized: true,
-    },
-  },
 }
-
 
 module.exports = nextConfig
