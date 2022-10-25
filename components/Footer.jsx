@@ -11,7 +11,7 @@ function Footer() {
                     <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="24" marginBottom="micro">
                         <Link href="/">
                             <Button kind="primary" shape="circular" bgColour="slate-40">
-                                <Text size="large">P</Text>
+                                <Text size="huge">P</Text>
                             </Button>
                         </Link>
                     </Portion>

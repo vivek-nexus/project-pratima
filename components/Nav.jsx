@@ -17,7 +17,7 @@ function Nav() {
           </Portion>
 
           <Portion desktopSpan="2" tabletLandscapeSpan="2" tabletPortraitSpan="2" mobileSpan="8">
-            <Link href="/#design-principles">
+            <Link href="/#team">
               <a>
                 <Text align="right" weight="600">About</Text>
               </a>
