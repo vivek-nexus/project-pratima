@@ -214,26 +214,29 @@ export default function Icons() {
                                             tabletLandscapeSpan={isInfoPanelOpen ? "10" : "8"}
                                             tabletPortraitSpan={isInfoPanelOpen ? "12" : "8"} mobileSpan={false ? "24" : "12"} padding="nano"
                                         >
-                                            <Card
+                                            <Element as="div"
                                                 isFullHeight
-                                                bgColor="blue-10"
-                                                className="flex flex-col justify-between rounded-xl cursor-pointer hover:shadow-xl duration-300 h-max"
+                                                className="flex flex-col rounded-lg cursor-pointer hover:shadow-xl duration-300"
+                                                shadow="mild"
                                                 onClick={() => {
                                                     setClickedIcon(item.fileName)
                                                     isMobile ? setIsBottomDrawerOpen(true) : setIsInfoPanelOpen(true)
                                                 }}
                                             >
-                                                <img
-                                                    src={`${process.env.LINK_PREFIX}/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
-                                                    alt={`${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
-                                                    className="mx-auto w-3/4"
+                                                <Element
+                                                    as="div"
+                                                    bgColor="blue-10 rounded-t-lg"
+                                                >
+                                                    <img
+                                                        src={`${process.env.LINK_PREFIX}/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
+                                                        alt={`${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
+                                                        className="mx-auto w-3/4"
 
-                                                />
-
-
-                                                <Card
-                                                    shadow="mild"
-                                                    className="flex justify-between items-center rounded-b-lg p-4"
+                                                    />
+                                                </Element>
+                                                <Element
+                                                    as="div"
+                                                    className="flex justify-between items-center bg-white rounded-b-lg p-4 flex-grow"
                                                 >
                                                     <Text
                                                         weight="600"
@@ -242,8 +245,8 @@ export default function Icons() {
                                                         {item.iconName}
                                                     </Text>
                                                     <img className="w-auto h-[32px]" src={`${process.env.LINK_PREFIX}/chevron_right.svg`} alt="chevron-right-icon" />
-                                                </Card>
-                                            </Card>
+                                                </Element>
+                                            </Element>
                                         </MotionPortion>)}
                                 </AnimatePresence>
                             </Row>
