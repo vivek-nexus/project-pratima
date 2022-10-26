@@ -24,7 +24,7 @@ function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, 
                                 <img
                                     src={`${process.env.LINK_PREFIX}/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
                                     alt={`${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
-                                    className="icon-large"
+                                    className="h-32 w-auto"
                                 />
                                 <a
                                     href={`${process.env.LINK_PREFIX}/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`}
