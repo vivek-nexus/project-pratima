@@ -11,7 +11,10 @@ function InfoPanelContents({ iconsArray, clickedIcon, strokeSize, cornerRadius, 
                         {(clickedIcon == item.fileName) && (
                             <>
                                 <Text as="h5" marginBottom="micro"
-                                    className="cursor-pointer flex items-center"
+                                    padding="nano"
+                                    paddingLeft="none"
+                                    bgColor="blue-10"
+                                    className="cursor-pointer flex z-20 items-center sticky top-0"
                                     onClick={() => { isMobile ? setIsBottomDrawerOpen(false) : setIsInfoPanelOpen(false) }}
                                 >
                                     <Element

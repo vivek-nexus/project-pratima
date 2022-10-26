@@ -356,8 +356,9 @@ export default function Icons() {
                     <InfoPanel
                         width="large"
                         isOpen={isInfoPanelOpen}
+                        bgColor="blue-10"
                         onCloseCallback={() => { setIsInfoPanelOpen(false) }}
-                        className={`bg-blue-100/80 shadow-md  z-50 ${clickedIcon ? `animate__animated animate__pulse animate__faster` : ``}`}
+                        className={`shadow-md  z-50 ${clickedIcon ? `animate__animated animate__pulse animate__faster` : ``}`}
                         style={{ backdropFilter: "blur(8px)" }}
                         padding="small"
                     >
