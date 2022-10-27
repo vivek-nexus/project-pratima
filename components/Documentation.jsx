@@ -10,7 +10,7 @@ function Documentation() {
                 <Heading as="h5">Base grid</Heading>
                 <Text>Icon content should remain inside of the live area, which is the region of an image that is unlikely to be hidden from view.</Text>
 
-                <Element as="div" className="flex gap-4 items-top justify-center" >
+                <Element as="div" className="grid grid-cols-3 gap-4 items-center justify-center" >
                     <div>
                         <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/base-grid-1.svg`} alt="icon-grid" />
                         <Text align="center" weight="600">Grid — 24 x 24px</Text>
@@ -65,17 +65,17 @@ function Documentation() {
                 <Heading as="h5">Sizes</Heading>
                 <Text marginBottom="none">Icons are displayed as 24 x 24 px and can scale upto 32 x 32 px. All icons are available at 24 x 24 SVGs.</Text>
 
-                <Element as="div" className="flex items-end justify-center">
+                <Element as="div" className="grid grid-cols-3 items-end justify-center">
                     <div>
-                        <img className="h-16 w-auto" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
+                        <img className="h-14" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
                         <Text align="center" margin="none" weight="600">16px</Text>
                     </div>
                     <div>
-                        <img className="h-24 w-auto" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
+                        <img className="h-20" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
                         <Text align="center" margin="none" weight="600">24px</Text>
                     </div>
                     <div>
-                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
+                        <img className="h-28" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
                         <Text align="center" margin="none" weight="600">32px</Text>
                     </div>
                 </Element>
@@ -85,17 +85,17 @@ function Documentation() {
                 <Heading as="h5">Strokes</Heading>
                 <Text marginBottom="none">Pratima icons use a consistent stroke width of either 2px or 1.5 px or 1px, including curves, angles and both interior and exterior strokes. Based on your brand guidelines, choose and maintain a consistent stroke for all icons.</Text>
 
-                <Element as="div" className="flex gap-4 items-center justify-center">
+                <Element as="div" className="grid grid-cols-3 gap-4 items-center justify-center">
                     <div>
-                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-strokes" />
+                        <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-strokes" />
                         <Text align="center" weight="600" margin="none">1px</Text>
                     </div>
                     <div>
-                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/icons/s1.5_r3_soft/ic_view_transaction_history_24_s1.5_r3_soft.svg`} alt="icon-strokes" />
+                        <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s1.5_r3_soft/ic_view_transaction_history_24_s1.5_r3_soft.svg`} alt="icon-strokes" />
                         <Text align="center" weight="600" margin="none">1.5px</Text>
                     </div>
                     <div>
-                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/icons/s2_r3_soft/ic_view_transaction_history_24_s2_r3_soft.svg`} alt="icon-strokes" />
+                        <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s2_r3_soft/ic_view_transaction_history_24_s2_r3_soft.svg`} alt="icon-strokes" />
                         <Text align="center" weight="600" margin="none">2px</Text>
                     </div>
                 </Element>
@@ -105,17 +105,17 @@ function Documentation() {
                 <Heading as="h5">Corner radius</Heading>
                 <Text marginBottom="none">Corner radiuses are 2px by default, but it can range from 0 px to 4px based on your brand principles. Here are examples of corner radius on a 1px stroke.</Text>
 
-                <Element as="div" className="flex gap-4 items-top justify-center">
+                <Element as="div" className="grid grid-cols-3 gap-4 items-center justify-center">
                     <div>
-                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/icons/s1_r0_soft/ic_view_transaction_history_24_s1_r0_soft.svg`} alt="corner-radius" />
+                        <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s1_r0_soft/ic_view_transaction_history_24_s1_r0_soft.svg`} alt="corner-radius" />
                         <Text align="center" weight="600" margin="none">0px</Text>
                     </div>
                     <div>
-                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/icons/s1_r2_soft/ic_view_transaction_history_24_s1_r2_soft.svg`} alt="corner-radius" />
+                        <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s1_r2_soft/ic_view_transaction_history_24_s1_r2_soft.svg`} alt="corner-radius" />
                         <Text align="center" weight="600" margin="none">2px</Text>
                     </div>
                     <div>
-                        <img className="h-32 w-auto -mt-1" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="corner-radius" />
+                        <img className="h-32 -mt-1" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="corner-radius" />
                         <Text align="center" weight="600" margin="none">3px</Text>
                     </div>
                 </Element>
@@ -126,15 +126,15 @@ function Documentation() {
                 <Heading as="h5">Edge variations</Heading>
                 <Text marginBottom="none">Two options for edges — soft and sharp. As per your brand principles, please choose the relevant edges to pair with the corner radius. Example here highlights soft and sharp edges on 0px and 2px corner radius, with 1px stroke.</Text>
 
-                <Element as="div" className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Element as="div" className="grid grid-cols-1 sm:grid-cols-2 sm:gap-32">
                     <div className="mb-8 sm:mb-0">
-                        <div className="flex justify-center gap-4">
+                        <div className="grid grid-cols-2 items-center justify-center">
                             <div>
-                                <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-1.svg`} alt="edge-variations" />
+                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-1.svg`} alt="edge-variations" />
                                 <Text align="center" margin="none">Soft</Text>
                             </div>
                             <div>
-                                <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-2.svg`} alt="edge-variations" />
+                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-2.svg`} alt="edge-variations" />
                                 <Text align="center" margin="none">Sharp</Text>
                             </div>
                         </div>
@@ -143,13 +143,13 @@ function Documentation() {
                         </div>
                     </div>
                     <div>
-                        <div className="flex justify-center gap-4">
+                        <div className="grid grid-cols-2 items-center justify-center">
                             <div>
-                                <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-3.svg`} alt="edge-variations" />
+                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-3.svg`} alt="edge-variations" />
                                 <Text align="center" margin="none">Soft</Text>
                             </div>
                             <div>
-                                <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-4.svg`} alt="edge-variations" />
+                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-4.svg`} alt="edge-variations" />
                                 <Text align="center" margin="none">Sharp</Text>
                             </div>
                         </div>
