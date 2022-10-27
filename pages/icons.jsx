@@ -68,7 +68,7 @@ export default function Icons() {
                             tabletPortraitSpan={isInfoPanelOpen ? "18" : "24"}
                             mobileSpan={false ? "12" : "24"}
                             className="sticky top-0 z-10 bg-white/80"
-                            style={{ backdropFilter: "blur(8px)" }}
+                            style={{ backdropFilter: "blur(8px)", WebkitBackdropFilter: "blur(8px)" }}
                             shape="rounded"
                             paddingBottom="nano"
                         >
@@ -359,7 +359,7 @@ export default function Icons() {
                         bgColor="blue-10"
                         onCloseCallback={() => { setIsInfoPanelOpen(false) }}
                         className={`shadow-md  z-50 ${clickedIcon ? `animate__animated animate__pulse animate__faster` : ``}`}
-                        style={{ backdropFilter: "blur(8px)" }}
+                        style={{ backdropFilter: "blur(8px)", WebkitBackdropFilter: "blur(8px)" }}
                         padding="small"
                     >
                         <InfoPanelContents

@@ -35,7 +35,7 @@ function Home() {
                     tabletLandscapeSpan="12"
                     tabletPortraitSpan="18"
                     mobileSpan="24"
-                    style={{ backdropFilter: "blur(12px)" }}
+                    style={{ backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(8px)" }}
                     className={"bg-white/60 bg-center bg-cover bg-no-repeat rounded-lg m animate__animated animate__zoomIn"}
                   >
                     <Heading as="h4" marginBottom="micro">Project Pratima</Heading>

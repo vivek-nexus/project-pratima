@@ -67,15 +67,15 @@ function Documentation() {
 
                 <Element as="div" className="flex items-end justify-center">
                     <div>
-                        <img className="h-16" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
+                        <img className="h-16 w-auto" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
                         <Text align="center" margin="none" weight="600">16px</Text>
                     </div>
                     <div>
-                        <img className="h-24" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
+                        <img className="h-24 w-auto" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
                         <Text align="center" margin="none" weight="600">24px</Text>
                     </div>
                     <div>
-                        <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
+                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
                         <Text align="center" margin="none" weight="600">32px</Text>
                     </div>
                 </Element>
@@ -87,15 +87,15 @@ function Documentation() {
 
                 <Element as="div" className="flex gap-4 items-center justify-center">
                     <div>
-                        <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-strokes" />
+                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-strokes" />
                         <Text align="center" weight="600" margin="none">1px</Text>
                     </div>
                     <div>
-                        <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s1.5_r3_soft/ic_view_transaction_history_24_s1.5_r3_soft.svg`} alt="icon-strokes" />
+                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/icons/s1.5_r3_soft/ic_view_transaction_history_24_s1.5_r3_soft.svg`} alt="icon-strokes" />
                         <Text align="center" weight="600" margin="none">1.5px</Text>
                     </div>
                     <div>
-                        <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s2_r3_soft/ic_view_transaction_history_24_s2_r3_soft.svg`} alt="icon-strokes" />
+                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/icons/s2_r3_soft/ic_view_transaction_history_24_s2_r3_soft.svg`} alt="icon-strokes" />
                         <Text align="center" weight="600" margin="none">2px</Text>
                     </div>
                 </Element>
@@ -107,15 +107,15 @@ function Documentation() {
 
                 <Element as="div" className="flex gap-4 items-top justify-center">
                     <div>
-                        <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s1_r0_soft/ic_view_transaction_history_24_s1_r0_soft.svg`} alt="corner-radius" />
+                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/icons/s1_r0_soft/ic_view_transaction_history_24_s1_r0_soft.svg`} alt="corner-radius" />
                         <Text align="center" weight="600" margin="none">0px</Text>
                     </div>
                     <div>
-                        <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s1_r2_soft/ic_view_transaction_history_24_s1_r2_soft.svg`} alt="corner-radius" />
+                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/icons/s1_r2_soft/ic_view_transaction_history_24_s1_r2_soft.svg`} alt="corner-radius" />
                         <Text align="center" weight="600" margin="none">2px</Text>
                     </div>
                     <div>
-                        <img className="h-32 -mt-1" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="corner-radius" />
+                        <img className="h-32 w-auto -mt-1" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="corner-radius" />
                         <Text align="center" weight="600" margin="none">3px</Text>
                     </div>
                 </Element>
@@ -130,11 +130,11 @@ function Documentation() {
                     <div className="mb-8 sm:mb-0">
                         <div className="flex justify-center gap-4">
                             <div>
-                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-1.svg`} alt="edge-variations" />
+                                <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-1.svg`} alt="edge-variations" />
                                 <Text align="center" margin="none">Soft</Text>
                             </div>
                             <div>
-                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-2.svg`} alt="edge-variations" />
+                                <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-2.svg`} alt="edge-variations" />
                                 <Text align="center" margin="none">Sharp</Text>
                             </div>
                         </div>
@@ -145,11 +145,11 @@ function Documentation() {
                     <div>
                         <div className="flex justify-center gap-4">
                             <div>
-                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-3.svg`} alt="edge-variations" />
+                                <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-3.svg`} alt="edge-variations" />
                                 <Text align="center" margin="none">Soft</Text>
                             </div>
                             <div>
-                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-4.svg`} alt="edge-variations" />
+                                <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/edge-variations-4.svg`} alt="edge-variations" />
                                 <Text align="center" margin="none">Sharp</Text>
                             </div>
                         </div>

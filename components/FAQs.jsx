@@ -12,11 +12,11 @@ function FAQs() {
                 <Text>Icon content should remain inside of the live area.</Text>
                 <Element as="div" className="flex gap-4 items-center justify-center">
                     <div>
-                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/base-grid-yes.svg`} alt="base-grid-yes" />
+                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/faqs/base-grid-yes.svg`} alt="base-grid-yes" />
                         <Text align="center" weight="600" size="huge" margin="none">👍</Text>
                     </div>
                     <div>
-                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/base-grid-no.svg`} alt="base-grid-no" />
+                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/faqs/base-grid-no.svg`} alt="base-grid-no" />
                         <Text align="center" weight="600" size="huge" margin="none">👎</Text>
                     </div>
                 </Element>
@@ -27,11 +27,11 @@ function FAQs() {
                 <Text>Use the same thickness across all icons to maintain consistency — do not manipulate the thickness.</Text>
                 <Element as="div" className="flex gap-4 items-center justify-center">
                     <div>
-                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/stroke-consistency-yes.svg`} alt="stroke-consistency-yes" />
+                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/faqs/stroke-consistency-yes.svg`} alt="stroke-consistency-yes" />
                         <Text align="center" weight="600" size="huge" margin="none">👍</Text>
                     </div>
                     <div>
-                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/stroke-consistency-no.svg`} alt="stroke-consistency-no" />
+                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/faqs/stroke-consistency-no.svg`} alt="stroke-consistency-no" />
                         <Text align="center" weight="600" size="huge" margin="none">👎</Text>
                     </div>
                 </Element>
@@ -44,11 +44,11 @@ function FAQs() {
                     <div className="mb-8 sm:mb-0">
                         <div className="flex justify-center gap-4">
                             <div>
-                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/set-consistency-yes-1.svg`} alt="set-consistency-yes" />
+                                <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/faqs/set-consistency-yes-1.svg`} alt="set-consistency-yes" />
                                 <Text align="center" margin="none">1px</Text>
                             </div>
                             <div>
-                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/set-consistency-yes-2.svg`} alt="set-consistency-yes" />
+                                <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/faqs/set-consistency-yes-2.svg`} alt="set-consistency-yes" />
                                 <Text align="center" margin="none">1px</Text>
                             </div>
                         </div>
@@ -59,11 +59,11 @@ function FAQs() {
                     <div>
                         <div className="flex justify-center gap-4">
                             <div>
-                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/set-consistency-no-1.svg`} alt="set-consistency-no" />
+                                <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/faqs/set-consistency-no-1.svg`} alt="set-consistency-no" />
                                 <Text align="center" margin="none">1px</Text>
                             </div>
                             <div>
-                                <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/set-consistency-no-2.svg`} alt="set-consistency-no" />
+                                <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/faqs/set-consistency-no-2.svg`} alt="set-consistency-no" />
                                 <Text align="center" margin="none">1.5px</Text>
                             </div>
                         </div>
@@ -79,15 +79,15 @@ function FAQs() {
                 <Text>Pratima only supports stroked icons — do not manipulate the icons with fill or add gradients.</Text>
                 <Element as="div" className="flex gap-4 items-center justify-center">
                     <div>
-                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/themes-yes.svg`} alt="themes-yes" />
+                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/faqs/themes-yes.svg`} alt="themes-yes" />
                         <Text align="center" weight="600" size="huge" margin="none">👍</Text>
                     </div>
                     <div>
-                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/themes-no-1.svg`} alt="themes-no" />
+                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/faqs/themes-no-1.svg`} alt="themes-no" />
                         <Text align="center" weight="600" size="huge" margin="none">👎</Text>
                     </div>
                     <div>
-                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/themes-no-2.svg`} alt="themes-no" />
+                        <img className="h-32 w-auto" src={`${process.env.LINK_PREFIX}/docs-images/faqs/themes-no-2.svg`} alt="themes-no" />
                         <Text align="center" weight="600" size="huge" margin="none">👎</Text>
                     </div>
                 </Element>
@@ -97,11 +97,11 @@ function FAQs() {
             <Text>Use tick and green circle of any size — minimum 24 x 24 px.</Text>
             <Element as="div" className="flex flex-wrap gap-12 items-center justify-center">
                 <div>
-                    <img className="h-64 shadow-xl rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/success-yes.png`} alt="success-yes" />
+                    <img className="h-64 w-auto shadow-xl rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/success-yes.png`} alt="success-yes" />
                     <Text align="center" weight="600" size="huge" marginBottom="none">👍</Text>
                 </div>
                 <div>
-                    <img className="h-64 shadow-xl rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/success-no.png`} alt="success-no" />
+                    <img className="h-64 w-auto shadow-xl rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/success-no.png`} alt="success-no" />
                     <Text align="center" weight="600" size="huge" marginBottom="none">👎</Text>
                 </div>
             </Element>
@@ -110,11 +110,11 @@ function FAQs() {
             <Text>Use a white cross on a red circle.</Text>
             <Element as="div" className="flex flex-wrap gap-12 items-center justify-center">
                 <div>
-                    <img className="h-64 p-20 shadow-xl rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/failure-yes.svg`} alt="failure-yes" />
+                    <img className="h-64 w-auto p-20 shadow-xl rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/failure-yes.svg`} alt="failure-yes" />
                     <Text align="center" weight="600" size="huge" marginBottom="none">👍</Text>
                 </div>
                 <div>
-                    <img className="h-64 shadow-xl rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/failure-no.png`} alt="failure-no" />
+                    <img className="h-64 w-auto shadow-xl rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/failure-no.png`} alt="failure-no" />
                     <Text align="center" weight="600" size="huge" marginBottom="none">👎</Text>
                 </div>
             </Element>
