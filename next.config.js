@@ -8,7 +8,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   swcMinify: true,
-  basePath: isProd ? "research" : "",
+  basePath: isProd ? "/research" : "",
   assetPrefix: isProd ? "/research" : "",
 }
 
