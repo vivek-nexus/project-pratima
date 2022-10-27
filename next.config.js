@@ -4,12 +4,12 @@ const nextConfig = {
   env: {
     // Sample LINK prefix: /project-pratima
     // Do not add the slash at the last
-    LINK_PREFIX: isProd ? "/project-pratima" : ""
+    LINK_PREFIX: isProd ? "/research" : ""
   },
   reactStrictMode: true,
   swcMinify: true,
-  basePath: isProd ? "/project-pratima" : "",
-  assetPrefix: isProd ? "/project-pratima" : "",
+  basePath: isProd ? "research" : "",
+  assetPrefix: isProd ? "/research" : "",
 }
 
 module.exports = nextConfig
