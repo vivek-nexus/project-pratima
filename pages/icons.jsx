@@ -180,7 +180,7 @@ export default function Icons() {
                                         mobileSpan={false ? "24" : "12"}
                                         paddingLeft="nano"
                                     >
-                                        <Select
+                                        {/* <Select
                                             id="size"
                                             label="Size"
                                             options={[
@@ -189,7 +189,11 @@ export default function Icons() {
                                                     value: "24px"
                                                 },
                                             ]}
-                                        />
+                                            disabled
+                                            helpText="See documentation for other size recomendations"
+                                        /> */}
+                                        <Text className="mt-2 mb-1 sm:my-1">Size — 24px</Text>
+                                        <Text margin="none" size="small" textColor="grey">See <Link href="#sizes">documentation</Link> for other size recomendations</Text>
                                     </MotionPortion>
                                 </AnimatePresence>
                             </Row>
@@ -268,7 +272,7 @@ export default function Icons() {
                         <FAQs />
                     </Element>
 
-                    <Element as="div" ref={ref4}>
+                    {/* <Element as="div" ref={ref4}>
                         <HRule kind="primary" id="figma-community" />
 
                         <Row marginBottom="small">
@@ -285,7 +289,7 @@ export default function Icons() {
                                 </a>
                             </Portion>
                         </Row>
-                    </Element>
+                    </Element> */}
                 </Portion>
 
 
@@ -327,11 +331,12 @@ export default function Icons() {
                                 weight={isVisible3 ? `600` : ``}
                                 style={{ color: isVisible3 ? `${customColours.hue}` : `` }}
                                 className="cursor-pointer"
+                                marginBottom="none"
                             >
                                 FAQs
                             </Text>
                         </Link>
-                        <Link href="/icons/#figma-community">
+                        {/* <Link href="/icons/#figma-community">
                             <Text
                                 weight={isVisible4 ? `600` : ``}
                                 style={{ color: isVisible4 ? `${customColours.hue}` : `` }}
@@ -340,7 +345,7 @@ export default function Icons() {
                             >
                                 Figma community
                             </Text>
-                        </Link>
+                        </Link> */}
                     </Element>
                 </Portion>
             </Row>

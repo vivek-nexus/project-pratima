@@ -2,28 +2,8 @@ const teamArray = {
     "coreGroup": [
         {
             "name": "Fatema Raja",
-            "designation": "Design",
+            "designation": "Design leadership",
             "org": "FamPay"
-        },
-        {
-            "name": "Kedar Nimkar",
-            "designation": "VP, Design",
-            "org": "Jupiter Money"
-        },
-        {
-            "name": "Nikita Gupte",
-            "designation": "Senior UI/UX Designer",
-            "org": "Safexpay"
-        },
-        {
-            "name": "Neha Shrimali",
-            "designation": "Manager — Visual Design",
-            "org": "Amazon Pay"
-        },
-        {
-            "name": "Rajashree Gopalakrishnan",
-            "designation": "Art Director",
-            "org": "Amazon Pay"
         },
         {
             "name": "Kalpitha Jagadeesh",
@@ -31,46 +11,72 @@ const teamArray = {
             "org": "Setu"
         },
         {
-            "name": "Vivek G",
-            "designation": "User Experience Designer",
-            "org": "Setu"
+            "name": "Kedar Nimkar",
+            "designation": "VP, Design",
+            "org": "Jupiter Money"
+        },
+        {
+            "name": "Neha Shrimali",
+            "designation": "Manager — Visual Design",
+            "org": "Amazon Pay"
+        },
+        {
+            "name": "Nikita Gupte",
+            "designation": "TL — UI/UX Designer",
+            "org": "Safexpay"
+        },
+        {
+            "name": "Rajashree Gopalakrishnan",
+            "designation": "Art Director",
+            "org": "Amazon Pay"
         },
         {
             "name": "Vikas Singh",
             "designation": "GM, Product Design",
             "org": "PayTM"
+        },
+        {
+            "name": "Vivek G",
+            "designation": "User Experience Designer",
+            "org": "Setu"
         }
+
     ],
     "workingGroup": [
-        {
-            "name": "Vinay Kashyap",
-            "designation": "UX Designer",
-            "org": "PayU"
-        },
-        {
-            "name": "Shobhit Mohan",
-            "designation": "VP Marketing",
-            "org": "PayU"
-        },
-        {
-            "name": "Quamar Alam Quamar",
-            "designation": "Lead UX Design",
-            "org": "Eko"
-        },
         {
             "name": "Ajay Kumar",
             "designation": "Associate Director — Design",
             "org": "Mobikwik"
         },
         {
-            "name": "Shehbad Ansari",
-            "designation": "Associate Director — Design",
-            "org": "Mobikwik"
+            "name": "Alfie Saldanha",
+            "designation": "Lead Marketing",
+            "org": "NPCI"
         },
         {
-            "name": "Vinay Choletti",
-            "designation": "Head — Merchant Payments",
-            "org": "WhatsApp Pay"
+            "name": "Deepak Shinde",
+            "designation": "Executive Vice President — Digital Banking",
+            "org": "HDFC Bank"
+        },
+        {
+            "name": "Dharshini Kumar",
+            "designation": "Sr. Lead Marketing",
+            "org": "NPCI"
+        },
+        {
+            "name": "Lakshmi Ravi Kumar",
+            "designation": "Assistant General Manager, Systems",
+            "org": "SBI"
+        },
+        {
+            "name": "Mayur Kaku",
+            "designation": "Incharge — Marketing",
+            "org": "NPCI"
+        },
+        {
+            "name": "Quamar Alam Quamar",
+            "designation": "Lead UX Design",
+            "org": "Eko"
         },
         {
             "name": "Rahul Saini",
@@ -83,36 +89,6 @@ const teamArray = {
             "org": "NPCI"
         },
         {
-            "name": "Alfie Saldanha",
-            "designation": "Lead Marketing",
-            "org": "NPCI"
-        },
-        {
-            "name": "Mayur Kaku",
-            "designation": "Incharge — Marketing",
-            "org": "NPCI"
-        },
-        {
-            "name": "Dharshini Kumar",
-            "designation": "Sr. Lead Marketing",
-            "org": "NPCI"
-        },
-        {
-            "name": "Sujatha V Kumar",
-            "designation": "Head of Marketing — India and South Asia",
-            "org": "Visa"
-        },
-        {
-            "name": "Lakshmi Ravi Kumar",
-            "designation": "Assistant General Manager, Systems",
-            "org": "SBI"
-        },
-        {
-            "name": "Deepak Shinde",
-            "designation": "Executive Vice President — Digital Banking",
-            "org": "HDFC Bank"
-        },
-        {
             "name": "Ramanik Pevekar",
             "designation": "Program Design Lead — Digital Banking",
             "org": "HDFC Bank"
@@ -123,10 +99,36 @@ const teamArray = {
             "org": "HDFC Bank"
         },
         {
+            "name": "Shehbad Ansari",
+            "designation": "Associate Director — Design",
+            "org": "Mobikwik"
+        },
+        {
+            "name": "Shobhit Mohan",
+            "designation": "VP Marketing",
+            "org": "PayU"
+        },
+        {
+            "name": "Sujatha V Kumar",
+            "designation": "Head of Marketing — India and South Asia",
+            "org": "Visa"
+        },
+        {
             "name": "Vibha Roy",
             "designation": "Program Manager UX Practice — Digital Banking",
             "org": "HDFC Bank"
+        },
+        {
+            "name": "Vinay Choletti",
+            "designation": "Head — Merchant Payments",
+            "org": "WhatsApp Pay"
+        },
+        {
+            "name": "Vinay Kashyap",
+            "designation": "UX Designer",
+            "org": "PayU"
         }
+
     ]
 };
 

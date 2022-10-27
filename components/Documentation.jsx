@@ -61,9 +61,9 @@ function Documentation() {
                 </Element>
             </Element>
 
-            <Element as="div" marginBottom="small">
+            <Element id="sizes" as="div" marginBottom="small">
                 <Heading as="h5">Sizes</Heading>
-                <Text marginBottom="none">Icons are displayed as 24 x 24 px and can scale upto 32 x 32 px. All icons are available at 24 x 24 SVGs.</Text>
+                <Text marginBottom="none">All icons are provided at 24 x 24 px SVGs and can be scaled up or down between 16 px and 32 px.</Text>
 
                 <Element as="div" className="grid grid-cols-3 items-end justify-center">
                     <div>
@@ -164,7 +164,7 @@ function Documentation() {
 
             <Element as="div" marginBottom="small">
                 <Heading as="h5">Colour</Heading>
-                <Text marginBottom="none">Pratima provides the flexibility of choosing your brand colours and style for each icon. Here are some examples of how colours can be applied on the icon. You can use any colour palette that your brand supports, as long as it meets the accessibility guidelines.</Text>
+                <Text marginBottom="none">Pratima provides the flexibility of choosing your brand colours and style for each icon. Here are some examples of how colours can be applied on the icon. You can use any colour palette that your brand supports, as long as it meets the <a href="https://webaim.org/resources/contrastchecker/" target="_blank" rel="noopener noreferrer"> accessibility guidelines</a>.</Text>
 
                 <Element as="div" className="grid grid-cols-2 sm:grid-cols-5 gap-4 justify-center items-start">
                     <div>
