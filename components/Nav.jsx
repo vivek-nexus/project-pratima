@@ -19,7 +19,7 @@ function Nav() {
           <Portion desktopSpan="2" tabletLandscapeSpan="2" tabletPortraitSpan="2" mobileSpan="8">
             <Link href="/#team">
               <a>
-                <Text align="right" weight="600">About</Text>
+                <Text align="right" weight="600">Abouts</Text>
               </a>
             </Link>
           </Portion>
