@@ -36,7 +36,7 @@ function Home() {
                     tabletPortraitSpan="18"
                     mobileSpan="24"
                     style={{ backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(8px)" }}
-                    className={"bg-white/60 bg-center bg-cover bg-no-repeat rounded-lg m animate__animated animate__zoomIn"}
+                    className={"bg-white/80 bg-center bg-cover bg-no-repeat rounded-lg m animate__animated animate__zoomIn"}
                   >
                     <Heading as="h4" marginBottom="micro">Project Pratima</Heading>
                     <Heading as="h6">An icon library for all financial institutions in India.</Heading>

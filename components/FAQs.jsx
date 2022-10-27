@@ -76,15 +76,11 @@ function FAQs() {
 
             <Element as="div" marginBottom="small">
                 <Heading as="h5">Themes</Heading>
-                <Text>Pratima only supports stroked icons — do not manipulate the icons with fill or add gradients.</Text>
-                <Element as="div" className="grid grid-cols-3 gap-4 items-center justify-center">
+                <Text>Pratima only supports stroked icons — do not add shadows.</Text>
+                <Element as="div" className="grid grid-cols-2 gap-4 items-center justify-center">
                     <div>
                         <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/themes-yes.svg`} alt="themes-yes" />
                         <Text align="center" weight="600" size="huge" margin="none">👍</Text>
-                    </div>
-                    <div>
-                        <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/themes-no-1.svg`} alt="themes-no" />
-                        <Text align="center" weight="600" size="huge" margin="none">👎</Text>
                     </div>
                     <div>
                         <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/themes-no-2.svg`} alt="themes-no" />

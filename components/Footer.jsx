@@ -6,13 +6,11 @@ function Footer() {
     return (
         <Row marginBottom="none" bgColor="blue-10">
             <Portion desktopSpan="4" tabletLandscapeSpan="2" tabletPortraitSpan="1" mobileSpan="1"></Portion>
-            <Portion desktopSpan="16" tabletLandscapeSpan="18" tabletPortraitSpan="20" mobileSpan="20">
+            <Portion desktopSpan="16" tabletLandscapeSpan="18" tabletPortraitSpan="22" mobileSpan="22">
                 <Row gutters="small" paddingTop="small" paddingBottom="micro" marginBottom="none">
                     <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="24" marginBottom="micro">
                         <Link href="/">
-                            <Button kind="primary" shape="circular" bgColour="slate-40">
-                                <Text size="huge">P</Text>
-                            </Button>
+                            <img className="cursor-pointer h-12 w-auto" src={`${process.env.LINK_PREFIX}/logotype.svg`} />
                         </Link>
                     </Portion>
                     <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
@@ -46,9 +44,9 @@ function Footer() {
                         </Link>
 
 
-                        <Link href="/icons#figma-community">
+                        {/* <Link href="/icons#figma-community">
                             <Text className="cursor-pointer" weight="400">Figma community</Text>
-                        </Link>
+                        </Link> */}
 
                     </Portion>
                     <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
@@ -64,13 +62,13 @@ function Footer() {
                     <Portion desktopSpan="12" tabletLandscapeSpan="12" tabletPortraitSpan="12" mobileSpan="12">
                         <Text align="center" weight="600" marginBottom="nano">Brought to you by</Text>
                         <a href="https://paymentscouncil.in/" target="_blank" rel="noreferrer">
-                            <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/pci.png`} alt="pci-logo" className="w-auto mx-auto" />
+                            <img height="48" src={`${process.env.LINK_PREFIX}/org-logos/pci.png`} alt="pci-logo" className="w-auto mx-auto" />
                         </a>
                     </Portion>
                     <Portion desktopSpan="12" tabletLandscapeSpan="12" tabletPortraitSpan="12" mobileSpan="12">
                         <Text align="center" weight="600" marginBottom="nano">In association with</Text>
                         <a href="https://www.iba.org.in/" target="_blank" rel="noreferrer">
-                            <img height="36" src={`${process.env.LINK_PREFIX}/org-logos/iba.png`} alt="iba-logo" className="w-auto mx-auto" />
+                            <img height="48" src={`${process.env.LINK_PREFIX}/org-logos/iba.png`} alt="iba-logo" className="w-auto mx-auto" />
                         </a>
                     </Portion>
                 </Row>

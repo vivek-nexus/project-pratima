@@ -5,14 +5,14 @@ import { customColours } from "../styles/FictoanTheme";
 
 function Nav() {
   return (
-    <Row marginBottom="none" className="bg-white/70" shadow="mild"
+    <Row marginBottom="none" className="bg-white/80" shadow="mild"
       style={{ backdropFilter: "blur(16px)", WebkitBackdropFilter: "blur(16px)" }}>
       <Portion desktopSpan="4" tabletLandscapeSpan="2" tabletPortraitSpan="1" mobileSpan="1"></Portion>
       <Portion desktopSpan="16" tabletLandscapeSpan="20" tabletPortraitSpan="22" mobileSpan="22">
         <Row marginBottom="none">
           <Portion desktopSpan="18" tabletLandscapeSpan="18" tabletPortraitSpan="18" mobileSpan="8" verticallyCenterItems>
             <Link href="/">
-              <Button kind="primary" shape="circular" size="small">P</Button>
+              <img className="cursor-pointer h-8 w-auto" src={`${process.env.LINK_PREFIX}/logotype.svg`} />
             </Link>
           </Portion>
 
