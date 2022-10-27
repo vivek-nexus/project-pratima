@@ -9,7 +9,7 @@ function FAQs() {
 
             <Element as="div" marginBottom="small">
                 <Heading as="h5">Base grid</Heading>
-                <Text>Icon content should remain inside of the live area.</Text>
+                <Text>Icon content should remain inside of the live area, unless needed to maintain visual balance.</Text>
                 <Element as="div" className="grid grid-cols-2 gap-4 items-center justify-center">
                     <div>
                         <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/faqs/base-grid-yes.svg`} alt="base-grid-yes" />
@@ -90,7 +90,7 @@ function FAQs() {
             </Element>
 
             <Heading as="h5">Success</Heading>
-            <Text>Use tick and green circle of any size — minimum 24 x 24 px.</Text>
+            <Text>Use tick and green circle of any size — minimum 24 x 24px.</Text>
             <Element as="div" className="flex flex-wrap gap-12 items-center justify-center">
                 <div>
                     <img className="h-64 shadow-xl rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/success-yes.png`} alt="success-yes" />
