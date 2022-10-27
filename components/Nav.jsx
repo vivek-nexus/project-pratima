@@ -19,7 +19,11 @@ function Nav() {
           <Portion desktopSpan="2" tabletLandscapeSpan="2" tabletPortraitSpan="2" mobileSpan="8">
             <Link href="/#team">
               <a>
-                <Text align="right" weight="600">About</Text>
+                <Text align="right" weight="600"
+                  style={{ color: customColours.hue }}
+                >
+                  About
+                </Text>
               </a>
             </Link>
           </Portion>
@@ -27,7 +31,11 @@ function Nav() {
           <Portion desktopSpan="4" tabletLandscapeSpan="4" tabletPortraitSpan="4" mobileSpan="8">
             <Link href="icons">
               <a>
-                <Text align="right" weight="600">Icon library</Text>
+                <Text align="right" weight="600"
+                  style={{ color: customColours.hue }}
+                >
+                  Icon library
+                </Text>
               </a>
             </Link>
           </Portion>

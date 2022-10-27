@@ -39,8 +39,8 @@ function Home() {
                     className={"bg-white/80 bg-center bg-cover bg-no-repeat rounded-lg m animate__animated animate__zoomIn"}
                   >
                     <Heading as="h4" marginBottom="micro">Project Pratima</Heading>
-                    <Heading as="h6">An icon library for all financial institutions in India.</Heading>
-                    <Text marginBottom="tiny"> Easily recognisable by every Indian irrespective of literacy and education level.</Text>
+                    <Heading as="h6">An icon library for all financial institutions in India</Heading>
+                    <Text marginBottom="tiny">Brought to you by Payments Council of India</Text>
                     <Link href="#icons">
                       <Button kind="primary" shadow="hard">Read more</Button>
                     </Link>

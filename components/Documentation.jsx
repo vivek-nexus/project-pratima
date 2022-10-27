@@ -63,7 +63,7 @@ function Documentation() {
 
             <Element id="sizes" as="div" marginBottom="small">
                 <Heading as="h5">Sizes</Heading>
-                <Text marginBottom="none">Icons are displayed as 24 x 24 px and can scale upto 32 x 32 px. All icons are available at 24 x 24 SVGs.</Text>
+                <Text marginBottom="none">All icons are provided at 24 x 24 px SVGs and can be scaled up or down between 16 px and 32 px.</Text>
 
                 <Element as="div" className="grid grid-cols-3 items-end justify-center">
                     <div>

@@ -331,6 +331,7 @@ export default function Icons() {
                                 weight={isVisible3 ? `600` : ``}
                                 style={{ color: isVisible3 ? `${customColours.hue}` : `` }}
                                 className="cursor-pointer"
+                                marginBottom="none"
                             >
                                 FAQs
                             </Text>
