@@ -20,7 +20,7 @@ function Home() {
         <Portion>
           <Element as="div" className="bg-gray-300 sm:bg-cover"
             style={{
-              backgroundImage: `url(${process.env.LINK_PREFIX}/hero-3.svg)`,
+              backgroundImage: `url(${process.env.LINK_PREFIX}/hero.svg)`,
             }}>
             <Nav />
             <Row marginBottom="none">

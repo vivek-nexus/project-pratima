@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
 
     let image = new Image();
-    image.src = `${process.env.LINK_PREFIX}/hero-3.svg`
+    image.src = `${process.env.LINK_PREFIX}/hero.svg`
     image.addEventListener("load", function () {
       setIsLoading(false)
     })

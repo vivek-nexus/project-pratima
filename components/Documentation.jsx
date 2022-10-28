@@ -10,7 +10,7 @@ function Documentation() {
                 <Heading as="h5">Base grid</Heading>
                 <Text>Icon content should remain inside of the live area, which is the region of an image that is unlikely to be hidden from view.</Text>
 
-                <Element as="div" className="grid grid-cols-3 gap-4 items-center justify-center" >
+                <Element as="div" className="grid grid-cols-3 gap-4 items-start justify-center sm:w-3/4 md:w-1/2 mx-auto" >
                     <div>
                         <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/base-grid-1.svg`} alt="icon-grid" />
                         <Text align="center" weight="600">Grid — 24 x 24px</Text>
@@ -63,9 +63,9 @@ function Documentation() {
 
             <Element id="sizes" as="div" marginBottom="small">
                 <Heading as="h5">Sizes</Heading>
-                <Text marginBottom="none">All icons are provided at 24 x 24 px SVGs and can be scaled up or down between 16 px and 32 px.</Text>
+                <Text marginBottom="none">All icons are provided as 24 x 24px SVGs and can be scaled up or down, between 16px and 32px.</Text>
 
-                <Element as="div" className="grid grid-cols-3 items-end justify-center">
+                <Element as="div" className="grid grid-cols-3 items-end justify-center sm:w-3/4 md:w-1/2 mx-auto">
                     <div>
                         <img className="h-14" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-sizes" />
                         <Text align="center" margin="none" weight="600">16px</Text>
@@ -83,9 +83,9 @@ function Documentation() {
 
             <Element as="div" marginBottom="small">
                 <Heading as="h5">Strokes</Heading>
-                <Text marginBottom="none">Pratima icons use a consistent stroke width of either 2px or 1.5 px or 1px, including curves, angles and both interior and exterior strokes. Based on your brand guidelines, choose and maintain a consistent stroke for all icons.</Text>
+                <Text marginBottom="none">Pratima icons use a consistent stroke width of either 2px or 1.5px or 1px, including curves, angles and both interior and exterior strokes. Based on your brand guidelines, choose and maintain a consistent stroke for all icons.</Text>
 
-                <Element as="div" className="grid grid-cols-3 gap-4 items-center justify-center">
+                <Element as="div" className="grid grid-cols-3 gap-4 items-center justify-center sm:w-3/4 md:w-1/2 mx-auto">
                     <div>
                         <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s1_r3_soft/ic_view_transaction_history_24_s1_r3_soft.svg`} alt="icon-strokes" />
                         <Text align="center" weight="600" margin="none">1px</Text>
@@ -103,9 +103,9 @@ function Documentation() {
 
             <Element as="div" marginBottom="small">
                 <Heading as="h5">Corner radius</Heading>
-                <Text marginBottom="none">Corner radiuses are 2px by default, but it can range from 0 px to 4px based on your brand principles. Here are examples of corner radius on a 1px stroke.</Text>
+                <Text marginBottom="none">Corner radiuses are 2px by default, but it can range from 0px to 4px based on your brand principles. Here are examples of corner radius on a 1px stroke.</Text>
 
-                <Element as="div" className="grid grid-cols-3 gap-4 items-center justify-center">
+                <Element as="div" className="grid grid-cols-3 gap-4 items-center justify-center sm:w-3/4 md:w-1/2 mx-auto">
                     <div>
                         <img className="h-32" src={`${process.env.LINK_PREFIX}/icons/s1_r0_soft/ic_view_transaction_history_24_s1_r0_soft.svg`} alt="corner-radius" />
                         <Text align="center" weight="600" margin="none">0px</Text>

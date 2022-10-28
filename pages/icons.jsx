@@ -226,6 +226,16 @@ export default function Icons() {
                                                     setClickedIcon(item.fileName)
                                                     isMobile ? setIsBottomDrawerOpen(true) : setIsInfoPanelOpen(true)
                                                 }}
+                                                onContextMenu={(event) => {
+                                                    // Easter egg
+                                                    event.preventDefault();
+                                                    let psuedoDownload = document.createElement("a");
+                                                    psuedoDownload.href = `${process.env.LINK_PREFIX}/icons/${strokeSize}_${cornerRadius}_${edges}/${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`
+                                                    psuedoDownload.download = `${item.fileName}_${size}_${strokeSize}_${cornerRadius}_${edges}.svg`
+                                                    document.body.appendChild(psuedoDownload)
+                                                    psuedoDownload.click();
+                                                    document.body.removeChild(psuedoDownload)
+                                                }}
                                             >
                                                 <Element
                                                     as="div"
