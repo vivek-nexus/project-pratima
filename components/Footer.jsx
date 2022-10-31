@@ -10,7 +10,7 @@ function Footer() {
                 <Row gutters="small" paddingTop="small" paddingBottom="micro" marginBottom="none">
                     <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="24" marginBottom="micro">
                         <Link href="/">
-                            <img className="cursor-pointer h-12 w-auto" src={`${process.env.LINK_PREFIX}/logotype.svg`} />
+                            <img className="cursor-pointer h-12 w-auto" src={`${process.env.LINK_PREFIX}/logotype.svg`} alt="project-pratima-logotype" />
                         </Link>
                     </Portion>
                     <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
