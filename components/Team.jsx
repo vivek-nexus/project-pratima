@@ -68,6 +68,23 @@ function Team() {
             <Row gutters="huge">
                 <Portion>
                     <Heading as="h4" marginBottom="micro">Team</Heading>
+                    <Text>In the case of digital retail payments, there are currently different symbols/icons that are being used across digital payment application operators /payment entities. This could be unclear for new users as well as the un-initiated for adoption of digital payments.
+
+
+
+                        Project Pratima aims to introduce a universal set of icons for basic payment processes, viz. transaction’s success, failure, pending/ processing, and ‘call to action’ icons such as collect receive and pay/ send, etc. The project has created an icon (symbol) library that can be used by all financial institutions across India for ease of icon recognition by anyone using digital payments, irrespective of age, literacy and education level.
+
+
+
+                        Through the deployment of this initiative, the project aims to improve the trust, security and familiarity of digital payment icons. The icon library has been created using a design first approach, which provide organizations the options to customize the icons per brand requirements while retaining the underlying message for the consumer.
+
+
+
+                        Project Pratima is an initiative by PCI (Payments Council of India)
+
+
+
+                        By way of introduction, PCI is a body representing over 90% of non-Bank companies in the Payments ecosystem with licenses to operate under Prepaid Payment Instruments, Payments Banks, Payment Gateways, Merchant Aggregators, Card Networks, International Remittance and Trade providers, along with BBPOU and UPI providers. The purpose of PCI is being the platform for non-bank players in the Payments ecosystem to deliberate, integrate and lead the development of Payments for our economy.</Text>
                 </Portion>
             </Row>
             <Row marginBottom="none" gutters="huge">

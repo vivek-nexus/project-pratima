@@ -89,30 +89,34 @@ function FAQs() {
                 </Element>
             </Element>
 
-            <Heading as="h5">Success</Heading>
-            <Text>Use tick and green circle of any size — minimum 24 x 24px.</Text>
-            <Element as="div" className="flex flex-wrap gap-12 items-center justify-center">
-                <div>
-                    <img className="h-64 shadow-xl rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/success-yes.png`} alt="success-yes" />
-                    <Text align="center" weight="600" size="huge" marginBottom="none">👍</Text>
-                </div>
-                <div>
-                    <img className="h-64 shadow-xl rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/success-no.png`} alt="success-no" />
-                    <Text align="center" weight="600" size="huge" marginBottom="none">👎</Text>
-                </div>
+            <Element as="div" marginBottom="small">
+                <Heading as="h5">Success</Heading>
+                <Text>Use tick and green circle of any size — minimum 24 x 24px.</Text>
+                <Element as="div" className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-4 items-center justify-center">
+                    <div>
+                        <img className="h-auto mx-auto shadow-sm border-solid border-gray-100 rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/success-yes.webp`} alt="success-yes" />
+                        <Text align="center" weight="600" size="huge" marginBottom="none">👍</Text>
+                    </div>
+                    <div>
+                        <img className="h-auto mx-auto shadow-sm border-solid border-gray-100 rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/success-no.webp`} alt="success-no" />
+                        <Text align="center" weight="600" size="huge" marginBottom="none">👎</Text>
+                    </div>
+                </Element>
             </Element>
 
-            <Heading as="h5">Failure</Heading>
-            <Text>Use a white cross on a red circle.</Text>
-            <Element as="div" className="flex flex-wrap gap-12 items-center justify-center">
-                <div>
-                    <img className="h-64 p-20 shadow-xl rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/failure-yes.svg`} alt="failure-yes" />
-                    <Text align="center" weight="600" size="huge" marginBottom="none">👍</Text>
-                </div>
-                <div>
-                    <img className="h-64 shadow-xl rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/failure-no.png`} alt="failure-no" />
-                    <Text align="center" weight="600" size="huge" marginBottom="none">👎</Text>
-                </div>
+            <Element as="div" marginBottom="small">
+                <Heading as="h5">Failure</Heading>
+                <Text>Use a white cross on a red circle.</Text>
+                <Element as="div" className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-4 items-center justify-center">
+                    <div>
+                        <img className="h-auto mx-auto shadow-sm border-solid border-gray-100 rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/failure-yes.webp`} alt="failure-yes" />
+                        <Text align="center" weight="600" size="huge" marginBottom="none">👍</Text>
+                    </div>
+                    <div>
+                        <img className="h-auto mx-auto shadow-sm border-solid border-gray-100 rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/failure-no.webp`} alt="failure-no" />
+                        <Text align="center" weight="600" size="huge" marginBottom="none">👎</Text>
+                    </div>
+                </Element>
             </Element>
 
         </Element >
