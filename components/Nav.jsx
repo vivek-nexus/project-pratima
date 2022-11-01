@@ -17,7 +17,7 @@ function Nav() {
           </Portion>
 
           <Portion desktopSpan="2" tabletLandscapeSpan="2" tabletPortraitSpan="2" mobileSpan="8">
-            <Link href="/#team">
+            <Link href="/#aim">
               <a>
                 <Text align="right" weight="600"
                   style={{ color: customColours.hue }}
