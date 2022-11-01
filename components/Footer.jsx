@@ -16,13 +16,15 @@ function Footer() {
                     <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
                         <Heading as="h6">ABOUT</Heading>
 
-                        <Link href="/">
-                            <Text className="cursor-pointer" weight="400">Overview</Text>
-                        </Link>
+
 
 
                         <Link href="/#design-principles">
                             <Text className="cursor-pointer" weight="400">Design principles</Text>
+                        </Link>
+
+                        <Link href="/#aim">
+                            <Text className="cursor-pointer" weight="400">Aim</Text>
                         </Link>
 
 

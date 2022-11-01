@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import Team from "../components/Team";
 import DesignPrinciples from "../components/DesignPrinciples";
 import { customColours } from "../styles/FictoanTheme";
+import Aim from "../components/Aim";
 
 
 
@@ -43,7 +44,7 @@ function Home() {
                       <Heading as="h6">An icon library for all financial institutions in India</Heading>
                       <Text marginTop="nano" marginBottom="tiny">Brought to you by Payments Council of India</Text>
                     </Element>
-                    <Text marginBottom="tiny">An initiative to suuport RBI's vision of driving adoption and simplifying digital payments</Text>
+                    <Text marginBottom="tiny">An initiative to support RBI&apos;s vision of driving adoption and simplifying digital payments</Text>
                     <Link href="#icons">
                       <Button kind="primary" shadow="hard">Read more</Button>
                     </Link>
@@ -96,6 +97,10 @@ function Home() {
           <HRule kind="primary" id="design-principles" />
 
           <DesignPrinciples />
+
+          <HRule kind="primary" id="aim" />
+
+          <Aim />
 
           <HRule kind="primary" id="team" />
 

@@ -94,11 +94,11 @@ function FAQs() {
                 <Text>Use tick and green circle of any size — minimum 24 x 24px.</Text>
                 <Element as="div" className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-4 items-center justify-center">
                     <div>
-                        <img className="h-auto mx-auto shadow-sm border-solid border-gray-100 rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/success-yes.webp`} alt="success-yes" />
+                        <img className="h-auto mx-auto border-solid border-gray-100 rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/success-yes.webp`} alt="success-yes" />
                         <Text align="center" weight="600" size="huge" marginBottom="none">👍</Text>
                     </div>
                     <div>
-                        <img className="h-auto mx-auto shadow-sm border-solid border-gray-100 rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/success-no.webp`} alt="success-no" />
+                        <img className="h-auto mx-auto border-solid border-gray-100 rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/success-no.webp`} alt="success-no" />
                         <Text align="center" weight="600" size="huge" marginBottom="none">👎</Text>
                     </div>
                 </Element>
@@ -109,11 +109,11 @@ function FAQs() {
                 <Text>Use a white cross on a red circle.</Text>
                 <Element as="div" className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-4 items-center justify-center">
                     <div>
-                        <img className="h-auto mx-auto shadow-sm border-solid border-gray-100 rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/failure-yes.webp`} alt="failure-yes" />
+                        <img className="h-auto mx-auto border-solid border-gray-100 rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/failure-yes.webp`} alt="failure-yes" />
                         <Text align="center" weight="600" size="huge" marginBottom="none">👍</Text>
                     </div>
                     <div>
-                        <img className="h-auto mx-auto shadow-sm border-solid border-gray-100 rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/failure-no.webp`} alt="failure-no" />
+                        <img className="h-auto mx-auto border-solid border-gray-100 rounded-xl" src={`${process.env.LINK_PREFIX}/docs-images/faqs/failure-no.webp`} alt="failure-no" />
                         <Text align="center" weight="600" size="huge" marginBottom="none">👎</Text>
                     </div>
                 </Element>
