@@ -65,12 +65,11 @@ const tabTwoContent = () => (
 function Team() {
     return (
         <>
-            <Row gutters="huge">
+
+            <Row marginBottom="none" gutters="huge" id="team">
                 <Portion>
                     <Heading as="h4" marginBottom="micro">Team</Heading>
                 </Portion>
-            </Row>
-            <Row marginBottom="none" gutters="huge">
                 <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
                     <OrgLogo org="whatsapp" format="svg" />
                 </Portion>

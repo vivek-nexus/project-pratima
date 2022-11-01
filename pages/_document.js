@@ -33,8 +33,13 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta name="description" content="An icon library for all financial institutions in India — brought to you by PCI" />
           <link rel="icon" type="image/png" href={`${process.env.LINK_PREFIX}/favicon.png`} />
+          <meta name="description" content="An icon library for all financial institutions in India — brought to you by PCI" />
+          <meta property="og:type" content="wesbite" />
+          <meta property="og:url" content="https://paymentscouncil.in/" />
+          <meta property="og:title" content="Project Pratima" />
+          <meta property="og:description" content="An icon library for all financial institutions in India — brought to you by PCI" />
+          <meta property="og:image" content={`${process.env.LINK_PREFIX}/favicon.png`} />
         </Head>
         <body>
           <Main />

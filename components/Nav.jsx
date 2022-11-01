@@ -12,12 +12,12 @@ function Nav() {
         <Row marginBottom="none">
           <Portion desktopSpan="18" tabletLandscapeSpan="18" tabletPortraitSpan="18" mobileSpan="8" verticallyCenterItems>
             <Link href="/">
-              <img className="cursor-pointer h-8 w-auto" src={`${process.env.LINK_PREFIX}/logotype.svg`} />
+              <img className="cursor-pointer h-8 w-auto" src={`${process.env.LINK_PREFIX}/logotype.svg`} alt="project-pratima-logotype" />
             </Link>
           </Portion>
 
           <Portion desktopSpan="2" tabletLandscapeSpan="2" tabletPortraitSpan="2" mobileSpan="8">
-            <Link href="/#team">
+            <Link href="/#aim">
               <a>
                 <Text align="right" weight="600"
                   style={{ color: customColours.hue }}

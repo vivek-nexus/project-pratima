@@ -6,6 +6,8 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import Team from "../components/Team";
 import DesignPrinciples from "../components/DesignPrinciples";
+import { customColours } from "../styles/FictoanTheme";
+import Aim from "../components/Aim";
 
 
 
@@ -28,19 +30,21 @@ function Home() {
               <Portion desktopSpan="16" tabletLandscapeSpan="20" tabletPortraitSpan="22" mobileSpan="22">
                 <Row>
                   <Portion
-                    marginTop="medium"
-                    marginBottom="medium"
+
                     padding="small"
-                    desktopSpan="12"
-                    tabletLandscapeSpan="12"
+                    desktopSpan="14"
+                    tabletLandscapeSpan="14"
                     tabletPortraitSpan="18"
                     mobileSpan="24"
                     style={{ backdropFilter: "blur(12px)", WebkitBackdropFilter: "blur(8px)" }}
-                    className={"bg-white/80 bg-center bg-cover bg-no-repeat rounded-lg m animate__animated animate__zoomIn"}
+                    className={"my-24 bg-white/80 bg-center bg-cover bg-no-repeat rounded-lg m animate__animated animate__zoomIn"}
                   >
                     <Heading as="h4" marginBottom="micro">Project Pratima</Heading>
-                    <Heading as="h6">An icon library for all financial institutions in India</Heading>
-                    <Text marginBottom="tiny">Brought to you by Payments Council of India</Text>
+                    <Element as="div" className="pl-3 border-l-4 rounded border-0 border-solid" style={{ borderColor: customColours.hue }}>
+                      <Heading as="h6">An icon library for all financial institutions in India</Heading>
+                      <Text marginTop="nano" marginBottom="tiny">Brought to you by Payments Council of India</Text>
+                    </Element>
+                    <Text marginBottom="tiny">An initiative to support RBI&apos;s vision of driving adoption and simplifying digital payments</Text>
                     <Link href="#icons">
                       <Button kind="primary" shadow="hard">Read more</Button>
                     </Link>
@@ -93,6 +97,10 @@ function Home() {
           <HRule kind="primary" id="design-principles" />
 
           <DesignPrinciples />
+
+          <HRule kind="primary" id="aim" />
+
+          <Aim />
 
           <HRule kind="primary" id="team" />
 
