@@ -116,7 +116,7 @@ function Team() {
 
 
 
-            <Row marginBottom="medium">
+            <Row>
                 <Portion>
                     <Tabs
                         tabs={[

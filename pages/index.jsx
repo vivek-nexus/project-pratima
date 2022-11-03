@@ -8,6 +8,7 @@ import Team from "../components/Team";
 import DesignPrinciples from "../components/DesignPrinciples";
 import { customColours } from "../styles/FictoanTheme";
 import Aim from "../components/Aim";
+import Contact from "../components/Contact";
 
 
 
@@ -102,9 +103,15 @@ function Home() {
 
           <Aim />
 
+          {/* <HRule kind="tertiary" id="contact" /> */}
+          <Contact />
+
           <HRule kind="primary" id="team" />
 
           <Team />
+
+
+
         </Portion>
         <Portion desktopSpan="4" tabletLandscapeSpan="2" tabletPortraitSpan="1" mobileSpan="1"></Portion>
       </Row>
