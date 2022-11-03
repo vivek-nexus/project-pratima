@@ -5,7 +5,7 @@ import { Element, Text, Table, Tabs, Row, Portion, Heading } from "fictoan-react
 function Aim() {
     return (
         <>
-            <Row gutters="huge" marginBottom="none">
+            <Row marginBottom="none">
                 <Portion>
                     <Heading as="h4" marginBottom="micro">Aim</Heading>
                     <Text>Different icons are being used across digital payment application operators and payment entities. This could be unclear for new users as well as the un-initiated, for adoption of digital payments.</Text>
