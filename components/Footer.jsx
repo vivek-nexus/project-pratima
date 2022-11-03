@@ -58,7 +58,7 @@ function Footer() {
                             <Text className="cursor-pointer" weight="400">FAQs</Text>
                         </Link>
 
-                        <Link href="/#contact">
+                        <Link href="/#aim">
                             <Text className="cursor-pointer" weight="400">Contact</Text>
                         </Link>
 
