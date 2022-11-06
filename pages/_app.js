@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
       console.log(window.location.hash)
       setTimeout(() => {
         document.querySelector(window.location.hash).scrollIntoView();
-      }, 500);
+      }, 1000);
     }
   }, [])
 
