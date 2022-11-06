@@ -17,6 +17,12 @@ function MyApp({ Component, pageProps }) {
     image.addEventListener("load", function () {
       setIsLoading(false)
     })
+
+    if (window.location.hash) {
+      setTimeout(() => {
+        document.querySelector(window.location.hash).scrollIntoView();
+      }, 1000);
+    }
   }, [])
 
   return (
