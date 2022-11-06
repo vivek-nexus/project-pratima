@@ -19,7 +19,6 @@ function MyApp({ Component, pageProps }) {
     })
 
     if (window.location.hash) {
-      console.log(window.location.hash)
       setTimeout(() => {
         document.querySelector(window.location.hash).scrollIntoView();
       }, 1000);
