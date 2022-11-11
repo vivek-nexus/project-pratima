@@ -1,6 +1,7 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
+  trailingSlash: true,
   env: {
     // Sample LINK prefix: /project-pratima
     // Do not add the slash at the last
