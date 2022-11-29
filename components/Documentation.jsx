@@ -10,7 +10,7 @@ function Documentation() {
                 <Heading as="h5">Base grid</Heading>
                 <Text>Icon content should remain inside of the live area, which is the region of an image that is unlikely to be hidden from view.</Text>
 
-                <Element as="div" className="grid grid-cols-3 gap-4 items-start justify-center sm:w-3/4 md:w-1/2 mx-auto" >
+                <Element as="div" className="grid grid-cols-3 gap-4 items-start justify-center sm:w-3/4 md:w-2/3 mx-auto" >
                     <div>
                         <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/base-grid-1.svg`} alt="icon-grid" />
                         <Text align="center" weight="600">Grid — 24 x 24px</Text>
@@ -21,7 +21,7 @@ function Documentation() {
                     </div>
                     <div>
                         <img className="h-32" src={`${process.env.LINK_PREFIX}/docs-images/base-grid-3.svg`} alt="icon-grid" />
-                        <Text align="center" weight="600">Live area — 2 x 2px</Text>
+                        <Text align="center" weight="600">Live area — 20 x 20px</Text>
                     </div>
                 </Element>
             </Element>

@@ -12,7 +12,7 @@ function Aim() {
 
                     <Text weight="600">Project Pratima aims to introduce a uniform set of icons for basic payment actions and processes. The project aims to improve trust, security and familiarity of digital payment icons.</Text>
 
-                    <Text marginBottom="none">PCI is a body representing over 90% of non-bank companies in the payments ecosystem, who hold licenses to operate under Prepaid Payment Instruments, Payments Banks, Payment Gateways, Merchant Aggregators, Card Networks, International Remittance and Trade providers, along with BBPOU and UPI providers. The purpose of PCI is to enable non-bank players in the payments ecosystem to deliberate, integrate and lead the development of payments for our economy. Implementation of this project in the banking sector is encouraged by IBA.</Text>
+                    <Text marginBottom="none">PCI is a body representing over 90% of non-bank companies in the payments ecosystem, who hold licenses to operate under Prepaid Payment Instruments, Payments Banks, Payment Gateways, Merchant Aggregators, Card Networks, International Remittance and Trade providers, along with BBPOU and UPI providers. The purpose of PCI is to enable non-bank players in the payments ecosystem to deliberate, integrate and lead the development of payments for our economy.</Text>
                 </Portion>
             </Row>
 
