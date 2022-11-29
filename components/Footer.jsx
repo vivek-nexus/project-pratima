@@ -65,7 +65,13 @@ function Footer() {
                     </Portion>
                 </Row>
                 <Row sidePadding="huge" paddingBottom="micro" marginBottom="none">
-                    <Portion desktopSpan="12" tabletLandscapeSpan="12" tabletPortraitSpan="12" mobileSpan="12">
+                    <Portion desktopSpan="24" tabletLandscapeSpan="24" tabletPortraitSpan="24" mobileSpan="24">
+                        <Text align="center" weight="600" marginBottom="nano">Brought to you by</Text>
+                        <a href="https://paymentscouncil.in/" target="_blank" rel="noreferrer">
+                            <img height="48" src={`${process.env.LINK_PREFIX}/org-logos/pci.png`} alt="pci-logo" className="w-auto mx-auto" />
+                        </a>
+                    </Portion>
+                    {/* <Portion desktopSpan="12" tabletLandscapeSpan="12" tabletPortraitSpan="12" mobileSpan="12">
                         <Text align="center" weight="600" marginBottom="nano">Brought to you by</Text>
                         <a href="https://paymentscouncil.in/" target="_blank" rel="noreferrer">
                             <img height="48" src={`${process.env.LINK_PREFIX}/org-logos/pci.png`} alt="pci-logo" className="w-auto mx-auto" />
@@ -76,7 +82,7 @@ function Footer() {
                         <a href="https://www.iba.org.in/" target="_blank" rel="noreferrer">
                             <img height="48" src={`${process.env.LINK_PREFIX}/org-logos/iba.png`} alt="iba-logo" className="w-auto mx-auto" />
                         </a>
-                    </Portion>
+                    </Portion> */}
                 </Row>
             </Portion>
             <Portion desktopSpan="4" tabletLandscapeSpan="2" tabletPortraitSpan="1" mobileSpan="1"></Portion>

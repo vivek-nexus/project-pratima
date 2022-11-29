@@ -17,7 +17,7 @@ function DesignPrinciples() {
                     isFullHeight
 
                 >
-                    <Element as="img" marginBottom="micro" src={`${process.env.LINK_PREFIX}/design-principles/recognisable.svg`} className="h-[60px] w-auto" alt="recognisable">
+                    <Element as="img" marginBottom="micro" src={`${process.env.LINK_PREFIX}/design-principles/recognisable.svg`} className="h-[64px] w-auto" alt="recognisable">
                     </Element>
                     <Heading as="h6">Recognisable</Heading>
                     <Text marginBottom="none">
@@ -47,7 +47,7 @@ function DesignPrinciples() {
                     bgColour="blue-10"
                     isFullHeight
                 >
-                    <Element as="img" marginBottom="micro" src={`${process.env.LINK_PREFIX}/design-principles/scalable.svg`} className="h-[52px] w-auto" alt="scalable">
+                    <Element as="img" marginBottom="micro" src={`${process.env.LINK_PREFIX}/design-principles/scalable.svg`} className="h-[64px] w-auto" alt="scalable">
                     </Element>
                     <Heading as="h6">Scalable</Heading>
                     <Text marginBottom="none">
@@ -62,7 +62,7 @@ function DesignPrinciples() {
                     bgColour="blue-10"
                     isFullHeight
                 >
-                    <Element as="img" marginBottom="micro" src={`${process.env.LINK_PREFIX}/design-principles/flexible.svg`} className="h-[68px] w-auto" alt="flexible">
+                    <Element as="img" marginBottom="micro" src={`${process.env.LINK_PREFIX}/design-principles/flexible.svg`} className="h-[64px] w-auto" alt="flexible">
                     </Element>
                     <Heading as="h6">Flexible</Heading>
                     <Text marginBottom="none">
