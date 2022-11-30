@@ -1,8 +1,9 @@
 ## Project pratima
 
 ### An icon library for all financial institutions in India.
+Official website: https://paymentscouncil.in/project-pratima
 
-View project website at http://yakshag.github.io/project-pratima/
+Github staging deployment: http://yakshag.github.io/project-pratima/
 
 ---
 
