@@ -264,11 +264,15 @@ export default function Icons() {
                                         </MotionPortion>)}
                                 </AnimatePresence>
                             </Row>
+                            {/* <Element as="div" className="flex justify-between items-center"> */}
                             <a
                                 href={`${process.env.LINK_PREFIX}/project-pratima-icons.zip`}
+                                className="flex-shrink-0"
                                 download>
                                 <Button kind="tertiary" shadow="mild" shape="rounded" marginLeft="nano">Download all</Button>
                             </a>
+                            <Text marginBottom="none" marginLeft="nano">All icons are made available under the <a href="https://www.apache.org/licenses/LICENSE-2.0.txt" target="_blank">Apache License Version 2.0</a></Text>
+                            {/* </Element> */}
                         </Portion>
                     </Row>
 

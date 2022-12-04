@@ -70,48 +70,79 @@ function Team() {
                 <Portion>
                     <Heading as="h4" marginBottom="micro">Team</Heading>
                 </Portion>
-                <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
+                <Portion className="flex gap-8 flex-wrap items-center">
+                    <OrgLogo org="amazon-pay" format="svg" className="pt-4" />
+
+                    <OrgLogo org="eko" format="svg" className="py-5" />
+
+                    <OrgLogo org="fampay" format="svg" />
+
+                    <OrgLogo org="hdfc" format="webp" />
+
+                    <OrgLogo org="jupiter" format="svg" />
+
+                    <OrgLogo org="mobikwik" format="svg" />
+
+                    <OrgLogo org="npci" format="png" />
+
+                    <OrgLogo org="paytm" format="svg" className="py-5" />
+
+                    <OrgLogo org="payu" format="png" />
+
+                    <OrgLogo org="safexpay" format="png" className="pt-4" />
+
+                    <OrgLogo org="sbi" format="png" className="py-5" />
+
+                    <OrgLogo org="setu" format="svg" className="py-4" />
+
+                    <OrgLogo org="visa" format="png" className="py-5" />
+
                     <OrgLogo org="whatsapp" format="svg" />
                 </Portion>
-                <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="mobikwik" format="svg" />
-                </Portion>
-                <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="eko" format="svg" />
-                </Portion>
-                <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
-                    <OrgLogo org="amazon-pay" format="svg" />
-                </Portion>
-                <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="payu" format="svg" />
-                </Portion>
-                <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="setu" format="svg" />
-                </Portion>
-                <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
-                    <OrgLogo org="sbi" format="svg" />
-                </Portion>
-                <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="fampay" format="svg" />
-                </Portion>
-                <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="jupiter" format="svg" />
-                </Portion>
-                <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
-                    <OrgLogo org="paytm" format="svg" />
-                </Portion>
-                <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="npci" format="svg" />
-                </Portion>
-                <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="visa" format="svg" />
-                </Portion>
-                <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="safexpay" format="svg" />
-                </Portion>
-                <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                    <OrgLogo org="hdfc" format="svg" />
-                </Portion>
+                {/* <Portion>
+                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
+                        <OrgLogo org="amazon-pay" format="svg" />
+                    </Portion>
+                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
+                        <OrgLogo org="eko" format="svg" />
+                    </Portion>
+                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
+                        <OrgLogo org="fampay" format="svg" />
+                    </Portion>
+                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
+                        <OrgLogo org="hdfc" format="webp" />
+                    </Portion>
+                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
+                        <OrgLogo org="jupiter" format="svg" />
+                    </Portion>
+                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
+                        <OrgLogo org="mobikwik" format="svg" />
+                    </Portion>
+                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
+                        <OrgLogo org="npci" format="png" />
+                    </Portion>
+                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
+                        <OrgLogo org="paytm" format="svg" />
+                    </Portion>
+                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
+                        <OrgLogo org="payu" format="png" />
+                    </Portion>
+                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
+                        <OrgLogo org="safexpay" format="svg" />
+                    </Portion>
+                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
+                        <OrgLogo org="sbi" format="svg" />
+                    </Portion>
+                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
+                        <OrgLogo org="setu" format="svg" />
+                    </Portion>
+                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
+                        <OrgLogo org="visa" format="svg" />
+                    </Portion>
+                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
+                        <OrgLogo org="whatsapp" format="svg" />
+                    </Portion>
+                </Portion> */}
             </Row>
 
 
