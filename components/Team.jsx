@@ -67,7 +67,7 @@ function Team() {
         <>
 
             <Element as="div" marginBottom="none" id="team">
-                <Heading as="h4" marginBottom="micro">Team</Heading>
+                <Heading as="h4" marginBottom="nano">Team</Heading>
                 <Element as="div" className="flex gap-8 flex-wrap items-center">
                     <OrgLogo org="amazon-pay" format="svg" className="pt-4" />
 
