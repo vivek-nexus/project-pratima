@@ -11,11 +11,6 @@ function Contact() {
                     <Text margin="none">Please write to <b>Mr. Gaurav Chopra</b> at <a href="mailto:gaurav@paymentscouncil.in">gaurav@paymentscouncil.in</a></Text>
                 </Portion>
             </Row>
-
-
-
-
-
         </>
     );
 }

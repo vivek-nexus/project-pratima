@@ -29,9 +29,8 @@ function Home() {
             <Row marginBottom="none">
               <Portion desktopSpan="4" tabletLandscapeSpan="2" tabletPortraitSpan="1" mobileSpan="1"></Portion>
               <Portion desktopSpan="16" tabletLandscapeSpan="20" tabletPortraitSpan="22" mobileSpan="22">
-                <Row>
+                <Row marginBottom="none">
                   <Portion
-
                     padding="small"
                     desktopSpan="14"
                     tabletLandscapeSpan="14"
