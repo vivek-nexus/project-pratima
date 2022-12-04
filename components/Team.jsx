@@ -68,10 +68,10 @@ function Team() {
 
             <Element as="div" marginBottom="none" id="team">
                 <Heading as="h4" marginBottom="nano">Team</Heading>
-                <Element as="div" className="flex gap-8 flex-wrap items-center">
-                    <OrgLogo org="amazon-pay" format="svg" className="pt-4" />
+                <Element as="div" className="flex gap-4 sm:gap-8 flex-wrap items-center">
+                    <OrgLogo org="amazon-pay" format="svg" />
 
-                    <OrgLogo org="eko" format="svg" className="py-5" />
+                    <OrgLogo org="eko" format="svg" />
 
                     <OrgLogo org="fampay" format="svg" />
 
@@ -83,17 +83,17 @@ function Team() {
 
                     <OrgLogo org="npci" format="png" />
 
-                    <OrgLogo org="paytm" format="svg" className="py-5" />
+                    <OrgLogo org="paytm" format="svg" />
 
                     <OrgLogo org="payu" format="png" />
 
-                    <OrgLogo org="safexpay" format="png" className="pt-4" />
+                    <OrgLogo org="safexpay" format="png" />
 
-                    <OrgLogo org="sbi" format="png" className="py-5" />
+                    <OrgLogo org="sbi" format="png" />
 
-                    <OrgLogo org="setu" format="svg" className="py-4" />
+                    <OrgLogo org="setu" format="svg" />
 
-                    <OrgLogo org="visa" format="png" className="py-5" />
+                    <OrgLogo org="visa" format="png" />
 
                     <OrgLogo org="whatsapp" format="svg" />
                 </Element>
