@@ -66,11 +66,9 @@ function Team() {
     return (
         <>
 
-            <Row marginBottom="none" gutters="huge" id="team">
-                <Portion>
-                    <Heading as="h4" marginBottom="micro">Team</Heading>
-                </Portion>
-                <Portion className="flex gap-8 flex-wrap items-center">
+            <Element as="div" marginBottom="none" id="team">
+                <Heading as="h4" marginBottom="micro">Team</Heading>
+                <Element as="div" className="flex gap-8 flex-wrap items-center">
                     <OrgLogo org="amazon-pay" format="svg" className="pt-4" />
 
                     <OrgLogo org="eko" format="svg" className="py-5" />
@@ -98,8 +96,8 @@ function Team() {
                     <OrgLogo org="visa" format="png" className="py-5" />
 
                     <OrgLogo org="whatsapp" format="svg" />
-                </Portion>
-            </Row>
+                </Element>
+            </Element>
 
 
 
