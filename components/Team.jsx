@@ -99,50 +99,6 @@ function Team() {
 
                     <OrgLogo org="whatsapp" format="svg" />
                 </Portion>
-                {/* <Portion>
-                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
-                        <OrgLogo org="amazon-pay" format="svg" />
-                    </Portion>
-                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                        <OrgLogo org="eko" format="svg" />
-                    </Portion>
-                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                        <OrgLogo org="fampay" format="svg" />
-                    </Portion>
-                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                        <OrgLogo org="hdfc" format="webp" />
-                    </Portion>
-                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                        <OrgLogo org="jupiter" format="svg" />
-                    </Portion>
-                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                        <OrgLogo org="mobikwik" format="svg" />
-                    </Portion>
-                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                        <OrgLogo org="npci" format="png" />
-                    </Portion>
-                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
-                        <OrgLogo org="paytm" format="svg" />
-                    </Portion>
-                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                        <OrgLogo org="payu" format="png" />
-                    </Portion>
-                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                        <OrgLogo org="safexpay" format="svg" />
-                    </Portion>
-                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
-                        <OrgLogo org="sbi" format="svg" />
-                    </Portion>
-                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                        <OrgLogo org="setu" format="svg" />
-                    </Portion>
-                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8">
-                        <OrgLogo org="visa" format="svg" />
-                    </Portion>
-                    <Portion desktopSpan="3" tabletLandscapeSpan="4" tabletPortraitSpan="6" mobileSpan="8" marginBottom="micro">
-                        <OrgLogo org="whatsapp" format="svg" />
-                    </Portion>
-                </Portion> */}
             </Row>
 
 

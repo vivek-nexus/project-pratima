@@ -15,10 +15,6 @@ function Footer() {
                     </Portion>
                     <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
                         <Heading as="h6">ABOUT</Heading>
-
-
-
-
                         <Link href="/#design-principles">
                             <Text className="cursor-pointer" weight="400">Design principles</Text>
                         </Link>
@@ -31,7 +27,6 @@ function Footer() {
                         <Link href="/#team">
                             <Text className="cursor-pointer" weight="400">Team</Text>
                         </Link>
-
                     </Portion>
                     <Portion desktopSpan="6" tabletLandscapeSpan="6" tabletPortraitSpan="6" mobileSpan="12" marginBottom="micro">
                         <Heading as="h6">RESOURCES</Heading>
@@ -39,7 +34,6 @@ function Footer() {
                         <Link href="/icons">
                             <Text className="cursor-pointer" weight="400">Icon library</Text>
                         </Link>
-
 
                         <Link href="/icons#documentation">
                             <Text className="cursor-pointer" weight="400">Documentation</Text>
