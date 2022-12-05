@@ -33,7 +33,7 @@ const teamArray = {
         {
             "name": "Vikas Singh",
             "designation": "GM, Product Design",
-            "org": "PayTM"
+            "org": "Paytm"
         },
         {
             "name": "Vivek G",
@@ -81,7 +81,7 @@ const teamArray = {
         {
             "name": "Rahul Saini",
             "designation": "Chief Design Officer",
-            "org": "PayTM"
+            "org": "Paytm"
         },
         {
             "name": "Rajeeth Pillai",
