@@ -33,7 +33,7 @@ const teamArray = {
         {
             "name": "Vikas Singh",
             "designation": "GM, Product Design",
-            "org": "PayTM"
+            "org": "Paytm"
         },
         {
             "name": "Vivek G",
