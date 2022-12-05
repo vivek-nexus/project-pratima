@@ -81,7 +81,7 @@ const teamArray = {
         {
             "name": "Rahul Saini",
             "designation": "Chief Design Officer",
-            "org": "PayTM"
+            "org": "Paytm"
         },
         {
             "name": "Rajeeth Pillai",
