@@ -3,7 +3,7 @@
 ### An icon library for all financial institutions in India.
 Official website: https://paymentscouncil.in/project-pratima
 
-Github staging deployment: http://yakshag.github.io/project-pratima/
+Github staging deployment: http://vivek-nexus.github.io/project-pratima/
 
 ---
 

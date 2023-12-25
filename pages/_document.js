@@ -39,7 +39,7 @@ export default class MyDocument extends Document {
           <meta property="og:url" content="https://paymentscouncil.in/project-pratima/" />
           <meta property="og:title" content="Project Pratima" />
           <meta property="og:description" content="An icon library for all financial institutions in India — brought to you by PCI" />
-          <meta property="og:image" content="https://yakshag.github.io/project-pratima/og-image.png" />
+          <meta property="og:image" content="https://vivek-nexus.github.io/project-pratima/og-image.png" />
         </Head>
         <body>
           <Main />
